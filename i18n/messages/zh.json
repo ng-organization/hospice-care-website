@@ -3,146 +3,148 @@
     "companyName": "諾安安寧療護",
     "services": "服務項目",
     "about": "關於我們",
-    "testimonials": "客戶見證",
+    "areas": "服務地區",
+    "dignity": "尊嚴護理",
+    "info": "實用信息",
     "contact": "聯絡我們",
     "callNow": "立即致電"
   },
   "hero": {
-    "badge": "慈悲關懷 • 24小時支援",
-    "title": "舒適與尊嚴",
-    "titleHighlight": "在最重要的時刻",
-    "description": "提供充滿慈悲的安寧療護服務，以專業醫療支援、情感指導和堅定不移的尊嚴，來尊重生命的旅程，服務患者和家庭。",
-    "ctaPrimary": "獲得即時支援",
-    "ctaSecondary": "了解更多服務內容",
+    "badge": "聯邦醫療保險認證 • 24小時服務",
+    "title": "生命安寧",
+    "titleHighlight": "舒適照護",
+    "description": "聯邦認證安寧療護服務機構，為南加州提供雙語英文/繁體中文服務。聯邦醫療保險、加州醫療保險及HMO最高可支付100%費用。",
+    "ctaPrimary": "致電 909-321-2255",
+    "ctaSecondary": "了解我們的服務",
     "certifications": {
       "medicare": "聯邦醫療保險認證",
-      "licensed": "執業專業人員",
-      "availability": "24小時服務"
+      "licensed": "CMS認證機構",
+      "availability": "24小時護士值班"
     }
   },
   "services": {
     "badge": "我們的服務",
-    "title": "全面照護",
-    "titleHighlight": "為您量身定做",
-    "description": "我們的跨專業團隊提供個人化護理計劃，旨在提升舒適度、管理症狀，並在整個旅程中支持患者和家庭。",
+    "title": "全面安寧",
+    "titleHighlight": "療護服務",
+    "description": "我們的華語醫護專業團隊為患者和家庭提供個人化護理安排，包括居家護理、住院護理、持續護理和喘息護理服務。",
     "items": {
-      "comfort": {
-        "title": "舒適照護",
-        "description": "全面的疼痛和症狀管理，專注於生活品質和尊嚴。"
+      "homecare": {
+        "title": "居家護理",
+        "description": "在您舒適的家中提供例行訪問、間歇性和按需護理。"
       },
-      "support": {
-        "title": "24小時支援",
-        "description": "全天候醫療支援和緊急護理，隨時為您提供服務。"
+      "inpatient": {
+        "title": "住院護理",
+        "description": "當需要專業護理時，提供專業護理設施安排。"
       },
-      "family": {
-        "title": "家庭支援",
-        "description": "在整個旅程中為患者和他們的親人提供情感和精神支持。"
+      "continuous": {
+        "title": "持續護理",
+        "description": "班次輪值護理，協助患者度過困難時期。"
       },
-      "equipment": {
-        "title": "醫療設備",
-        "description": "所有必要的醫療設備和用品均在您家中提供和維護。"
+      "respite": {
+        "title": "喘息護理",
+        "description": "在專業設施為家庭成員和主要照顧者提供最多5天的喘息護理。"
       }
     }
   },
   "about": {
     "badge": "關於諾安安寧療護",
-    "title": "致力於",
-    "titleHighlight": "慈悲卓越",
-    "description": "15年來，諾安安寧療護一直提供卓越的臨終關懷服務，專注於舒適、尊嚴和家庭支援。我們的執業醫療專業團隊致力於確保每位患者在自己舒適的家中獲得個人化護理。",
+    "title": "聯邦認證",
+    "titleHighlight": "安寧療護服務機構",
+    "description": "諾安安寧療護有限公司是聯邦認證的聯邦醫療保險/加州醫療保險安寧療護服務機構，服務南加州5個縣。我們的使命：提供充滿慈悲的護理，以尊嚴、舒適和希望提升生活品質。",
     "stats": {
-      "families": "服務家庭",
-      "experience": "年經驗"
+      "families": "服務縣數",
+      "experience": "服務年數"
     },
     "buttons": {
       "meetTeam": "認識我們的團隊",
-      "viewCredentials": "查看資格證書"
+      "viewCredentials": "查看認證"
     }
   },
   "testimonials": {
-    "badge": "客戶見證",
-    "title": "來自",
-    "titleHighlight": "感恩家庭的話語",
+    "badge": "患者及家屬見證",
+    "title": "慈悲關懷的",
+    "titleHighlight": "真實故事",
     "items": [
       {
-        "name": "莎拉·強森",
-        "relation": "女兒",
-        "content": "在我母親生命的最後幾個月中，他們提供的慈悲關懷非常卓越。團隊以他們的善良和專業精神，讓困難的時光變得可以忍受。"
+        "name": "王女士",
+        "relation": "患者家屬",
+        "content": "華語醫護人員讓一切變得不同。他們理解我們的文化需求，以真誠的慈悲和尊重提供護理。"
       },
       {
-        "name": "邁克爾·陳",
-        "relation": "兒子",
-        "content": "對於24小時的支援和舒適照護，我無法表達足夠的感激。他們以尊嚴和尊重對待我的父親，讓他的最後日子變得平靜。"
+        "name": "陳氏家族",
+        "relation": "家庭成員",
+        "content": "在我們最需要的時候提供24小時服務。疼痛管理和情感支持幫助我們的父親在整個旅程中保持尊嚴。"
       },
       {
-        "name": "艾蜜麗·羅德里格茲",
-        "relation": "妻子",
-        "content": "整個家庭在這個旅程中都感受到了支持。他們在疼痛管理和情感支持方面的專業知識，在我們最困難的時期非常寶貴。"
+        "name": "羅德里格茲家族",
+        "relation": "感恩家屬",
+        "content": "聯邦醫療保險涵蓋一切費用。我們不必擔心費用，可以專注於在那些珍貴的最後幾個月中共度美好時光。"
       }
     ]
   },
   "contact": {
     "badge": "聯絡我們",
-    "title": "我們在這裡協助您",
+    "title": "我們隨時為您服務",
     "titleHighlight": "一天24小時",
-    "description": "請聯繫我們富有同情心的團隊，獲得即時支援、詢問我們的服務或安排諮詢。",
+    "description": "不用擔心保險問題 - 致電909-321-2255。我們有保險專員隨時準備回答您所有的問題和疑慮。",
     "form": {
       "title": "發送訊息給我們",
       "firstName": "名字",
       "lastName": "姓氏",
-      "email": "電子郵箱",
+      "email": "電子郵件",
       "phone": "電話",
       "message": "訊息",
-      "messagePlaceholder": "我們今天可以如何協助您？",
+      "messagePlaceholder": "我們如何幫助您和您的家人？",
       "submit": "發送訊息"
     },
     "info": {
-      "title": "聯繫方式",
+      "title": "聯絡資訊",
       "phone": {
         "title": "24小時支援專線",
-        "number": "(555) 123-4567",
-        "note": "全天候服務"
+        "number": "909-321-2255",
+        "note": "辦公時間外提供值班護士服務"
       },
       "email": {
-        "title": "電子郵箱",
-        "address": "info@serenityhospice.com",
-        "note": "我們將在2小時內回覆"
+        "title": "電子郵件",
+        "address": "INFO@IECOMMUNITYHOSPICE.COM",
+        "note": "我們將在辦公時間內回覆"
       },
       "address": {
-        "title": "辦公地址",
-        "address": "123 Compassion Drive\nPeaceful Valley, CA 90210",
-        "note": "週一至週五 上午8點至下午6點"
+        "title": "服務地區",
+        "address": "聖貝納迪諾縣\n河濱縣\n洛杉磯縣\n橙縣\n聖地亞哥縣",
+        "note": "星期一至星期五上午9點至下午5點"
       }
     },
     "emergency": {
-      "title": "緊急支援",
-      "description": "如遇緊急醫療情況，請撥打911。如有緊急安寧療護相關問題：",
-      "button": "緊急專線：(555) 911-HELP"
+      "title": "24小時緊急支援",
+      "description": "醫療緊急情況請撥打911。緊急安寧療護需求請致電：",
+      "button": "致電 909-321-2255"
     }
   },
   "footer": {
-    "description": "15年來提供充滿慈悲的安寧療護服務，秉持尊嚴、舒適和專業卓越的精神。",
+    "description": "諾安安寧療護有限公司 - 聯邦認證聯邦醫療保險/加州醫療保險安寧療護服務機構，為南加州提供雙語服務和文化敏感護理。",
     "badges": {
       "medicare": "聯邦醫療保險認證",
-      "licensed": "執業專業人員"
+      "licensed": "CMS認證"
     },
     "services": {
-      "title": "服務項目",
-      "comfort": "舒適照護",
+      "title": "服務",
+      "comfort": "居家護理",
       "pain": "疼痛管理",
       "family": "家庭支援",
-      "bereavement": "喪親關懷"
+      "bereavement": "喪慟護理"
     },
     "contact": {
-      "title": "聯絡方式",
-      "phone": "(555) 123-4567",
-      "email": "info@serenityhospice.com",
-      "address": "123 Compassion Drive\nPeaceful Valley, CA 90210"
+      "title": "聯絡",
+      "phone": "909-321-2255",
+      "email": "INFO@IECOMMUNITYHOSPICE.COM",
+      "address": "服務南加州\n5個縣"
     },
     "legal": {
-      "copyright": "© {year} 諾安安寧療護。版權所有。",
+      "copyright": "© {year} 諾安安寧療護有限公司。版權所有。",
       "privacy": "隱私政策",
       "terms": "服務條款",
-      "hipaa": "HIPAA 通知"
+      "hipaa": "HIPAA通知"
     }
   }
 }

@@ -2,81 +2,83 @@
   "navigation": {
     "companyName": "IE Community Hospice",
     "services": "Services",
-    "about": "About",
-    "testimonials": "Testimonials",
-    "contact": "Contact",
+    "about": "About Us",
+    "areas": "Service Areas",
+    "dignity": "Death With Dignity",
+    "info": "Useful Information",
+    "contact": "Contact Us",
     "callNow": "Call Now"
   },
   "hero": {
-    "badge": "Compassionate Care • 24/7 Support",
-    "title": "Comfort and Dignity",
-    "titleHighlight": "When It Matters Most",
-    "description": "Providing compassionate hospice care that honors life's journey with professional medical support, emotional guidance, and unwavering dignity for patients and families.",
-    "ctaPrimary": "Get Immediate Support",
-    "ctaSecondary": "Learn More About Our Services",
+    "badge": "Medicare & Medi-Cal Certified • 24/7 Availability",
+    "title": "Life with Dignity,",
+    "titleHighlight": "Comfort Care",
+    "description": "Federally certified hospice care provider serving Southern California with bilingual English/Traditional Chinese services. Medicare, Medi-Cal, and HMO coverage up to 100%.",
+    "ctaPrimary": "Call 909-321-2255",
+    "ctaSecondary": "Learn About Our Services",
     "certifications": {
       "medicare": "Medicare Certified",
-      "licensed": "Licensed Professionals",
-      "availability": "24/7 Availability"
+      "licensed": "CMS Certified Provider",
+      "availability": "24/7 Nurse On-Call"
     }
   },
   "services": {
     "badge": "Our Services",
-    "title": "Comprehensive Care",
-    "titleHighlight": "Tailored to Your Needs",
-    "description": "Our interdisciplinary team provides personalized care plans designed to enhance comfort, manage symptoms, and support both patients and families throughout their journey.",
+    "title": "Comprehensive Hospice",
+    "titleHighlight": "Care Services",
+    "description": "Our Chinese-speaking medical professionals provide personalized care arrangements for patients and families, including home care, inpatient care, continuous care, and respite care services.",
     "items": {
-      "comfort": {
-        "title": "Comfort Care",
-        "description": "Comprehensive pain and symptom management focused on quality of life and dignity."
+      "homecare": {
+        "title": "Home Care",
+        "description": "Routine visits, intermittent and on-demand care provided in the comfort of your home."
       },
-      "support": {
-        "title": "24/7 Support",
-        "description": "Round-the-clock medical support and emergency care available whenever needed."
+      "inpatient": {
+        "title": "Inpatient Care",
+        "description": "Professional facility care arrangements when specialized nursing is needed."
       },
-      "family": {
-        "title": "Family Support",
-        "description": "Emotional and spiritual support for both patients and their loved ones throughout the journey."
+      "continuous": {
+        "title": "Continuous Care",
+        "description": "Shift-based nursing care to help patients through difficult periods."
       },
-      "equipment": {
-        "title": "Medical Equipment",
-        "description": "All necessary medical equipment and supplies provided and maintained in your home."
+      "respite": {
+        "title": "Respite Care",
+        "description": "Up to 5 days of relief care for families and primary caregivers in professional facilities."
       }
     }
   },
   "about": {
     "badge": "About IE Community Hospice",
-    "title": "Dedicated to",
-    "titleHighlight": "Compassionate Excellence",
-    "description": "For over 15 years, IE Community Hospice has been providing exceptional end-of-life care with a focus on comfort, dignity, and family support. Our team of licensed healthcare professionals is committed to ensuring that every patient receives personalized care in the comfort of their own home.",
+    "title": "Federally Certified",
+    "titleHighlight": "Hospice Care Provider",
+    "description": "IE Community Hospice Inc. is a federally certified Medicare/Medi-Cal hospice care provider serving 5 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
     "stats": {
-      "families": "Families Served",
-      "experience": "Years Experience"
+      "families": "Counties Served",
+      "experience": "Years of Service"
     },
     "buttons": {
       "meetTeam": "Meet Our Team",
-      "viewCredentials": "View Credentials"
+      "viewCredentials": "View Certifications"
     }
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "Words from",
-    "titleHighlight": "Grateful Families",
+    "badge": "Patient & Family Testimonials",
+    "title": "Stories of",
+    "titleHighlight": "Compassionate Care",
     "items": [
       {
-        "name": "Sarah Johnson",
-        "relation": "Daughter",
-        "content": "The compassionate care provided to my mother during her final months was extraordinary. The team made a difficult time bearable with their kindness and professionalism."
+        "name": "Mrs. Wang",
+        "relation": "Patient Family",
+        "content": "The Chinese-speaking staff made all the difference. They understood our cultural needs and provided care with genuine compassion and respect."
       },
       {
-        "name": "Michael Chen",
-        "relation": "Son",
-        "content": "I cannot express enough gratitude for the 24/7 support and comfort care. They treated my father with dignity and respect, making his final days peaceful."
+        "name": "Chen Family",
+        "relation": "Family Members",
+        "content": "Available 24/7 when we needed them most. The pain management and emotional support helped our father maintain his dignity throughout his journey."
       },
       {
-        "name": "Emily Rodriguez",
-        "relation": "Wife",
-        "content": "The entire family felt supported throughout this journey. Their expertise in pain management and emotional support was invaluable during our most difficult time."
+        "name": "Rodriguez Family",
+        "relation": "Grateful Family",
+        "content": "Medicare covered everything. We didn't have to worry about costs and could focus on spending quality time together during those precious final months."
       }
     ]
   },
@@ -84,7 +86,7 @@
     "badge": "Contact Us",
     "title": "We're Here to Help",
     "titleHighlight": "24 Hours a Day",
-    "description": "Reach out to our compassionate team for immediate support, questions about our services, or to schedule a consultation.",
+    "description": "Don't worry about insurance - call 909-321-2255. We have insurance specialists ready to answer all your questions and concerns.",
     "form": {
       "title": "Send us a message",
       "firstName": "First Name",
@@ -92,54 +94,54 @@
       "email": "Email",
       "phone": "Phone",
       "message": "Message",
-      "messagePlaceholder": "How can we help you today?",
+      "messagePlaceholder": "How can we help you and your family?",
       "submit": "Send Message"
     },
     "info": {
-      "title": "Get in touch",
+      "title": "Contact Information",
       "phone": {
         "title": "24/7 Support Line",
-        "number": "(555) 123-4567",
-        "note": "Available around the clock"
+        "number": "909-321-2255",
+        "note": "Nurse on-call available outside business hours"
       },
       "email": {
         "title": "Email",
-        "address": "info@iecommunityhospice.com",
-        "note": "We'll respond within 2 hours"
+        "address": "INFO@IECOMMUNITYHOSPICE.COM",
+        "note": "We'll respond during business hours"
       },
       "address": {
-        "title": "Office Location",
-        "address": "123 Compassion Drive\nPeaceful Valley, CA 90210",
-        "note": "Mon-Fri 8AM-6PM"
+        "title": "Service Areas",
+        "address": "San Bernardino County\nRiverside County\nLos Angeles County\nOrange County\nSan Diego County",
+        "note": "Monday-Friday 9AM-5PM"
       }
     },
     "emergency": {
-      "title": "Emergency Support",
-      "description": "For immediate medical emergencies, call 911. For urgent hospice-related concerns:",
-      "button": "Emergency Line: (555) 911-HELP"
+      "title": "24/7 Emergency Support",
+      "description": "For medical emergencies, call 911. For urgent hospice care needs:",
+      "button": "Call 909-321-2255"
     }
   },
   "footer": {
-    "description": "Providing compassionate hospice care with dignity, comfort, and professional excellence for over 15 years.",
+    "description": "IE Community Hospice Inc. - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
     "badges": {
       "medicare": "Medicare Certified",
-      "licensed": "Licensed Professionals"
+      "licensed": "CMS Certified"
     },
     "services": {
       "title": "Services",
-      "comfort": "Comfort Care",
+      "comfort": "Home Care",
       "pain": "Pain Management",
       "family": "Family Support",
       "bereavement": "Bereavement Care"
     },
     "contact": {
       "title": "Contact",
-      "phone": "(555) 123-4567",
-      "email": "info@iecommunityhospice.com",
-      "address": "123 Compassion Drive\nPeaceful Valley, CA 90210"
+      "phone": "909-321-2255",
+      "email": "INFO@IECOMMUNITYHOSPICE.COM",
+      "address": "Serving 5 Counties in\nSouthern California"
     },
     "legal": {
-      "copyright": "© {year} IE Community Hospice. All rights reserved.",
+      "copyright": "© {year} IE Community Hospice Inc. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "hipaa": "HIPAA Notice"

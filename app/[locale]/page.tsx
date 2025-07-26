@@ -9,7 +9,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import {
-  Heart,
   Shield,
   Clock,
   Users,
@@ -24,6 +23,7 @@ import {
   CheckCircle,
   Award,
   Stethoscope,
+  Home,
 } from "lucide-react";
 
 export default function HospiceCareWebsite() {
@@ -83,24 +83,24 @@ export default function HospiceCareWebsite() {
 
   const services = [
     {
-      icon: <Heart className="w-8 h-8" />,
-      title: t("services.items.comfort.title"),
-      description: t("services.items.comfort.description"),
+      icon: <Home className="w-8 h-8" />,
+      title: t("services.items.homecare.title"),
+      description: t("services.items.homecare.description"),
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: t("services.items.support.title"),
-      description: t("services.items.support.description"),
+      title: t("services.items.inpatient.title"),
+      description: t("services.items.inpatient.description"),
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: t("services.items.family.title"),
-      description: t("services.items.family.description"),
+      title: t("services.items.continuous.title"),
+      description: t("services.items.continuous.description"),
     },
     {
       icon: <Stethoscope className="w-8 h-8" />,
-      title: t("services.items.equipment.title"),
-      description: t("services.items.equipment.description"),
+      title: t("services.items.respite.title"),
+      description: t("services.items.respite.description"),
     },
   ];
 
@@ -117,44 +117,97 @@ export default function HospiceCareWebsite() {
   return (
     <div className="min-h-screen flex flex-col scroll-smooth">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-sm border-b border-white/10 transition-all duration-300">
+      <nav
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-lg"
+            : "bg-accent-800/90 border-white/20"
+        }`}
+      >
         <div className="w-full px-4 md:px-8 lg:px-16">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Heart className="w-8 h-8 text-white" />
-              <span className="text-xl font-semibold text-white">
+              <img
+                src="/assets/logo.png"
+                alt="IE Community Hospice Logo"
+                className="w-8 h-8"
+              />
+              <span
+                className={`text-xl font-semibold transition-colors duration-300 ${
+                  isScrolled ? "text-accent-800" : "text-white"
+                }`}
+              >
                 {t("navigation.companyName")}
               </span>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-6">
               <a
                 href="#services"
-                className="text-white hover:text-gray-300 transition-all duration-300"
+                className={`transition-all duration-300 ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.services")}
               </a>
               <a
                 href="#about"
-                className="text-white hover:text-gray-300 transition-all duration-300"
+                className={`transition-all duration-300 ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.about")}
               </a>
               <a
-                href="#testimonials"
-                className="text-white hover:text-gray-300 transition-all duration-300"
+                href="#areas"
+                className={`transition-all duration-300 ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
-                {t("navigation.testimonials")}
+                {t("navigation.areas")}
+              </a>
+              <a
+                href="#dignity"
+                className={`transition-all duration-300 ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
+              >
+                {t("navigation.dignity")}
+              </a>
+              <a
+                href="#info"
+                className={`transition-all duration-300 ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
+              >
+                {t("navigation.info")}
               </a>
               <a
                 href="#contact"
-                className="text-white hover:text-gray-300 transition-all duration-300"
+                className={`transition-all duration-300 ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.contact")}
               </a>
-              <LanguageSwitcher />
-              <Button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+              <LanguageSwitcher isScrolled={isScrolled} />
+              <Button
+                onClick={() => window.open("tel:909-321-2255", "_self")}
+                className="bg-primary-600 hover:bg-primary-700 text-white border-0 px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+              >
                 <Phone className="w-4 h-4 mr-2" />
                 {t("navigation.callNow")}
               </Button>
@@ -162,7 +215,9 @@ export default function HospiceCareWebsite() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2 text-white"
+              className={`md:hidden p-2 transition-colors duration-300 ${
+                isScrolled ? "text-accent-800" : "text-white"
+              }`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
@@ -176,7 +231,7 @@ export default function HospiceCareWebsite() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-black/80 backdrop-blur-md border-t border-white/10">
+          <div className="md:hidden bg-accent-800/95 backdrop-blur-md border-t border-white/20 shadow-lg">
             <div className="px-4 py-4 space-y-4">
               <a
                 href="#services"
@@ -191,10 +246,22 @@ export default function HospiceCareWebsite() {
                 {t("navigation.about")}
               </a>
               <a
-                href="#testimonials"
+                href="#areas"
                 className="block text-white hover:text-gray-300 transition-colors"
               >
-                {t("navigation.testimonials")}
+                {t("navigation.areas")}
+              </a>
+              <a
+                href="#dignity"
+                className="block text-white hover:text-gray-300 transition-colors"
+              >
+                {t("navigation.dignity")}
+              </a>
+              <a
+                href="#info"
+                className="block text-white hover:text-gray-300 transition-colors"
+              >
+                {t("navigation.info")}
               </a>
               <a
                 href="#contact"
@@ -203,9 +270,12 @@ export default function HospiceCareWebsite() {
                 {t("navigation.contact")}
               </a>
               <div className="pt-2">
-                <LanguageSwitcher />
+                <LanguageSwitcher isScrolled={false} />
               </div>
-              <Button className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm">
+              <Button
+                onClick={() => window.open("tel:909-321-2255", "_self")}
+                className="w-full bg-primary-600 hover:bg-primary-700 text-white border-0 shadow-lg"
+              >
                 <Phone className="w-4 h-4 mr-2" />
                 {t("navigation.callNow")}
               </Button>
@@ -217,12 +287,18 @@ export default function HospiceCareWebsite() {
       {/* Main Content Wrapper */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-screen w-full bg-gray-200 animate-pulse bg-cover bg-center bg-no-repeat flex items-center justify-center">
-          {/* Background Image Placeholder */}
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-800/90 to-accent-900/80"></div>
+        <section
+          className="relative h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
+          style={{
+            backgroundImage:
+              "url('/image_asset/20250725_1120_Realistic Medical Encounter_remix_01k11cx9w6f8wvtm0npyje67ct.webp')",
+          }}
+        >
+          {/* Background Image Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-accent-800/95 to-accent-900/90"></div>
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-accent-800/60"></div>
+          {/* Additional dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
 
           {/* Hero Content */}
           <div className="relative z-10 w-full px-4 md:px-8 lg:px-16 text-center">
@@ -246,6 +322,7 @@ export default function HospiceCareWebsite() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Button
                   size="lg"
+                  onClick={() => window.open("tel:909-321-2255", "_self")}
                   className="bg-white text-slate-800 hover:bg-white/90 px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
                 >
                   <Phone className="w-5 h-5 mr-2" />
@@ -361,7 +438,7 @@ export default function HospiceCareWebsite() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                     <div className="text-4xl font-bold text-primary-600 mb-2">
-                      500+
+                      5
                     </div>
                     <div className="text-slate-600 font-medium">
                       {t("about.stats.families")}
@@ -369,7 +446,7 @@ export default function HospiceCareWebsite() {
                   </div>
                   <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                     <div className="text-4xl font-bold text-primary-600 mb-2">
-                      15+
+                      24/7
                     </div>
                     <div className="text-slate-600 font-medium">
                       {t("about.stats.experience")}
@@ -393,8 +470,8 @@ export default function HospiceCareWebsite() {
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-primary-100 to-secondary-100 rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="/placeholder.svg?height=600&width=600&text=Professional+hospice+care+team"
-                    alt="Professional hospice care team"
+                    src="/image_asset/20250725_1034_Realistic Care Interaction_remix_01k11a9631e8rv6vmsdb2qbgkh.webp"
+                    alt="Professional hospice care team providing compassionate care"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -648,7 +725,10 @@ export default function HospiceCareWebsite() {
                     <p className="text-red-700 mb-4">
                       {t("contact.emergency.description")}
                     </p>
-                    <Button className="bg-red-600 hover:bg-red-700 text-white transition-all duration-300 hover:scale-105">
+                    <Button
+                      onClick={() => window.open("tel:909-321-2255", "_self")}
+                      className="bg-primary-600 hover:bg-primary-700 text-white transition-all duration-300 hover:scale-105"
+                    >
                       <Phone className="w-4 h-4 mr-2" />
                       {t("contact.emergency.button")}
                     </Button>
@@ -666,7 +746,11 @@ export default function HospiceCareWebsite() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
-                <Heart className="w-8 h-8 text-primary-400" />
+                <img
+                  src="/assets/logo.png"
+                  alt="IE Community Hospice Logo"
+                  className="w-8 h-8"
+                />
                 <span className="text-xl font-semibold">
                   {t("navigation.companyName")}
                 </span>
@@ -770,6 +854,7 @@ export default function HospiceCareWebsite() {
       <div className="fixed bottom-8 right-8 z-50">
         <Button
           size="lg"
+          onClick={() => window.open("tel:909-321-2255", "_self")}
           className="bg-primary-600 hover:bg-primary-700 text-white rounded-full w-16 h-16 shadow-2xl transition-all duration-300 hover:scale-110"
         >
           <Phone className="w-6 h-6" />
