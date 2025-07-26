@@ -231,46 +231,74 @@ export default function HospiceCareWebsite() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-accent-800/95 backdrop-blur-md border-t border-white/20 shadow-lg">
+          <div className={`md:hidden backdrop-blur-md border-t shadow-lg transition-all duration-300 ${
+            isScrolled
+              ? "bg-white/95 border-gray-200"
+              : "bg-accent-800/95 border-white/20"
+          }`}>
             <div className="px-4 py-4 space-y-4">
               <a
                 href="#services"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className={`block transition-colors ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.services")}
               </a>
               <a
                 href="#about"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className={`block transition-colors ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.about")}
               </a>
               <a
                 href="#areas"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className={`block transition-colors ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.areas")}
               </a>
               <a
                 href="#dignity"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className={`block transition-colors ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.dignity")}
               </a>
               <a
                 href="#info"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className={`block transition-colors ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.info")}
               </a>
               <a
                 href="#contact"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className={`block transition-colors ${
+                  isScrolled
+                    ? "text-accent-800 hover:text-accent-600"
+                    : "text-white hover:text-gray-300"
+                }`}
               >
                 {t("navigation.contact")}
               </a>
               <div className="pt-2">
-                <LanguageSwitcher isScrolled={false} />
+                <LanguageSwitcher isScrolled={isScrolled} />
               </div>
               <Button
                 onClick={() => window.open("tel:909-321-2255", "_self")}
