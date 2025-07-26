@@ -6,9 +6,9 @@ import { getMessages } from "next-intl/server";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Serenity Hospice - Compassionate Care When It Matters Most",
+  title: "IE Community Hospice - Compassionate Care When It Matters Most",
   description:
-    "Providing compassionate hospice care with professional medical support, emotional guidance, and unwavering dignity for patients and families.",
+    "IE Community Hospice provides compassionate hospice care with professional medical support, emotional guidance, and unwavering dignity for patients and families.",
 };
 
 export default async function LocaleLayout({
