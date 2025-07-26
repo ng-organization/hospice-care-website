@@ -5,55 +5,55 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 221 27% 23%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 221 27% 23%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 221 27% 23%;
+    --primary: 201 53% 61%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 238 24% 45%;
+    --secondary-foreground: 0 0% 98%;
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 221 27% 23%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 201 53% 61%;
     --radius: 0.5rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
+    --chart-1: 201 53% 61%;
+    --chart-2: 238 24% 45%;
+    --chart-3: 221 27% 23%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --background: 221 27% 23%;
+    --foreground: 0 0% 98%;
+    --card: 221 27% 23%;
+    --card-foreground: 0 0% 98%;
+    --popover: 221 27% 23%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 201 53% 61%;
+    --primary-foreground: 221 27% 23%;
+    --secondary: 238 24% 45%;
+    --secondary-foreground: 0 0% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 201 53% 61%;
+    --accent-foreground: 221 27% 23%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
+    --ring: 201 53% 61%;
+    --chart-1: 201 53% 61%;
+    --chart-2: 238 24% 45%;
+    --chart-3: 221 27% 23%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
@@ -119,97 +119,258 @@
   }
 }
 
-/* Custom sage color classes */
-.text-sage-50 {
-  color: #f8faf8;
+/* Custom color palette - Light Blue, Medium Purple, Dark Navy */
+
+/* Primary - Light Blue (#73b2d3) */
+.text-primary-50 {
+  color: #f0f8fb;
 }
-.text-sage-100 {
-  color: #e8f2e8;
+.text-primary-100 {
+  color: #d9eef6;
 }
-.text-sage-200 {
-  color: #d1e5d1;
+.text-primary-200 {
+  color: #b3ddec;
 }
-.text-sage-300 {
-  color: #a8d0a8;
+.text-primary-300 {
+  color: #8dcce3;
 }
-.text-sage-400 {
-  color: #7fb87f;
+.text-primary-400 {
+  color: #73b2d3;
 }
-.text-sage-500 {
-  color: #5a9f5a;
+.text-primary-500 {
+  color: #5a9bc4;
 }
-.text-sage-600 {
-  color: #4a8a4a;
+.text-primary-600 {
+  color: #4a82a3;
 }
-.text-sage-700 {
-  color: #3d723d;
+.text-primary-700 {
+  color: #3a6982;
 }
-.text-sage-800 {
-  color: #2f5a2f;
+.text-primary-800 {
+  color: #2a5061;
 }
-.text-sage-900 {
-  color: #1f3f1f;
+.text-primary-900 {
+  color: #1a3740;
 }
 
-.bg-sage-50 {
-  background-color: #f8faf8;
+.bg-primary-50 {
+  background-color: #f0f8fb;
 }
-.bg-sage-100 {
-  background-color: #e8f2e8;
+.bg-primary-100 {
+  background-color: #d9eef6;
 }
-.bg-sage-200 {
-  background-color: #d1e5d1;
+.bg-primary-200 {
+  background-color: #b3ddec;
 }
-.bg-sage-300 {
-  background-color: #a8d0a8;
+.bg-primary-300 {
+  background-color: #8dcce3;
 }
-.bg-sage-400 {
-  background-color: #7fb87f;
+.bg-primary-400 {
+  background-color: #73b2d3;
 }
-.bg-sage-500 {
-  background-color: #5a9f5a;
+.bg-primary-500 {
+  background-color: #5a9bc4;
 }
-.bg-sage-600 {
-  background-color: #4a8a4a;
+.bg-primary-600 {
+  background-color: #4a82a3;
 }
-.bg-sage-700 {
-  background-color: #3d723d;
+.bg-primary-700 {
+  background-color: #3a6982;
 }
-.bg-sage-800 {
-  background-color: #2f5a2f;
+.bg-primary-800 {
+  background-color: #2a5061;
 }
-.bg-sage-900 {
-  background-color: #1f3f1f;
-}
-
-.border-sage-200 {
-  border-color: #d1e5d1;
-}
-.border-sage-300 {
-  border-color: #a8d0a8;
-}
-.border-sage-500 {
-  border-color: #5a9f5a;
+.bg-primary-900 {
+  background-color: #1a3740;
 }
 
-.hover\:bg-sage-50:hover {
-  background-color: #f8faf8;
+/* Secondary - Medium Purple (#646697) */
+.text-secondary-50 {
+  color: #f4f4f8;
 }
-.hover\:bg-sage-200:hover {
-  background-color: #d1e5d1;
+.text-secondary-100 {
+  color: #e8e8f0;
 }
-.hover\:bg-sage-700:hover {
-  background-color: #3d723d;
+.text-secondary-200 {
+  color: #d1d1e1;
 }
-.hover\:text-sage-400:hover {
-  color: #7fb87f;
+.text-secondary-300 {
+  color: #babbd2;
 }
-.hover\:text-sage-600:hover {
-  color: #4a8a4a;
+.text-secondary-400 {
+  color: #a3a4c3;
+}
+.text-secondary-500 {
+  color: #646697;
+}
+.text-secondary-600 {
+  color: #545582;
+}
+.text-secondary-700 {
+  color: #44446d;
+}
+.text-secondary-800 {
+  color: #343358;
+}
+.text-secondary-900 {
+  color: #242243;
 }
 
-.focus\:border-sage-500:focus {
-  border-color: #5a9f5a;
+.bg-secondary-50 {
+  background-color: #f4f4f8;
+}
+.bg-secondary-100 {
+  background-color: #e8e8f0;
+}
+.bg-secondary-200 {
+  background-color: #d1d1e1;
+}
+.bg-secondary-300 {
+  background-color: #babbd2;
+}
+.bg-secondary-400 {
+  background-color: #a3a4c3;
+}
+.bg-secondary-500 {
+  background-color: #646697;
+}
+.bg-secondary-600 {
+  background-color: #545582;
+}
+.bg-secondary-700 {
+  background-color: #44446d;
+}
+.bg-secondary-800 {
+  background-color: #343358;
+}
+.bg-secondary-900 {
+  background-color: #242243;
+}
+
+/* Accent - Dark Navy (#263159) */
+.text-accent-50 {
+  color: #f1f2f4;
+}
+.text-accent-100 {
+  color: #e3e5e9;
+}
+.text-accent-200 {
+  color: #c7cbd3;
+}
+.text-accent-300 {
+  color: #abb1bd;
+}
+.text-accent-400 {
+  color: #8f97a7;
+}
+.text-accent-500 {
+  color: #737d91;
+}
+.text-accent-600 {
+  color: #57637b;
+}
+.text-accent-700 {
+  color: #3b4965;
+}
+.text-accent-800 {
+  color: #263159;
+}
+.text-accent-900 {
+  color: #1a2240;
+}
+
+.bg-accent-50 {
+  background-color: #f1f2f4;
+}
+.bg-accent-100 {
+  background-color: #e3e5e9;
+}
+.bg-accent-200 {
+  background-color: #c7cbd3;
+}
+.bg-accent-300 {
+  background-color: #abb1bd;
+}
+.bg-accent-400 {
+  background-color: #8f97a7;
+}
+.bg-accent-500 {
+  background-color: #737d91;
+}
+.bg-accent-600 {
+  background-color: #57637b;
+}
+.bg-accent-700 {
+  background-color: #3b4965;
+}
+.bg-accent-800 {
+  background-color: #263159;
+}
+.bg-accent-900 {
+  background-color: #1a2240;
+}
+
+/* Border colors */
+.border-primary-200 {
+  border-color: #b3ddec;
+}
+.border-primary-300 {
+  border-color: #8dcce3;
+}
+.border-primary-400 {
+  border-color: #73b2d3;
+}
+.border-secondary-200 {
+  border-color: #d1d1e1;
+}
+.border-secondary-300 {
+  border-color: #babbd2;
+}
+.border-secondary-500 {
+  border-color: #646697;
+}
+.border-accent-200 {
+  border-color: #c7cbd3;
+}
+.border-accent-800 {
+  border-color: #263159;
+}
+
+/* Hover states */
+.hover\:bg-primary-50:hover {
+  background-color: #f0f8fb;
+}
+.hover\:bg-primary-200:hover {
+  background-color: #b3ddec;
+}
+.hover\:bg-primary-600:hover {
+  background-color: #4a82a3;
+}
+.hover\:bg-secondary-50:hover {
+  background-color: #f4f4f8;
+}
+.hover\:bg-secondary-200:hover {
+  background-color: #d1d1e1;
+}
+.hover\:bg-secondary-600:hover {
+  background-color: #545582;
+}
+.hover\:bg-accent-700:hover {
+  background-color: #3b4965;
+}
+.hover\:text-primary-300:hover {
+  color: #8dcce3;
+}
+.hover\:text-primary-600:hover {
+  color: #4a82a3;
+}
+
+/* Focus states */
+.focus\:border-primary-400:focus {
+  border-color: #73b2d3;
+}
+.focus\:border-secondary-500:focus {
+  border-color: #646697;
 }
 
 /* Responsive padding utilities */

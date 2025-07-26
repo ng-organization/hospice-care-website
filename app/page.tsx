@@ -180,10 +180,10 @@ export default function HospiceCareWebsite() {
         {/* Hero Section */}
         <section className="relative h-screen w-full bg-gray-200 animate-pulse bg-cover bg-center bg-no-repeat flex items-center justify-center">
           {/* Background Image Placeholder */}
-          <div className="absolute inset-0 bg-gradient-to-br from-sage-600/20 to-blue-600/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-accent-800/90 to-accent-900/80"></div>
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-accent-800/60"></div>
 
           {/* Hero Content */}
           <div className="relative z-10 w-full px-4 md:px-8 lg:px-16 text-center">
@@ -243,19 +243,19 @@ export default function HospiceCareWebsite() {
         </section>
 
         {/* Section Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-sage-200 to-transparent"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* Services Section */}
         <section id="services" className="min-h-screen w-full bg-white observe-section">
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="text-center mb-16">
-              <Badge className="bg-sage-100 text-sage-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Our Services
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
                 Comprehensive Care
                 <br />
-                <span className="font-semibold text-sage-700">Tailored to Your Needs</span>
+                <span className="font-semibold text-primary-600">Tailored to Your Needs</span>
               </h2>
               <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
                 Our interdisciplinary team provides personalized care plans designed to enhance comfort, manage
@@ -267,11 +267,11 @@ export default function HospiceCareWebsite() {
               {services.map((service, index) => (
                 <Card
                   key={index}
-                  className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-white to-sage-50/30 hover:scale-105 hover:-translate-y-2"
+                  className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-white to-primary-50/30 hover:scale-105 hover:-translate-y-2"
                 >
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-sage-200 transition-all duration-300 group-hover:scale-110">
-                      <div className="text-sage-600">{service.icon}</div>
+                    <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-all duration-300 group-hover:scale-110">
+                      <div className="text-primary-600">{service.icon}</div>
                     </div>
                     <h3 className="text-xl font-semibold text-slate-800 mb-4">{service.title}</h3>
                     <p className="text-slate-600 leading-relaxed">{service.description}</p>
@@ -283,21 +283,21 @@ export default function HospiceCareWebsite() {
         </section>
 
         {/* Section Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-sage-200 to-transparent"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* About Section */}
-        <section id="about" className="min-h-screen w-full bg-gradient-to-br from-sage-50/30 to-white observe-section">
+        <section id="about" className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section">
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
               <div className="space-y-8">
                 <div>
-                  <Badge className="bg-sage-100 text-sage-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
                     About Serenity Hospice
                   </Badge>
                   <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
                     Dedicated to
                     <br />
-                    <span className="font-semibold text-sage-700">Compassionate Excellence</span>
+                    <span className="font-semibold text-secondary-600">Compassionate Excellence</span>
                   </h2>
                 </div>
 
@@ -309,22 +309,22 @@ export default function HospiceCareWebsite() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="text-4xl font-bold text-sage-600 mb-2">500+</div>
+                    <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
                     <div className="text-slate-600 font-medium">Families Served</div>
                   </div>
                   <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="text-4xl font-bold text-sage-600 mb-2">15+</div>
+                    <div className="text-4xl font-bold text-primary-600 mb-2">15+</div>
                     <div className="text-slate-600 font-medium">Years Experience</div>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105">
+                  <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105">
                     Meet Our Team
                   </Button>
                   <Button
                     variant="outline"
-                    className="border-sage-300 text-sage-700 hover:bg-sage-50 px-8 py-4 rounded-full text-lg bg-transparent transition-all duration-300"
+                    className="border-secondary-300 text-secondary-700 hover:bg-secondary-50 px-8 py-4 rounded-full text-lg bg-transparent transition-all duration-300"
                   >
                     View Credentials
                   </Button>
@@ -332,39 +332,39 @@ export default function HospiceCareWebsite() {
               </div>
 
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-sage-100 to-blue-100 rounded-3xl overflow-hidden shadow-2xl">
+                <div className="aspect-square bg-gradient-to-br from-primary-100 to-secondary-100 rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="/placeholder.svg?height=600&width=600&text=Professional+hospice+care+team"
                     alt="Professional hospice care team"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-sage-200/50 rounded-full blur-xl"></div>
-                <div className="absolute -top-6 -left-6 w-16 h-16 bg-blue-200/50 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary-200/50 rounded-full blur-xl"></div>
+                <div className="absolute -top-6 -left-6 w-16 h-16 bg-secondary-200/50 rounded-full blur-xl"></div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Section Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-sage-200 to-transparent"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* Testimonials Section */}
         <section id="testimonials" className="min-h-[60vh] w-full bg-white observe-section">
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="text-center mb-16">
-              <Badge className="bg-sage-100 text-sage-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Testimonials
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
                 Words from
                 <br />
-                <span className="font-semibold text-sage-700">Grateful Families</span>
+                <span className="font-semibold text-primary-600">Grateful Families</span>
               </h2>
             </div>
 
             <div className="relative max-w-4xl mx-auto">
-              <Card className="border-0 bg-gradient-to-br from-sage-50/50 to-white shadow-2xl">
+              <Card className="border-0 bg-gradient-to-br from-primary-50/50 to-white shadow-2xl">
                 <CardContent className="p-12 text-center">
                   <div className="flex justify-center mb-6">
                     {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
@@ -388,7 +388,7 @@ export default function HospiceCareWebsite() {
                   variant="outline"
                   size="sm"
                   onClick={prevTestimonial}
-                  className="rounded-full w-12 h-12 p-0 border-sage-300 hover:bg-sage-50 bg-transparent transition-all duration-300 hover:scale-110"
+                  className="rounded-full w-12 h-12 p-0 border-primary-300 hover:bg-primary-50 bg-transparent transition-all duration-300 hover:scale-110"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </Button>
@@ -399,7 +399,7 @@ export default function HospiceCareWebsite() {
                       key={index}
                       onClick={() => setCurrentTestimonial(index)}
                       className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentTestimonial ? "bg-sage-600 scale-125" : "bg-sage-200 hover:bg-sage-300"
+                        index === currentTestimonial ? "bg-primary-600 scale-125" : "bg-primary-200 hover:bg-primary-300"
                       }`}
                     />
                   ))}
@@ -409,7 +409,7 @@ export default function HospiceCareWebsite() {
                   variant="outline"
                   size="sm"
                   onClick={nextTestimonial}
-                  className="rounded-full w-12 h-12 p-0 border-sage-300 hover:bg-sage-50 bg-transparent transition-all duration-300 hover:scale-110"
+                  className="rounded-full w-12 h-12 p-0 border-primary-300 hover:bg-primary-50 bg-transparent transition-all duration-300 hover:scale-110"
                 >
                   <ChevronRight className="w-5 h-5" />
                 </Button>
@@ -419,22 +419,22 @@ export default function HospiceCareWebsite() {
         </section>
 
         {/* Section Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-sage-200 to-transparent"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* Contact Section */}
         <section
           id="contact"
-          className="min-h-screen w-full bg-gradient-to-br from-sage-50/30 to-white observe-section"
+          className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section"
         >
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="text-center mb-16">
-              <Badge className="bg-sage-100 text-sage-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Contact Us
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
                 We're Here to Help
                 <br />
-                <span className="font-semibold text-sage-700">24 Hours a Day</span>
+                <span className="font-semibold text-primary-600">24 Hours a Day</span>
               </h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
                 Reach out to our compassionate team for immediate support, questions about our services, or to schedule
@@ -451,34 +451,34 @@ export default function HospiceCareWebsite() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-slate-700">First Name</label>
-                        <Input className="border-sage-200 focus:border-sage-500 rounded-lg h-12" />
+                        <Input className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
                       </div>
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-slate-700">Last Name</label>
-                        <Input className="border-sage-200 focus:border-sage-500 rounded-lg h-12" />
+                        <Input className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Email</label>
-                      <Input type="email" className="border-sage-200 focus:border-sage-500 rounded-lg h-12" />
+                      <Input type="email" className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
                     </div>
 
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Phone</label>
-                      <Input type="tel" className="border-sage-200 focus:border-sage-500 rounded-lg h-12" />
+                      <Input type="tel" className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
                     </div>
 
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Message</label>
                       <Textarea
                         rows={4}
-                        className="border-sage-200 focus:border-sage-500 rounded-lg resize-none"
+                        className="border-secondary-200 focus:border-primary-400 rounded-lg resize-none"
                         placeholder="How can we help you today?"
                       />
                     </div>
 
-                    <Button className="w-full bg-sage-600 hover:bg-sage-700 text-white py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105">
+                    <Button className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105">
                       Send Message
                     </Button>
                   </form>
@@ -491,8 +491,8 @@ export default function HospiceCareWebsite() {
                   <h3 className="text-2xl font-semibold text-slate-800 mb-6">Get in touch</h3>
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                      <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-6 h-6 text-sage-600" />
+                      <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Phone className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800 text-lg">24/7 Support Line</h4>
@@ -502,8 +502,8 @@ export default function HospiceCareWebsite() {
                     </div>
 
                     <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                      <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Mail className="w-6 h-6 text-sage-600" />
+                      <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Mail className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800 text-lg">Email</h4>
@@ -513,8 +513,8 @@ export default function HospiceCareWebsite() {
                     </div>
 
                     <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                      <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-sage-600" />
+                      <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800 text-lg">Office Location</h4>
@@ -554,7 +554,7 @@ export default function HospiceCareWebsite() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
-                <Heart className="w-8 h-8 text-sage-400" />
+                <Heart className="w-8 h-8 text-primary-400" />
                 <span className="text-xl font-semibold">Serenity Hospice</span>
               </div>
               <p className="text-slate-300 mb-6 max-w-md text-lg leading-relaxed">
@@ -562,8 +562,8 @@ export default function HospiceCareWebsite() {
                 years.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Badge className="bg-sage-600 text-white px-4 py-2">Medicare Certified</Badge>
-                <Badge className="bg-blue-600 text-white px-4 py-2">Licensed Professionals</Badge>
+                <Badge className="bg-primary-600 text-white px-4 py-2">Medicare Certified</Badge>
+                <Badge className="bg-secondary-600 text-white px-4 py-2">Licensed Professionals</Badge>
               </div>
             </div>
 
@@ -571,22 +571,22 @@ export default function HospiceCareWebsite() {
               <h4 className="font-semibold mb-4 text-lg">Services</h4>
               <ul className="space-y-3 text-slate-300">
                 <li>
-                  <a href="#" className="hover:text-sage-400 transition-colors">
+                  <a href="#" className="hover:text-primary-400 transition-colors">
                     Comfort Care
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-sage-400 transition-colors">
+                  <a href="#" className="hover:text-primary-400 transition-colors">
                     Pain Management
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-sage-400 transition-colors">
+                  <a href="#" className="hover:text-primary-400 transition-colors">
                     Family Support
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-sage-400 transition-colors">
+                  <a href="#" className="hover:text-primary-400 transition-colors">
                     Bereavement Care
                   </a>
                 </li>
@@ -610,13 +610,13 @@ export default function HospiceCareWebsite() {
           <div className="border-t border-slate-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400">© {new Date().getFullYear()} Serenity Hospice. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-slate-400 hover:text-sage-400 transition-colors">
+              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-slate-400 hover:text-sage-400 transition-colors">
+              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-slate-400 hover:text-sage-400 transition-colors">
+              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors">
                 HIPAA Notice
               </a>
             </div>
@@ -628,7 +628,7 @@ export default function HospiceCareWebsite() {
       <div className="fixed bottom-8 right-8 z-50">
         <Button
           size="lg"
-          className="bg-sage-600 hover:bg-sage-700 text-white rounded-full w-16 h-16 shadow-2xl transition-all duration-300 hover:scale-110"
+          className="bg-primary-600 hover:bg-primary-700 text-white rounded-full w-16 h-16 shadow-2xl transition-all duration-300 hover:scale-110"
         >
           <Phone className="w-6 h-6" />
         </Button>
