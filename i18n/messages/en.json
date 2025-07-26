@@ -1,0 +1,148 @@
+{
+  "navigation": {
+    "companyName": "IE Community Hospice",
+    "services": "Services",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "callNow": "Call Now"
+  },
+  "hero": {
+    "badge": "Compassionate Care • 24/7 Support",
+    "title": "Comfort and Dignity",
+    "titleHighlight": "When It Matters Most",
+    "description": "Providing compassionate hospice care that honors life's journey with professional medical support, emotional guidance, and unwavering dignity for patients and families.",
+    "ctaPrimary": "Get Immediate Support",
+    "ctaSecondary": "Learn More About Our Services",
+    "certifications": {
+      "medicare": "Medicare Certified",
+      "licensed": "Licensed Professionals",
+      "availability": "24/7 Availability"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Comprehensive Care",
+    "titleHighlight": "Tailored to Your Needs",
+    "description": "Our interdisciplinary team provides personalized care plans designed to enhance comfort, manage symptoms, and support both patients and families throughout their journey.",
+    "items": {
+      "comfort": {
+        "title": "Comfort Care",
+        "description": "Comprehensive pain and symptom management focused on quality of life and dignity."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock medical support and emergency care available whenever needed."
+      },
+      "family": {
+        "title": "Family Support",
+        "description": "Emotional and spiritual support for both patients and their loved ones throughout the journey."
+      },
+      "equipment": {
+        "title": "Medical Equipment",
+        "description": "All necessary medical equipment and supplies provided and maintained in your home."
+      }
+    }
+  },
+  "about": {
+    "badge": "About IE Community Hospice",
+    "title": "Dedicated to",
+    "titleHighlight": "Compassionate Excellence",
+    "description": "For over 15 years, IE Community Hospice has been providing exceptional end-of-life care with a focus on comfort, dignity, and family support. Our team of licensed healthcare professionals is committed to ensuring that every patient receives personalized care in the comfort of their own home.",
+    "stats": {
+      "families": "Families Served",
+      "experience": "Years Experience"
+    },
+    "buttons": {
+      "meetTeam": "Meet Our Team",
+      "viewCredentials": "View Credentials"
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Words from",
+    "titleHighlight": "Grateful Families",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "relation": "Daughter",
+        "content": "The compassionate care provided to my mother during her final months was extraordinary. The team made a difficult time bearable with their kindness and professionalism."
+      },
+      {
+        "name": "Michael Chen",
+        "relation": "Son",
+        "content": "I cannot express enough gratitude for the 24/7 support and comfort care. They treated my father with dignity and respect, making his final days peaceful."
+      },
+      {
+        "name": "Emily Rodriguez",
+        "relation": "Wife",
+        "content": "The entire family felt supported throughout this journey. Their expertise in pain management and emotional support was invaluable during our most difficult time."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "We're Here to Help",
+    "titleHighlight": "24 Hours a Day",
+    "description": "Reach out to our compassionate team for immediate support, questions about our services, or to schedule a consultation.",
+    "form": {
+      "title": "Send us a message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you today?",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Get in touch",
+      "phone": {
+        "title": "24/7 Support Line",
+        "number": "(555) 123-4567",
+        "note": "Available around the clock"
+      },
+      "email": {
+        "title": "Email",
+        "address": "info@iecommunityhospice.com",
+        "note": "We'll respond within 2 hours"
+      },
+      "address": {
+        "title": "Office Location",
+        "address": "123 Compassion Drive\nPeaceful Valley, CA 90210",
+        "note": "Mon-Fri 8AM-6PM"
+      }
+    },
+    "emergency": {
+      "title": "Emergency Support",
+      "description": "For immediate medical emergencies, call 911. For urgent hospice-related concerns:",
+      "button": "Emergency Line: (555) 911-HELP"
+    }
+  },
+  "footer": {
+    "description": "Providing compassionate hospice care with dignity, comfort, and professional excellence for over 15 years.",
+    "badges": {
+      "medicare": "Medicare Certified",
+      "licensed": "Licensed Professionals"
+    },
+    "services": {
+      "title": "Services",
+      "comfort": "Comfort Care",
+      "pain": "Pain Management",
+      "family": "Family Support",
+      "bereavement": "Bereavement Care"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "(555) 123-4567",
+      "email": "info@iecommunityhospice.com",
+      "address": "123 Compassion Drive\nPeaceful Valley, CA 90210"
+    },
+    "legal": {
+      "copyright": "© {year} IE Community Hospice. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "hipaa": "HIPAA Notice"
+    }
+  }
+}

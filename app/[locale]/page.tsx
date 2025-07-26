@@ -1,11 +1,13 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { useState, useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { LanguageSwitcher } from "@/components/language-switcher";
 import {
   Heart,
   Shield,
@@ -22,21 +24,22 @@ import {
   CheckCircle,
   Award,
   Stethoscope,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function HospiceCareWebsite() {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const observerRef = useRef<IntersectionObserver | null>(null)
+  const t = useTranslations();
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     // Intersection Observer for animations
@@ -44,73 +47,72 @@ export default function HospiceCareWebsite() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in-up")
+            entry.target.classList.add("animate-fade-in-up");
           }
-        })
+        });
       },
-      { threshold: 0.1 },
-    )
+      { threshold: 0.1 }
+    );
 
-    const sections = document.querySelectorAll(".observe-section")
-    sections.forEach((section) => observerRef.current?.observe(section))
+    const sections = document.querySelectorAll(".observe-section");
+    sections.forEach((section) => observerRef.current?.observe(section));
 
-    return () => observerRef.current?.disconnect()
-  }, [])
+    return () => observerRef.current?.disconnect();
+  }, []);
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      relation: "Daughter",
-      content:
-        "The compassionate care provided to my mother during her final months was extraordinary. The team made a difficult time bearable with their kindness and professionalism.",
+      name: t("testimonials.items.0.name"),
+      relation: t("testimonials.items.0.relation"),
+      content: t("testimonials.items.0.content"),
       rating: 5,
     },
     {
-      name: "Michael Chen",
-      relation: "Son",
-      content:
-        "I cannot express enough gratitude for the 24/7 support and comfort care. They treated my father with dignity and respect, making his final days peaceful.",
+      name: t("testimonials.items.1.name"),
+      relation: t("testimonials.items.1.relation"),
+      content: t("testimonials.items.1.content"),
       rating: 5,
     },
     {
-      name: "Emily Rodriguez",
-      relation: "Wife",
-      content:
-        "The entire family felt supported throughout this journey. Their expertise in pain management and emotional support was invaluable during our most difficult time.",
+      name: t("testimonials.items.2.name"),
+      relation: t("testimonials.items.2.relation"),
+      content: t("testimonials.items.2.content"),
       rating: 5,
     },
-  ]
+  ];
 
   const services = [
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Comfort Care",
-      description: "Comprehensive pain and symptom management focused on quality of life and dignity.",
+      title: t("services.items.comfort.title"),
+      description: t("services.items.comfort.description"),
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "24/7 Support",
-      description: "Round-the-clock medical support and emergency care available whenever needed.",
+      title: t("services.items.support.title"),
+      description: t("services.items.support.description"),
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Family Support",
-      description: "Emotional and spiritual support for both patients and their loved ones throughout the journey.",
+      title: t("services.items.family.title"),
+      description: t("services.items.family.description"),
     },
     {
       icon: <Stethoscope className="w-8 h-8" />,
-      title: "Medical Equipment",
-      description: "All necessary medical equipment and supplies provided and maintained in your home.",
+      title: t("services.items.equipment.title"),
+      description: t("services.items.equipment.description"),
     },
-  ]
+  ];
 
   const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-  }
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
 
   const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-  }
+    setCurrentTestimonial(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
+  };
 
   return (
     <div className="min-h-screen flex flex-col scroll-smooth">
@@ -120,32 +122,54 @@ export default function HospiceCareWebsite() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Heart className="w-8 h-8 text-white" />
-              <span className="text-xl font-semibold text-white">Serenity Hospice</span>
+              <span className="text-xl font-semibold text-white">
+                {t("navigation.companyName")}
+              </span>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-white hover:text-gray-300 transition-all duration-300">
-                Services
+              <a
+                href="#services"
+                className="text-white hover:text-gray-300 transition-all duration-300"
+              >
+                {t("navigation.services")}
               </a>
-              <a href="#about" className="text-white hover:text-gray-300 transition-all duration-300">
-                About
+              <a
+                href="#about"
+                className="text-white hover:text-gray-300 transition-all duration-300"
+              >
+                {t("navigation.about")}
               </a>
-              <a href="#testimonials" className="text-white hover:text-gray-300 transition-all duration-300">
-                Testimonials
+              <a
+                href="#testimonials"
+                className="text-white hover:text-gray-300 transition-all duration-300"
+              >
+                {t("navigation.testimonials")}
               </a>
-              <a href="#contact" className="text-white hover:text-gray-300 transition-all duration-300">
-                Contact
+              <a
+                href="#contact"
+                className="text-white hover:text-gray-300 transition-all duration-300"
+              >
+                {t("navigation.contact")}
               </a>
+              <LanguageSwitcher />
               <Button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 backdrop-blur-sm">
                 <Phone className="w-4 h-4 mr-2" />
-                Call Now
+                {t("navigation.callNow")}
               </Button>
             </div>
 
             {/* Mobile menu button */}
-            <button className="md:hidden p-2 text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <button
+              className="md:hidden p-2 text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -154,21 +178,36 @@ export default function HospiceCareWebsite() {
         {isMenuOpen && (
           <div className="md:hidden bg-black/80 backdrop-blur-md border-t border-white/10">
             <div className="px-4 py-4 space-y-4">
-              <a href="#services" className="block text-white hover:text-gray-300 transition-colors">
-                Services
+              <a
+                href="#services"
+                className="block text-white hover:text-gray-300 transition-colors"
+              >
+                {t("navigation.services")}
               </a>
-              <a href="#about" className="block text-white hover:text-gray-300 transition-colors">
-                About
+              <a
+                href="#about"
+                className="block text-white hover:text-gray-300 transition-colors"
+              >
+                {t("navigation.about")}
               </a>
-              <a href="#testimonials" className="block text-white hover:text-gray-300 transition-colors">
-                Testimonials
+              <a
+                href="#testimonials"
+                className="block text-white hover:text-gray-300 transition-colors"
+              >
+                {t("navigation.testimonials")}
               </a>
-              <a href="#contact" className="block text-white hover:text-gray-300 transition-colors">
-                Contact
+              <a
+                href="#contact"
+                className="block text-white hover:text-gray-300 transition-colors"
+              >
+                {t("navigation.contact")}
               </a>
+              <div className="pt-2">
+                <LanguageSwitcher />
+              </div>
               <Button className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm">
                 <Phone className="w-4 h-4 mr-2" />
-                Call Now
+                {t("navigation.callNow")}
               </Button>
             </div>
           </div>
@@ -189,18 +228,19 @@ export default function HospiceCareWebsite() {
           <div className="relative z-10 w-full px-4 md:px-8 lg:px-16 text-center">
             <div className="space-y-8 animate-fade-in">
               <Badge className="bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
-                Compassionate Care • 24/7 Support
+                {t("hero.badge")}
               </Badge>
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-light text-white leading-tight">
-                Comfort and Dignity
+                {t("hero.title")}
                 <br />
-                <span className="font-semibold">When It Matters Most</span>
+                <span className="font-semibold">
+                  {t("hero.titleHighlight")}
+                </span>
               </h1>
 
               <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-                Providing compassionate hospice care that honors life's journey with professional medical support,
-                emotional guidance, and unwavering dignity for patients and families.
+                {t("hero.description")}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -209,29 +249,29 @@ export default function HospiceCareWebsite() {
                   className="bg-white text-slate-800 hover:bg-white/90 px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  Get Immediate Support
+                  {t("hero.ctaPrimary")}
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
                   className="border-white/50 text-white hover:bg-white/10 px-8 py-4 rounded-full text-lg transition-all duration-300 bg-transparent backdrop-blur-sm"
                 >
-                  Learn More About Our Services
+                  {t("hero.ctaSecondary")}
                 </Button>
               </div>
 
               <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-white/80 pt-8">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-4 h-4 text-white" />
-                  <span>Medicare Certified</span>
+                  <span>{t("hero.certifications.medicare")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Award className="w-4 h-4 text-white" />
-                  <span>Licensed Professionals</span>
+                  <span>{t("hero.certifications.licensed")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-4 h-4 text-white" />
-                  <span>24/7 Availability</span>
+                  <span>{t("hero.certifications.availability")}</span>
                 </div>
               </div>
             </div>
@@ -246,20 +286,24 @@ export default function HospiceCareWebsite() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* Services Section */}
-        <section id="services" className="min-h-screen w-full bg-white observe-section">
+        <section
+          id="services"
+          className="min-h-screen w-full bg-white observe-section"
+        >
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="text-center mb-16">
               <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                Our Services
+                {t("services.badge")}
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-                Comprehensive Care
+                {t("services.title")}
                 <br />
-                <span className="font-semibold text-primary-600">Tailored to Your Needs</span>
+                <span className="font-semibold text-primary-600">
+                  {t("services.titleHighlight")}
+                </span>
               </h2>
               <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-                Our interdisciplinary team provides personalized care plans designed to enhance comfort, manage
-                symptoms, and support both patients and families throughout their journey.
+                {t("services.description")}
               </p>
             </div>
 
@@ -273,8 +317,12 @@ export default function HospiceCareWebsite() {
                     <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-all duration-300 group-hover:scale-110">
                       <div className="text-primary-600">{service.icon}</div>
                     </div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-4">{service.title}</h3>
-                    <p className="text-slate-600 leading-relaxed">{service.description}</p>
+                    <h3 className="text-xl font-semibold text-slate-800 mb-4">
+                      {service.title}
+                    </h3>
+                    <p className="text-slate-600 leading-relaxed">
+                      {service.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -286,47 +334,58 @@ export default function HospiceCareWebsite() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* About Section */}
-        <section id="about" className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section">
+        <section
+          id="about"
+          className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section"
+        >
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
               <div className="space-y-8">
                 <div>
                   <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                    About Serenity Hospice
+                    {t("about.badge")}
                   </Badge>
                   <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-                    Dedicated to
+                    {t("about.title")}
                     <br />
-                    <span className="font-semibold text-secondary-600">Compassionate Excellence</span>
+                    <span className="font-semibold text-secondary-600">
+                      {t("about.titleHighlight")}
+                    </span>
                   </h2>
                 </div>
 
                 <p className="text-xl text-slate-600 leading-relaxed">
-                  For over 15 years, Serenity Hospice has been providing exceptional end-of-life care with a focus on
-                  comfort, dignity, and family support. Our team of licensed healthcare professionals is committed to
-                  ensuring that every patient receives personalized care in the comfort of their own home.
+                  {t("about.description")}
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
-                    <div className="text-slate-600 font-medium">Families Served</div>
+                    <div className="text-4xl font-bold text-primary-600 mb-2">
+                      500+
+                    </div>
+                    <div className="text-slate-600 font-medium">
+                      {t("about.stats.families")}
+                    </div>
                   </div>
                   <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="text-4xl font-bold text-primary-600 mb-2">15+</div>
-                    <div className="text-slate-600 font-medium">Years Experience</div>
+                    <div className="text-4xl font-bold text-primary-600 mb-2">
+                      15+
+                    </div>
+                    <div className="text-slate-600 font-medium">
+                      {t("about.stats.experience")}
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105">
-                    Meet Our Team
+                    {t("about.buttons.meetTeam")}
                   </Button>
                   <Button
                     variant="outline"
                     className="border-secondary-300 text-secondary-700 hover:bg-secondary-50 px-8 py-4 rounded-full text-lg bg-transparent transition-all duration-300"
                   >
-                    View Credentials
+                    {t("about.buttons.viewCredentials")}
                   </Button>
                 </div>
               </div>
@@ -350,16 +409,21 @@ export default function HospiceCareWebsite() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="min-h-[60vh] w-full bg-white observe-section">
+        <section
+          id="testimonials"
+          className="min-h-[60vh] w-full bg-white observe-section"
+        >
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="text-center mb-16">
               <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                Testimonials
+                {t("testimonials.badge")}
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-                Words from
+                {t("testimonials.title")}
                 <br />
-                <span className="font-semibold text-primary-600">Grateful Families</span>
+                <span className="font-semibold text-primary-600">
+                  {t("testimonials.titleHighlight")}
+                </span>
               </h2>
             </div>
 
@@ -367,9 +431,14 @@ export default function HospiceCareWebsite() {
               <Card className="border-0 bg-gradient-to-br from-primary-50/50 to-white shadow-2xl">
                 <CardContent className="p-12 text-center">
                   <div className="flex justify-center mb-6">
-                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
-                    ))}
+                    {[...Array(testimonials[currentTestimonial].rating)].map(
+                      (_, i) => (
+                        <Star
+                          key={i}
+                          className="w-6 h-6 text-yellow-400 fill-current"
+                        />
+                      )
+                    )}
                   </div>
 
                   <blockquote className="text-2xl text-slate-700 leading-relaxed mb-8 italic font-light">
@@ -377,8 +446,12 @@ export default function HospiceCareWebsite() {
                   </blockquote>
 
                   <div>
-                    <div className="font-semibold text-slate-800 text-xl">{testimonials[currentTestimonial].name}</div>
-                    <div className="text-slate-500 text-lg">{testimonials[currentTestimonial].relation}</div>
+                    <div className="font-semibold text-slate-800 text-xl">
+                      {testimonials[currentTestimonial].name}
+                    </div>
+                    <div className="text-slate-500 text-lg">
+                      {testimonials[currentTestimonial].relation}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -399,7 +472,9 @@ export default function HospiceCareWebsite() {
                       key={index}
                       onClick={() => setCurrentTestimonial(index)}
                       className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentTestimonial ? "bg-primary-600 scale-125" : "bg-primary-200 hover:bg-primary-300"
+                        index === currentTestimonial
+                          ? "bg-primary-600 scale-125"
+                          : "bg-primary-200 hover:bg-primary-300"
                       }`}
                     />
                   ))}
@@ -429,16 +504,17 @@ export default function HospiceCareWebsite() {
           <div className="w-full px-4 md:px-8 lg:px-16 py-24">
             <div className="text-center mb-16">
               <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                Contact Us
+                {t("contact.badge")}
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-                We're Here to Help
+                {t("contact.title")}
                 <br />
-                <span className="font-semibold text-primary-600">24 Hours a Day</span>
+                <span className="font-semibold text-primary-600">
+                  {t("contact.titleHighlight")}
+                </span>
               </h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                Reach out to our compassionate team for immediate support, questions about our services, or to schedule
-                a consultation.
+                {t("contact.description")}
               </p>
             </div>
 
@@ -446,40 +522,58 @@ export default function HospiceCareWebsite() {
               {/* Contact Form */}
               <Card className="border-0 bg-white shadow-2xl">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold text-slate-800 mb-6">Send us a message</h3>
+                  <h3 className="text-2xl font-semibold text-slate-800 mb-6">
+                    {t("contact.form.title")}
+                  </h3>
                   <form className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <label className="text-sm font-medium text-slate-700">First Name</label>
+                        <label className="text-sm font-medium text-slate-700">
+                          {t("contact.form.firstName")}
+                        </label>
                         <Input className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-sm font-medium text-slate-700">Last Name</label>
+                        <label className="text-sm font-medium text-slate-700">
+                          {t("contact.form.lastName")}
+                        </label>
                         <Input className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">Email</label>
-                      <Input type="email" className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
+                      <label className="text-sm font-medium text-slate-700">
+                        {t("contact.form.email")}
+                      </label>
+                      <Input
+                        type="email"
+                        className="border-secondary-200 focus:border-primary-400 rounded-lg h-12"
+                      />
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">Phone</label>
-                      <Input type="tel" className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
+                      <label className="text-sm font-medium text-slate-700">
+                        {t("contact.form.phone")}
+                      </label>
+                      <Input
+                        type="tel"
+                        className="border-secondary-200 focus:border-primary-400 rounded-lg h-12"
+                      />
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-700">Message</label>
+                      <label className="text-sm font-medium text-slate-700">
+                        {t("contact.form.message")}
+                      </label>
                       <Textarea
                         rows={4}
                         className="border-secondary-200 focus:border-primary-400 rounded-lg resize-none"
-                        placeholder="How can we help you today?"
+                        placeholder={t("contact.form.messagePlaceholder")}
                       />
                     </div>
 
                     <Button className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105">
-                      Send Message
+                      {t("contact.form.submit")}
                     </Button>
                   </form>
                 </CardContent>
@@ -488,16 +582,24 @@ export default function HospiceCareWebsite() {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-2xl font-semibold text-slate-800 mb-6">Get in touch</h3>
+                  <h3 className="text-2xl font-semibold text-slate-800 mb-6">
+                    {t("contact.info.title")}
+                  </h3>
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                       <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <Phone className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-slate-800 text-lg">24/7 Support Line</h4>
-                        <p className="text-slate-600 text-lg">(555) 123-4567</p>
-                        <p className="text-sm text-slate-500">Available around the clock</p>
+                        <h4 className="font-semibold text-slate-800 text-lg">
+                          {t("contact.info.phone.title")}
+                        </h4>
+                        <p className="text-slate-600 text-lg">
+                          {t("contact.info.phone.number")}
+                        </p>
+                        <p className="text-sm text-slate-500">
+                          {t("contact.info.phone.note")}
+                        </p>
                       </div>
                     </div>
 
@@ -506,9 +608,15 @@ export default function HospiceCareWebsite() {
                         <Mail className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-slate-800 text-lg">Email</h4>
-                        <p className="text-slate-600 text-lg">info@serenityhospice.com</p>
-                        <p className="text-sm text-slate-500">We'll respond within 2 hours</p>
+                        <h4 className="font-semibold text-slate-800 text-lg">
+                          {t("contact.info.email.title")}
+                        </h4>
+                        <p className="text-slate-600 text-lg">
+                          {t("contact.info.email.address")}
+                        </p>
+                        <p className="text-sm text-slate-500">
+                          {t("contact.info.email.note")}
+                        </p>
                       </div>
                     </div>
 
@@ -517,13 +625,15 @@ export default function HospiceCareWebsite() {
                         <MapPin className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-slate-800 text-lg">Office Location</h4>
-                        <p className="text-slate-600 text-lg">
-                          123 Compassion Drive
-                          <br />
-                          Peaceful Valley, CA 90210
+                        <h4 className="font-semibold text-slate-800 text-lg">
+                          {t("contact.info.address.title")}
+                        </h4>
+                        <p className="text-slate-600 text-lg whitespace-pre-line">
+                          {t("contact.info.address.address")}
                         </p>
-                        <p className="text-sm text-slate-500">Mon-Fri 8AM-6PM</p>
+                        <p className="text-sm text-slate-500">
+                          {t("contact.info.address.note")}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -532,13 +642,15 @@ export default function HospiceCareWebsite() {
                 {/* Emergency Contact */}
                 <Card className="border-2 border-red-200 bg-red-50/50">
                   <CardContent className="p-6">
-                    <h4 className="font-semibold text-red-800 mb-2 text-lg">Emergency Support</h4>
+                    <h4 className="font-semibold text-red-800 mb-2 text-lg">
+                      {t("contact.emergency.title")}
+                    </h4>
                     <p className="text-red-700 mb-4">
-                      For immediate medical emergencies, call 911. For urgent hospice-related concerns:
+                      {t("contact.emergency.description")}
                     </p>
                     <Button className="bg-red-600 hover:bg-red-700 text-white transition-all duration-300 hover:scale-105">
                       <Phone className="w-4 h-4 mr-2" />
-                      Emergency Line: (555) 911-HELP
+                      {t("contact.emergency.button")}
                     </Button>
                   </CardContent>
                 </Card>
@@ -555,69 +667,99 @@ export default function HospiceCareWebsite() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <Heart className="w-8 h-8 text-primary-400" />
-                <span className="text-xl font-semibold">Serenity Hospice</span>
+                <span className="text-xl font-semibold">
+                  {t("navigation.companyName")}
+                </span>
               </div>
               <p className="text-slate-300 mb-6 max-w-md text-lg leading-relaxed">
-                Providing compassionate hospice care with dignity, comfort, and professional excellence for over 15
-                years.
+                {t("footer.description")}
               </p>
               <div className="flex flex-wrap gap-4">
-                <Badge className="bg-primary-600 text-white px-4 py-2">Medicare Certified</Badge>
-                <Badge className="bg-secondary-600 text-white px-4 py-2">Licensed Professionals</Badge>
+                <Badge className="bg-primary-600 text-white px-4 py-2">
+                  {t("footer.badges.medicare")}
+                </Badge>
+                <Badge className="bg-secondary-600 text-white px-4 py-2">
+                  {t("footer.badges.licensed")}
+                </Badge>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Services</h4>
+              <h4 className="font-semibold mb-4 text-lg">
+                {t("footer.services.title")}
+              </h4>
               <ul className="space-y-3 text-slate-300">
                 <li>
-                  <a href="#" className="hover:text-primary-400 transition-colors">
-                    Comfort Care
+                  <a
+                    href="#"
+                    className="hover:text-primary-400 transition-colors"
+                  >
+                    {t("footer.services.comfort")}
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary-400 transition-colors">
-                    Pain Management
+                  <a
+                    href="#"
+                    className="hover:text-primary-400 transition-colors"
+                  >
+                    {t("footer.services.pain")}
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary-400 transition-colors">
-                    Family Support
+                  <a
+                    href="#"
+                    className="hover:text-primary-400 transition-colors"
+                  >
+                    {t("footer.services.family")}
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary-400 transition-colors">
-                    Bereavement Care
+                  <a
+                    href="#"
+                    className="hover:text-primary-400 transition-colors"
+                  >
+                    {t("footer.services.bereavement")}
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-lg">Contact</h4>
+              <h4 className="font-semibold mb-4 text-lg">
+                {t("footer.contact.title")}
+              </h4>
               <ul className="space-y-3 text-slate-300">
-                <li className="text-lg">(555) 123-4567</li>
-                <li>info@serenityhospice.com</li>
-                <li>
-                  123 Compassion Drive
-                  <br />
-                  Peaceful Valley, CA 90210
+                <li className="text-lg">{t("footer.contact.phone")}</li>
+                <li>{t("footer.contact.email")}</li>
+                <li className="whitespace-pre-line">
+                  {t("footer.contact.address")}
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-slate-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400">© {new Date().getFullYear()} Serenity Hospice. All rights reserved.</p>
+            <p className="text-slate-400">
+              {t("footer.legal.copyright", { year: new Date().getFullYear() })}
+            </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors">
-                Privacy Policy
+              <a
+                href="#"
+                className="text-slate-400 hover:text-primary-400 transition-colors"
+              >
+                {t("footer.legal.privacy")}
               </a>
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors">
-                Terms of Service
+              <a
+                href="#"
+                className="text-slate-400 hover:text-primary-400 transition-colors"
+              >
+                {t("footer.legal.terms")}
               </a>
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors">
-                HIPAA Notice
+              <a
+                href="#"
+                className="text-slate-400 hover:text-primary-400 transition-colors"
+              >
+                {t("footer.legal.hipaa")}
               </a>
             </div>
           </div>
@@ -634,5 +776,5 @@ export default function HospiceCareWebsite() {
         </Button>
       </div>
     </div>
-  )
+  );
 }
