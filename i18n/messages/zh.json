@@ -1,6 +1,7 @@
 {
   "navigation": {
     "companyName": "諾安安寧療護",
+    "home": "首頁",
     "services": "服務項目",
     "about": "關於我們",
     "areas": "服務地區",
@@ -44,7 +45,9 @@
         "title": "喘息護理",
         "description": "在專業設施為家庭成員和主要照顧者提供最多5天的喘息護理。"
       }
-    }
+    },
+    "additionalInfo": "我們還提供疼痛管理、社工服務、喪慟支援、志願者計劃、藥物服務和醫療設備 - 這些都是我們全面安寧療護的一部分。",
+    "viewAllServices": "查看所有服務"
   },
   "about": {
     "badge": "關於諾安安寧療護",
@@ -145,6 +148,169 @@
       "privacy": "隱私政策",
       "terms": "服務條款",
       "hipaa": "HIPAA通知"
+    }
+  },
+  "areas": {
+    "badge": "服務覆蓋地區",
+    "title": "服務南加州",
+    "titleHighlight": "各大縣市",
+    "description": "諾安安寧療護自豪地為南加州四個主要縣市的家庭提供服務，無論您的家在哪裡，我們都提供慈悲的安寧療護。",
+    "counties": {
+      "sanBernardino": "聖貝納迪諾縣",
+      "riverside": "河濱縣",
+      "losAngeles": "洛杉磯縣",
+      "orange": "橙縣"
+    },
+    "office": {
+      "title": "總部地址",
+      "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786"
+    },
+    "settings": {
+      "description": "我們在您最需要的地方提供彈性的護理設施：",
+      "home": "私人住宅",
+      "skilled": "專業護理機構",
+      "assisted": "輔助生活社區",
+      "hospitals": "醫院",
+      "longTerm": "長期護理機構",
+      "boardCare": "寄宿與護理設施"
+    }
+  },
+  "dignity": {
+    "badge": "尊嚴死亡",
+    "title": "生命的舒適、",
+    "titleHighlight": "安詳與尊嚴",
+    "description": "安寧療護不是放棄。當所有治療選擇已用盡或方法不再有效時，安寧療護為患者提供另一種方式，讓他們在沒有治癒性護理的情況下，仍能舒適、安詳、有尊嚴地生活。",
+    "benefits": {
+      "title": "安寧療護的福利",
+      "description": "安寧療護的福利為患者和照護者帶來力量，在最具挑戰性的時期提供安慰和支持。"
+    },
+    "decision": {
+      "title": "誰來作決定？",
+      "description": "患者、家庭成員和醫療保健提供者共同作出安寧療護的決定。這是一項尊重患者意願和家庭價值觀的醫療護理決定。"
+    },
+    "eligibility": {
+      "title": "資格要求",
+      "description": "醫師根據六個月或更短的末期預後以及功能狀態下降情況，確定患者是否符合安寧療護資格。"
+    },
+    "button": "了解更多我們的方法"
+  },
+  "info": {
+    "badge": "實用信息",
+    "title": "常見問題",
+    "titleHighlight": "與資源",
+    "description": "獲得關於安寧療護、保險覆蓋和資格要求的常見問題解答。我們在這裡幫助指導您做出這個重要的決定。",
+    "faq": {
+      "title": "常見問題",
+      "payment": {
+        "question": "誰支付安寧療護的費用？",
+        "answer": "聯邦醫療保險、加州醫療保險和大多數HMO和私人保險計劃最高可100%覆蓋安寧療護服務。我們處理所有保險文件和授權。"
+      },
+      "eligibility": {
+        "question": "如何獲得安寧療護資格？",
+        "answer": "醫師根據六個月或更短的末期預後以及功能狀態下降情況來確定患者資格。我們與您的醫生合作評估資格。"
+      },
+      "location": {
+        "question": "安寧療護在哪裡提供？",
+        "answer": "我們在患者選擇的任何地方提供服務 - 家中、護理設施、醫院、輔助生活中心，以及他們稱之為家的任何地方。"
+      }
+    },
+    "conditions": {
+      "title": "符合資格的疾病",
+      "cancer": "癌症（晚期）",
+      "heart": "心臟病和循環系統疾病",
+      "dementia": "失智症/阿茲海默症",
+      "respiratory": "呼吸疾病（慢阻肺等）",
+      "stroke": "中風和偏癱"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "badge": "全面安寧療護服務",
+      "title": "我們完整的",
+      "titleHighlight": "安寧療護服務範圍",
+      "description": "諾安安寧療護提供全方位的安寧療護服務，旨在為患者和家庭在末期護理期間提高生活品質。",
+      "ctaPrimary": "致電 909-321-2255",
+      "ctaSecondary": "立即聯絡我們"
+    },
+    "overview": {
+      "badge": "核心服務",
+      "title": "八項基本",
+      "titleHighlight": "護理服務",
+      "description": "我們的跨學科團隊通過八個核心服務領域提供全面支持，確保患者和家庭的舒適、尊嚴和生活品質。"
+    },
+    "coreServices": {
+      "painManagement": {
+        "title": "疼痛管理",
+        "description": "專業的疼痛控制和症狀管理，確保患者的舒適和生活品質。"
+      },
+      "onCallNursing": {
+        "title": "24小時隨叫隨到護理",
+        "description": "全天候護理支持，可在緊急需求和危機期間提供幫助。"
+      },
+      "personalCare": {
+        "title": "個人護理協助",
+        "description": "安寧療護助理在保持患者尊嚴的同時協助日常生活活動。"
+      },
+      "socialWorker": {
+        "title": "社工服務",
+        "description": "情感支持、資源協調、家庭咨詢和預先護理計劃協助。"
+      },
+      "bereavement": {
+        "title": "喪慟服務",
+        "description": "在失去親人之前、期間和之後為家庭提供持續的悲傷咨詢和支持。"
+      },
+      "volunteer": {
+        "title": "志願者計劃",
+        "description": "經過培訓的志願者提供陪伴、情感支持和實際幫助。"
+      },
+      "medication": {
+        "title": "藥物服務",
+        "description": "所有與安寧療護相關的藥物管理、配送和協調。"
+      },
+      "equipment": {
+        "title": "設備服務",
+        "description": "提供必要的醫療設備和用品，確保患者的舒適和護理。"
+      }
+    },
+    "levelsOfCare": {
+      "badge": "護理級別",
+      "title": "四個級別的",
+      "titleHighlight": "安寧療護",
+      "description": "我們根據患者需求和嚴重程度提供不同級別的護理，確保在安寧療護旅程的所有階段都有適當的支持。",
+      "routine": {
+        "title": "常規護理",
+        "description": "為管理日常護理需求的穩定患者提供定期家訪和間歇性護理。"
+      },
+      "continuous": {
+        "title": "持續護理",
+        "description": "在危機期間提供密集的班次護理，幫助患者度過困難時期。"
+      },
+      "inpatient": {
+        "title": "一般住院護理",
+        "description": "當症狀控制需要住院或專業護理時提供短期設施護理。"
+      },
+      "respite": {
+        "title": "住院喘息護理",
+        "description": "在專業設施中提供最多5天的緩解護理，讓主要照護者休息。"
+      }
+    },
+    "team": {
+      "badge": "我們的團隊",
+      "title": "經驗豐富的",
+      "titleHighlight": "跨學科團隊",
+      "description": "我們富有同情心的醫療保健專業團隊共同合作，為患者和家庭提供全面、協調的護理。",
+      "doctors": "醫生",
+      "nurses": "護士",
+      "socialWorkers": "社工",
+      "counselors": "顧問",
+      "volunteers": "志願者"
+    },
+    "cta": {
+      "title": "準備了解更多",
+      "titleHighlight": "關於我們的服務？",
+      "description": "我們的團隊24/7全天候為您解答問題，並幫助確定安寧療護是否適合您或您的親人。",
+      "ctaPrimary": "致電 909-321-2255",
+      "ctaSecondary": "立即聯絡我們"
     }
   }
 }

@@ -1,6 +1,7 @@
 {
   "navigation": {
     "companyName": "IE Community Hospice",
+    "home": "Home",
     "services": "Services",
     "about": "About Us",
     "areas": "Service Areas",
@@ -44,7 +45,9 @@
         "title": "Respite Care",
         "description": "Up to 5 days of relief care for families and primary caregivers in professional facilities."
       }
-    }
+    },
+    "additionalInfo": "We also provide pain management, social worker services, bereavement support, volunteer programs, medication services, and medical equipment - all as part of our comprehensive hospice care.",
+    "viewAllServices": "View All Services"
   },
   "about": {
     "badge": "About IE Community Hospice",
@@ -145,6 +148,169 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "hipaa": "HIPAA Notice"
+    }
+  },
+  "areas": {
+    "badge": "Service Coverage Areas",
+    "title": "Serving Southern",
+    "titleHighlight": "California Counties",
+    "description": "IE Community Hospice proudly serves families across four major Southern California counties, providing compassionate hospice care wherever you call home.",
+    "counties": {
+      "sanBernardino": "San Bernardino County",
+      "riverside": "Riverside County",
+      "losAngeles": "Los Angeles County",
+      "orange": "Orange County"
+    },
+    "office": {
+      "title": "Main Office Location",
+      "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786"
+    },
+    "settings": {
+      "description": "We provide flexible care settings wherever you need us most:",
+      "home": "Private Homes",
+      "skilled": "Skilled Nursing",
+      "assisted": "Assisted Living",
+      "hospitals": "Hospitals",
+      "longTerm": "Long-term Care",
+      "boardCare": "Board & Care"
+    }
+  },
+  "dignity": {
+    "badge": "Death With Dignity",
+    "title": "Living with Comfort,",
+    "titleHighlight": "Peace & Dignity",
+    "description": "Hospice care is not giving up. When all treatment options have been exhausted or methods are no longer effective, hospice care provides another way for patients to live comfortably, peacefully, and with dignity without curative care.",
+    "benefits": {
+      "title": "Benefits of Hospice Care",
+      "description": "The benefits of hospice bring strength to patients and their caregivers, providing comfort and support during the most challenging times."
+    },
+    "decision": {
+      "title": "Who Makes the Decision?",
+      "description": "Patients, family members, and healthcare providers make the hospice care decision together. This is a medical care decision that respects patient wishes and family values."
+    },
+    "eligibility": {
+      "title": "Eligibility Requirements",
+      "description": "Physicians determine if a patient qualifies for hospice care based on terminal prognosis of six months or less and declining functional status."
+    },
+    "button": "Learn More About Our Approach"
+  },
+  "info": {
+    "badge": "Useful Information",
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions & Resources",
+    "description": "Get answers to common questions about hospice care, insurance coverage, and eligibility requirements. We're here to help guide you through this important decision.",
+    "faq": {
+      "title": "Common Questions",
+      "payment": {
+        "question": "Who pays for hospice care?",
+        "answer": "Medicare, Medi-Cal, and most HMO and private insurance plans cover hospice services up to 100%. We handle all insurance paperwork and authorization."
+      },
+      "eligibility": {
+        "question": "How does one qualify for hospice?",
+        "answer": "Physicians determine patient eligibility based on a terminal prognosis of six months or less and declining functional status. We work with your doctor to assess eligibility."
+      },
+      "location": {
+        "question": "Where is hospice care provided?",
+        "answer": "We provide services wherever the patient chooses - homes, care facilities, hospitals, assisted living centers, and any place they call home."
+      }
+    },
+    "conditions": {
+      "title": "Qualifying Conditions",
+      "cancer": "Cancer (Advanced Stages)",
+      "heart": "Heart Disease & Circulatory Conditions",
+      "dementia": "Dementia/Alzheimer's Disease",
+      "respiratory": "Respiratory Diseases (COPD, etc.)",
+      "stroke": "Stroke and Paralysis"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "badge": "Comprehensive Hospice Services",
+      "title": "Our Complete Range of",
+      "titleHighlight": "Hospice Care Services",
+      "description": "IE Community Hospice provides a full spectrum of hospice care services designed to enhance quality of life for patients and families during end-of-life care.",
+      "ctaPrimary": "Call 909-321-2255",
+      "ctaSecondary": "Contact Us Today"
+    },
+    "overview": {
+      "badge": "Core Services",
+      "title": "Eight Essential",
+      "titleHighlight": "Care Services",
+      "description": "Our interdisciplinary team provides comprehensive support through eight core service areas, ensuring comfort, dignity, and quality of life for patients and families."
+    },
+    "coreServices": {
+      "painManagement": {
+        "title": "Pain Management",
+        "description": "Expert pain control and symptom management to ensure patient comfort and quality of life."
+      },
+      "onCallNursing": {
+        "title": "24-Hour On-Call Nursing",
+        "description": "Round-the-clock nursing support available for urgent needs and crisis periods."
+      },
+      "personalCare": {
+        "title": "Personal Care Assistance",
+        "description": "Hospice aides provide assistance with daily living activities while maintaining patient dignity."
+      },
+      "socialWorker": {
+        "title": "Social Worker Services",
+        "description": "Emotional support, resource coordination, family counseling, and advance care planning assistance."
+      },
+      "bereavement": {
+        "title": "Bereavement Services",
+        "description": "Ongoing grief counseling and support for families before, during, and after loss."
+      },
+      "volunteer": {
+        "title": "Volunteer Program",
+        "description": "Trained volunteers providing companionship, emotional support, and practical assistance."
+      },
+      "medication": {
+        "title": "Medication Services",
+        "description": "All hospice-related medication management, delivery, and coordination."
+      },
+      "equipment": {
+        "title": "Equipment Services",
+        "description": "Necessary medical equipment and supplies to ensure patient comfort and care."
+      }
+    },
+    "levelsOfCare": {
+      "badge": "Levels of Care",
+      "title": "Four Levels of",
+      "titleHighlight": "Hospice Care",
+      "description": "We provide different levels of care based on patient needs and acuity, ensuring appropriate support during all stages of the hospice journey.",
+      "routine": {
+        "title": "Routine Care",
+        "description": "Regular home visits and intermittent care for stable patients managing their daily care needs."
+      },
+      "continuous": {
+        "title": "Continuous Care",
+        "description": "Intensive shift-based nursing care during crisis periods to help patients through difficult times."
+      },
+      "inpatient": {
+        "title": "General Inpatient Care",
+        "description": "Short-term facility care when symptom control requires hospitalization or specialized nursing."
+      },
+      "respite": {
+        "title": "Inpatient Respite Care",
+        "description": "Up to 5 days of relief care in professional facilities to give primary caregivers a break."
+      }
+    },
+    "team": {
+      "badge": "Our Team",
+      "title": "Experienced",
+      "titleHighlight": "Interdisciplinary Team",
+      "description": "Our compassionate team of healthcare professionals works together to provide comprehensive, coordinated care for patients and families.",
+      "doctors": "Doctors",
+      "nurses": "Nurses",
+      "socialWorkers": "Social Workers",
+      "counselors": "Counselors",
+      "volunteers": "Volunteers"
+    },
+    "cta": {
+      "title": "Ready to Learn More",
+      "titleHighlight": "About Our Services?",
+      "description": "Our team is available 24/7 to answer your questions and help determine if hospice care is right for you or your loved one.",
+      "ctaPrimary": "Call 909-321-2255",
+      "ctaSecondary": "Contact Us Today"
     }
   }
 }
