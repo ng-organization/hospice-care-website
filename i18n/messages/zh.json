@@ -196,26 +196,56 @@
     "description": "諾安安寧療護有限公司 - 聯邦認證聯邦醫療保險/加州醫療保險安寧療護服務機構，為南加州提供雙語服務和文化敏感護理。",
     "badges": {
       "medicare": "聯邦醫療保險認證",
-      "licensed": "CMS認證"
+      "licensed": "CMS認證",
+      "available": "24小時服務",
+      "bilingual": "雙語醫護人員"
+    },
+    "quickLinks": {
+      "title": "快速連結",
+      "about": "關於我們",
+      "services": "我們的服務",
+      "areas": "服務地區",
+      "dignity": "尊嚴護理",
+      "info": "實用信息",
+      "contact": "聯絡我們"
     },
     "services": {
-      "title": "服務",
+      "title": "核心服務",
       "comfort": "居家護理",
       "pain": "疼痛管理",
       "family": "家庭支援",
-      "bereavement": "喪慟護理"
+      "bereavement": "喪慟護理",
+      "continuous": "持續護理",
+      "respite": "喘息護理"
     },
     "contact": {
-      "title": "聯絡",
+      "title": "聯絡資訊",
       "phone": "909-321-2255",
+      "fax": "909-351-0151",
       "email": "INFO@IECOMMUNITYHOSPICE.COM",
-      "address": "服務南加州\n5個縣"
+      "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
+      "hours": "辦公時間",
+      "hoursDetail": "週一至週五：上午9:00 - 下午5:00",
+      "emergency": "24小時護士值班服務"
+    },
+    "certifications": {
+      "title": "認證與合規",
+      "medicare": "聯邦醫療保險認證機構",
+      "cms": "CMS認證",
+      "civilRights": "平等機會提供者",
+      "hipaa": "HIPAA合規"
+    },
+    "social": {
+      "title": "與我們聯繫",
+      "facebook": "Facebook",
+      "chinese": "華人資訊網"
     },
     "legal": {
       "copyright": "© {year} 諾安安寧療護有限公司。版權所有。",
       "privacy": "隱私政策",
       "terms": "服務條款",
-      "hipaa": "HIPAA通知"
+      "hipaa": "HIPAA通知",
+      "compliance": "非歧視政策"
     }
   },
   "areas": {

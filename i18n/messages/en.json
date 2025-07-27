@@ -196,26 +196,56 @@
     "description": "IE Community Hospice Inc. - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
     "badges": {
       "medicare": "Medicare Certified",
-      "licensed": "CMS Certified"
+      "licensed": "CMS Certified",
+      "available": "24/7 Available",
+      "bilingual": "Bilingual Staff"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "services": "Our Services",
+      "areas": "Service Areas",
+      "dignity": "Death With Dignity",
+      "info": "Useful Information",
+      "contact": "Contact Us"
     },
     "services": {
-      "title": "Services",
+      "title": "Core Services",
       "comfort": "Home Care",
       "pain": "Pain Management",
       "family": "Family Support",
-      "bereavement": "Bereavement Care"
+      "bereavement": "Bereavement Care",
+      "continuous": "Continuous Care",
+      "respite": "Respite Care"
     },
     "contact": {
-      "title": "Contact",
+      "title": "Contact Information",
       "phone": "909-321-2255",
+      "fax": "909-351-0151",
       "email": "INFO@IECOMMUNITYHOSPICE.COM",
-      "address": "Serving 5 Counties in\nSouthern California"
+      "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
+      "hours": "Office Hours",
+      "hoursDetail": "Monday - Friday: 9:00 AM - 5:00 PM",
+      "emergency": "24/7 Nurse On-Call Available"
+    },
+    "certifications": {
+      "title": "Certifications & Compliance",
+      "medicare": "Medicare Certified Provider",
+      "cms": "CMS Certified",
+      "civilRights": "Equal Opportunity Provider",
+      "hipaa": "HIPAA Compliant"
+    },
+    "social": {
+      "title": "Connect With Us",
+      "facebook": "Facebook",
+      "chinese": "Chinese in LA"
     },
     "legal": {
       "copyright": "© {year} IE Community Hospice Inc. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
-      "hipaa": "HIPAA Notice"
+      "hipaa": "HIPAA Notice",
+      "compliance": "Non-Discrimination Policy"
     }
   },
   "areas": {
