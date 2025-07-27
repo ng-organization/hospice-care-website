@@ -63,6 +63,74 @@
       "viewCredentials": "View Certifications"
     }
   },
+  "aboutPage": {
+    "hero": {
+      "badge": "About IE Community Hospice",
+      "title": "Committed to",
+      "titleHighlight": "Compassionate Care",
+      "description": "IE Community Hospice is guided by a commitment for personal and clinical excellence through compassionate care and service to our patients."
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Creating Comfort",
+      "titleHighlight": "and Peace",
+      "description": "IE Community Hospice is guided by a commitment for personal and clinical excellence through compassionate care and service to our patients. We believe it is vital to create an environment of comfort and peace as patients and their families deal with the realities that come with terminal illness."
+    },
+    "promise": {
+      "badge": "Our Promise",
+      "title": "We Are Here",
+      "titleHighlight": "to Help",
+      "description": "Our commitment to you and your family goes beyond medical care.",
+      "items": [
+        "We are here to help",
+        "To serve in times of your need",
+        "It is who we are"
+      ]
+    },
+    "program": {
+      "badge": "Our Programs",
+      "title": "Comprehensive Care",
+      "titleHighlight": "Levels",
+      "description": "Based on patient's acuity and level of need, IE Community Hospice provides different levels of care to meet individual needs.",
+      "items": [
+        {
+          "title": "Routine Care",
+          "description": "Daily care needs provided in the comfort of your chosen setting"
+        },
+        {
+          "title": "Continuous Care",
+          "description": "Intensive care during crisis periods when additional support is needed"
+        },
+        {
+          "title": "General Inpatient Care",
+          "description": "When symptom control requires specialized facility-based care"
+        },
+        {
+          "title": "Inpatient Respite Care",
+          "description": "Short-term relief for caregivers while maintaining quality patient care"
+        }
+      ]
+    },
+    "locations": {
+      "badge": "Where We Serve",
+      "title": "Care Wherever",
+      "titleHighlight": "You Call Home",
+      "description": "We provide compassionate hospice care in the setting that's most comfortable for you and your family.",
+      "items": [
+        "Private homes",
+        "Skilled nursing facilities",
+        "Residential facilities",
+        "Assisted living centers",
+        "Board and care facilities"
+      ]
+    },
+    "compliance": {
+      "badge": "Compliance & Accreditation",
+      "title": "Equal Care",
+      "titleHighlight": "for Everyone",
+      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, IE Community Hospice, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age."
+    }
+  },
   "testimonials": {
     "badge": "Patient & Family Testimonials",
     "title": "Stories of",

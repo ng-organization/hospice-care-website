@@ -59,7 +59,7 @@ export function Navbar() {
               {t("navigation.services")}
             </a>
             <a
-              href="#about"
+              href={`/${locale}/about`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
                   ? "text-accent-800 hover:text-accent-600"
@@ -195,7 +195,7 @@ export function Navbar() {
               {t("navigation.services")}
             </a>
             <a
-              href="#about"
+              href={`/${locale}/about`}
               className={`block transition-colors py-2 ${
                 isScrolled
                   ? "text-accent-800 hover:text-accent-600"
