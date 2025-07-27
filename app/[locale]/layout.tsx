@@ -3,7 +3,10 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
+import { FloatingCallButton } from "@/components/ui/FloatingCallButton";
 
 export const metadata: Metadata = {
   title: "IE Community Hospice - Compassionate Care When It Matters Most",
@@ -33,7 +36,10 @@ html {
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
+          <FloatingCallButton />
         </NextIntlClientProvider>
       </body>
     </html>
