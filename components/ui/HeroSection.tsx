@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone, CheckCircle, Award, Clock } from "lucide-react";
+import { StaggerContainer, StaggerItem } from "@/components/motion";
 
 interface HeroSectionProps {
   variant?: "home" | "page";
@@ -72,73 +73,83 @@ export function HeroSection({
 
       {/* Hero Content */}
       <div className="section-content relative z-10 text-center">
-        <div className={`space-y-8 animate-fade-in ${isHomePage ? 'max-w-5xl mx-auto' : 'max-w-4xl mx-auto'}`}>
-          <Badge className="bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
-            {badgeText}
-          </Badge>
+        <StaggerContainer className={`space-y-8 ${isHomePage ? 'max-w-5xl mx-auto' : 'max-w-4xl mx-auto'}`}>
+          <StaggerItem>
+            <Badge className="bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
+              {badgeText}
+            </Badge>
+          </StaggerItem>
 
-          <h1 className={`font-light text-white leading-tight ${
-            isHomePage 
-              ? 'text-4xl sm:text-5xl lg:text-7xl' 
-              : 'text-3xl sm:text-4xl lg:text-6xl'
-          }`}>
-            {title}
-            {titleHighlight && (
-              <>
-                <br />
-                <span className="font-semibold">
-                  {titleHighlight}
-                </span>
-              </>
-            )}
-          </h1>
+          <StaggerItem>
+            <h1 className={`font-light text-white leading-tight ${
+              isHomePage 
+                ? 'text-4xl sm:text-5xl lg:text-7xl' 
+                : 'text-3xl sm:text-4xl lg:text-6xl'
+            }`}>
+              {title}
+              {titleHighlight && (
+                <>
+                  <br />
+                  <span className="font-semibold">
+                    {titleHighlight}
+                  </span>
+                </>
+              )}
+            </h1>
+          </StaggerItem>
 
-          <p className={`text-white/90 mx-auto leading-relaxed ${
-            isHomePage 
-              ? 'text-xl max-w-4xl' 
-              : 'text-lg max-w-3xl'
-          }`}>
-            {description}
-          </p>
+          <StaggerItem>
+            <p className={`text-white/90 mx-auto leading-relaxed ${
+              isHomePage 
+                ? 'text-xl max-w-4xl' 
+                : 'text-lg max-w-3xl'
+            }`}>
+              {description}
+            </p>
+          </StaggerItem>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handlePrimaryClick}
-              className="bg-white text-primary-800 hover:bg-white/90 hover:text-primary-900 px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-2xl border-none"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              {primaryButtonText}
-            </Button>
-            <Button
-              variant="secondary"
-              size="lg"
-              onClick={handleSecondaryClick}
-              className="border-white/50 text-white hover:bg-white/10 hover:border-white px-8 py-4 rounded-full text-lg transition-all duration-300 bg-transparent backdrop-blur-sm"
-            >
-              {secondaryButtonText}
-            </Button>
-          </div>
+          <StaggerItem>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={handlePrimaryClick}
+                className="bg-white text-primary-800 hover:bg-white/90 hover:text-primary-900 px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-2xl border-none"
+              >
+                <Phone className="w-5 h-5 mr-2" />
+                {primaryButtonText}
+              </Button>
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={handleSecondaryClick}
+                className="border-white/50 text-white hover:bg-white/10 hover:border-white px-8 py-4 rounded-full text-lg transition-all duration-300 bg-transparent backdrop-blur-sm"
+              >
+                {secondaryButtonText}
+              </Button>
+            </div>
+          </StaggerItem>
 
           {/* Certifications - Only show on home page or when explicitly requested */}
           {(isHomePage || showCertifications) && (
-            <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-white/80 pt-8">
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-white" />
-                <span>{t("hero.certifications.medicare")}</span>
+            <StaggerItem>
+              <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-white/80 pt-8">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-white" />
+                  <span>{t("hero.certifications.medicare")}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Award className="w-4 h-4 text-white" />
+                  <span>{t("hero.certifications.licensed")}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Clock className="w-4 h-4 text-white" />
+                  <span>{t("hero.certifications.availability")}</span>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <Award className="w-4 h-4 text-white" />
-                <span>{t("hero.certifications.licensed")}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Clock className="w-4 h-4 text-white" />
-                <span>{t("hero.certifications.availability")}</span>
-              </div>
-            </div>
+            </StaggerItem>
           )}
-        </div>
+        </StaggerContainer>
       </div>
 
       {/* Floating elements - Only on home page */}

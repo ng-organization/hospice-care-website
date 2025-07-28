@@ -5,7 +5,7 @@ interface ContainerProps {
   children: React.ReactNode;
   size?: "sm" | "md" | "lg" | "xl" | "full";
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
 }
 
 const sizeClasses = {

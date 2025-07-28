@@ -9,13 +9,11 @@ import { ServiceAreasSection } from "@/components/sections/ServiceAreasSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { SectionDivider } from "@/components/ui/SectionDivider";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { PageTransition } from "@/components/motion";
 
 export default function HospiceCareWebsite() {
-  useIntersectionObserver();
-
   return (
-    <div className="min-h-screen flex flex-col scroll-smooth">
+    <PageTransition className="min-h-screen flex flex-col scroll-smooth">
       <main className="flex-1">
         <HeroSection />
         <SectionDivider />
@@ -33,6 +31,6 @@ export default function HospiceCareWebsite() {
         <SectionDivider />
         <ContactSection />
       </main>
-    </div>
+    </PageTransition>
   );
 }

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/motion";
 
 export function TestimonialsSection() {
   const t = useTranslations();
@@ -45,24 +46,30 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="min-h-[60vh] w-full bg-white observe-section"
+      className="min-h-[60vh] w-full bg-white"
     >
-      <div className="w-full px-4 md:px-8 lg:px-16 py-24">
-        <div className="text-center mb-16">
-          <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            {t("testimonials.badge")}
-          </Badge>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-            {t("testimonials.title")}
-            <br />
-            <span className="font-semibold text-primary-600">
-              {t("testimonials.titleHighlight")}
-            </span>
-          </h2>
-        </div>
+      <AnimatedSection animation="fadeInUp" delay={0.2}>
+        <div className="w-full px-4 md:px-8 lg:px-16 py-24">
+          <StaggerContainer className="text-center mb-16">
+            <StaggerItem>
+              <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                {t("testimonials.badge")}
+              </Badge>
+            </StaggerItem>
+            <StaggerItem>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
+                {t("testimonials.title")}
+                <br />
+                <span className="font-semibold text-primary-600">
+                  {t("testimonials.titleHighlight")}
+                </span>
+              </h2>
+            </StaggerItem>
+          </StaggerContainer>
 
-        <div className="relative max-w-4xl mx-auto">
-          <Card className="border-0 bg-gradient-to-br from-primary-50/50 to-white shadow-2xl">
+          <AnimatedSection animation="scaleIn" delay={0.4}>
+            <div className="relative max-w-4xl mx-auto">
+              <Card className="border-0 bg-gradient-to-br from-primary-50/50 to-white shadow-2xl">
             <CardContent className="p-12 text-center">
               <div className="flex justify-center mb-6">
                 {[...Array(testimonials[currentTestimonial].rating)].map(
@@ -122,9 +129,11 @@ export function TestimonialsSection() {
             >
               <ChevronRight className="w-5 h-5" />
             </Button>
-          </div>
+            </div>
+            </div>
+          </AnimatedSection>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

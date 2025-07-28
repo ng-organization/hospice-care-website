@@ -2,72 +2,72 @@
   "navigation": {
     "companyName": "諾安安寧療護",
     "home": "首頁",
-    "services": "服務項目",
+    "services": "我們的服務",
     "about": "關於我們",
     "areas": "服務地區",
-    "dignity": "尊嚴護理",
-    "info": "實用信息",
+    "dignity": "尊嚴照護",
+    "info": "常見問題",
     "contact": "聯絡我們",
-    "callNow": "立即致電"
+    "callNow": "馬上致電"
   },
   "common": {
-    "note": "注意",
-    "callButton": "致電 909-321-2255",
+    "note": "請注意",
+    "callButton": "立即致電 909-321-2255",
     "contactUs": "聯絡我們",
-    "checkAvailability": "檢查服務可用性",
-    "call": "致電"
+    "checkAvailability": "詢問服務是否適用",
+    "call": "電話詢問"
   },
   "hero": {
-    "badge": "聯邦醫療保險認證 • 24小時服務",
-    "title": "生命安寧",
-    "titleHighlight": "舒適照護",
-    "description": "聯邦認證安寧療護服務機構，為南加州提供雙語英文/繁體中文服務。聯邦醫療保險、加州醫療保險及HMO最高可支付100%費用。",
-    "ctaPrimary": "致電 909-321-2255",
-    "ctaSecondary": "了解我們的服務",
+    "badge": "聯邦醫療保險認證 • 全天候服務",
+    "title": "讓生命走得",
+    "titleHighlight": "安詳有尊嚴",
+    "description": "聯邦認證的安寧療護服務，專為華人家庭提供溫暖貼心的雙語照護。聯邦醫療保險、加州醫療保險及各大保險公司全額給付，讓您無後顧之憂。",
+    "ctaPrimary": "馬上致電 909-321-2255",
+    "ctaSecondary": "了解我們如何幫助您",
     "certifications": {
       "medicare": "聯邦醫療保險認證",
       "licensed": "CMS認證機構",
-      "availability": "24小時護士值班"
+      "availability": "24小時專業護士值班"
     }
   },
   "services": {
     "badge": "我們的服務",
-    "title": "全面安寧",
-    "titleHighlight": "療護服務",
-    "description": "我們的華語醫護專業團隊為患者和家庭提供個人化護理安排，包括居家護理、住院護理、持續護理和喘息護理服務。",
+    "title": "全方位的溫暖",
+    "titleHighlight": "安寧照護",
+    "description": "我們的華語醫護團隊深深了解華人家庭的需要，提供量身定制的貼心照護，讓您的親人在最熟悉的環境中，得到最專業的關愛。",
     "items": {
       "homecare": {
-        "title": "居家護理",
-        "description": "在您舒適的家中提供例行訪問、間歇性和按需護理。"
+        "title": "居家照護",
+        "description": "在最熟悉溫暖的家中，提供定期探視和隨時的貼心照料。"
       },
       "inpatient": {
-        "title": "住院護理",
-        "description": "當需要專業護理時，提供專業護理設施安排。"
+        "title": "住院照護",
+        "description": "當需要更專業的醫療照顧時，我們協助安排最適合的醫療機構。"
       },
       "continuous": {
-        "title": "持續護理",
-        "description": "班次輪值護理，協助患者度過困難時期。"
+        "title": "連續照護",
+        "description": "在最困難的時刻，我們的護理師全程陪伴，讓家人安心。"
       },
       "respite": {
-        "title": "喘息護理",
-        "description": "在專業設施為家庭成員和主要照顧者提供最多5天的喘息護理。"
+        "title": "暫託照護",
+        "description": "讓辛苦的家人有時間休息，我們在專業機構提供最多5天的安心照顧。"
       }
     },
-    "additionalInfo": "我們還提供疼痛管理、社工服務、喪慟支援、志願者計劃、藥物服務和醫療設備 - 這些都是我們全面安寧療護的一部分。",
+    "additionalInfo": "除了基本照護，我們還提供疼痛舒緩、心理諮商、哀傷輔導、愛心志工陪伴、藥物管理及醫療設備等全方位服務，讓每個家庭都能得到最完整的關懷。",
     "viewAllServices": "查看所有服務"
   },
   "about": {
     "badge": "關於諾安安寧療護",
-    "title": "聯邦認證",
-    "titleHighlight": "安寧療護服務機構",
-    "description": "諾安安寧療護有限公司是聯邦認證的聯邦醫療保險/加州醫療保險安寧療護服務機構，服務南加州5個縣。我們的使命：提供充滿慈悲的護理，以尊嚴、舒適和希望提升生活品質。",
+    "title": "值得信賴的",
+    "titleHighlight": "安寧照護夥伴",
+    "description": "諾安安寧療護是聯邦認證的專業機構，專門為南加州華人家庭提供安寧照護服務。我們的使命是用最溫暖的關懷，讓每個生命都能在尊嚴、舒適與愛中，走完人生最後一段路。",
     "stats": {
-      "families": "服務縣數",
-      "experience": "服務年數"
+      "families": "個服務縣市",
+      "experience": "全天候守護"
     },
     "buttons": {
-      "meetTeam": "認識我們的團隊",
-      "viewCredentials": "查看認證"
+      "meetTeam": "認識我們的專業團隊",
+      "viewCredentials": "了解我們的專業認證"
     }
   },
   "aboutPage": {
@@ -139,73 +139,73 @@
     }
   },
   "testimonials": {
-    "badge": "患者及家屬見證",
-    "title": "慈悲關懷的",
-    "titleHighlight": "真實故事",
+    "badge": "家屬心聲",
+    "title": "這些家庭的",
+    "titleHighlight": "溫馨分享",
     "items": [
       {
         "name": "王女士",
         "relation": "患者家屬",
-        "content": "華語醫護人員讓一切變得不同。他們理解我們的文化需求，以真誠的慈悲和尊重提供護理。"
+        "content": "有了會說中文的護理師，就像家人在身邊一樣。他們懂得我們的文化，也明白我們的心情，用真誠的愛心照顧我的家人。"
       },
       {
         "name": "陳氏家族",
         "relation": "家庭成員",
-        "content": "在我們最需要的時候提供24小時服務。疼痛管理和情感支持幫助我們的父親在整個旅程中保持尊嚴。"
+        "content": "不管白天黑夜，只要一通電話，他們馬上就到。父親沒有痛苦，我們心裡也安心。最後的時光，父親走得很安祥，這就是最大的安慰。"
       },
       {
-        "name": "羅德里格茲家族",
-        "relation": "感恩家屬",
-        "content": "聯邦醫療保險涵蓋一切費用。我們不必擔心費用，可以專注於在那些珍貴的最後幾個月中共度美好時光。"
+        "name": "羅先生",
+        "relation": "感恩的家屬",
+        "content": "一分錢都不用担心，保險全部給付。這樣我們就能安心地陪伴在家人身邊，把每一天都當成珍貴的礎物。"
       }
     ]
   },
   "contact": {
     "badge": "聯絡我們",
-    "title": "我們隨時為您服務",
-    "titleHighlight": "一天24小時",
-    "description": "不用擔心保險問題 - 致電909-321-2255。我們有保險專員隨時準備回答您所有的問題和疑慮。",
+    "title": "我們始終在這裡",
+    "titleHighlight": "等候您的來電",
+    "description": "無論何時，只要您需要我們，請立即致電 909-321-2255。我們的專業人員會耐心解答您所有關於保險和照護的疑問。",
     "form": {
-      "title": "發送訊息給我們",
-      "firstName": "名字",
-      "lastName": "姓氏",
-      "email": "電子郵件",
-      "phone": "電話",
-      "message": "訊息",
-      "messagePlaceholder": "我們如何幫助您和您的家人？",
+      "title": "留下您的訊息",
+      "firstName": "您的姓名",
+      "lastName": "家族姓氏",
+      "email": "電子信箱",
+      "phone": "聯絡電話",
+      "message": "您想說的話",
+      "messagePlaceholder": "請告訴我們您的情況，我們希望能夠幫到您和家人...",
       "submit": "發送訊息"
     },
     "info": {
-      "title": "聯絡資訊",
+      "title": "與我們聯繫",
       "phone": {
-        "title": "24小時支援專線",
+        "title": "全天候關懷熱線",
         "number": "909-321-2255",
-        "note": "辦公時間外提供值班護士服務"
+        "note": "隨時都有專業護理師接聽您的來電"
       },
       "email": {
-        "title": "電子郵件",
+        "title": "電子信箱",
         "address": "INFO@IECOMMUNITYHOSPICE.COM",
-        "note": "我們將在辦公時間內回覆"
+        "note": "我們會盡快回覆您的來信"
       },
       "address": {
         "title": "服務地區",
         "address": "聖貝納迪諾縣\n河濱縣\n洛杉磯縣\n橙縣\n聖地亞哥縣",
-        "note": "星期一至星期五上午9點至下午5點"
+        "note": "週一至週五 上午 9:00 - 下午 5:00"
       }
     },
     "emergency": {
-      "title": "24小時緊急支援",
-      "description": "醫療緊急情況請撥打911。緊急安寧療護需求請致電：",
-      "button": "致電 909-321-2255"
+      "title": "緊急情況",
+      "description": "如遇醫療緊急情況請打 911。如需安寧療護緊急協助，請馬上連絡：",
+      "button": "立即致電 909-321-2255"
     }
   },
   "footer": {
-    "description": "諾安安寧療護有限公司 - 聯邦認證聯邦醫療保險/加州醫療保險安寧療護服務機構，為南加州提供雙語服務和文化敏感護理。",
+    "description": "諾安安寧療護 - 聯邦認證的專業機構，專為南加州華人家庭提供雙語安寧照護服務，用心理解每個家庭的文化背景和需要。",
     "badges": {
       "medicare": "聯邦醫療保險認證",
-      "licensed": "CMS認證",
-      "available": "24小時服務",
-      "bilingual": "雙語醫護人員"
+      "licensed": "CMS政府認證",
+      "available": "全天候服務",
+      "bilingual": "雙語專業團隊"
     },
     "quickLinks": {
       "title": "快速連結",
@@ -217,13 +217,13 @@
       "contact": "聯絡我們"
     },
     "services": {
-      "title": "核心服務",
-      "comfort": "居家護理",
-      "pain": "疼痛管理",
-      "family": "家庭支援",
-      "bereavement": "喪慟護理",
-      "continuous": "持續護理",
-      "respite": "喘息護理"
+      "title": "主要服務",
+      "comfort": "居家照護",
+      "pain": "疼痛舒緩",
+      "family": "家屬支持",
+      "bereavement": "哀傷輔導",
+      "continuous": "連續照護",
+      "respite": "暫託照護"
     },
     "contact": {
       "title": "聯絡資訊",
@@ -256,10 +256,10 @@
     }
   },
   "areas": {
-    "badge": "服務覆蓋地區",
-    "title": "服務南加州",
-    "titleHighlight": "各大縣市",
-    "description": "諾安安寧療護自豪地為南加州四個主要縣市的家庭提供服務，無論您的家在哪裡，我們都提供慈悲的安寧療護。",
+    "badge": "服務地區",
+    "title": "在您的家門口",
+    "titleHighlight": "就能找到我們",
+    "description": "無論您住在南加州的哪個角落，我們都能夠到達。四個主要縣市的華人家庭，都是我們最珍貴的服務對象。",
     "counties": {
       "sanBernardino": "聖貝納迪諾縣",
       "riverside": "河濱縣",
@@ -267,17 +267,17 @@
       "orange": "橙縣"
     },
     "office": {
-      "title": "總部地址",
+      "title": "我們的總部",
       "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786"
     },
     "settings": {
-      "description": "我們在您最需要的地方提供彈性的護理設施：",
-      "home": "私人住宅",
-      "skilled": "專業護理機構",
-      "assisted": "輔助生活社區",
+      "description": "哪裡有家人，哪裡就有我們的照護：",
+      "home": "自己的家",
+      "skilled": "護理之家",
+      "assisted": "輔助生活中心",
       "hospitals": "醫院",
-      "longTerm": "長期護理機構",
-      "boardCare": "寄宿與護理設施"
+      "longTerm": "長期照護機構",
+      "boardCare": "寄養院所"
     }
   },
   "areasPage": {
@@ -402,51 +402,51 @@
     }
   },
   "dignity": {
-    "badge": "尊嚴死亡",
-    "title": "生命的舒適、",
-    "titleHighlight": "安詳與尊嚴",
-    "description": "安寧療護不是放棄。當所有治療選擇已用盡或方法不再有效時，安寧療護為患者提供另一種方式，讓他們在沒有治癒性護理的情況下，仍能舒適、安詳、有尊嚴地生活。",
+    "badge": "尊嚴照護",
+    "title": "讓每一個生命",
+    "titleHighlight": "都能美麗謝幕",
+    "description": "安寧照護不是放棄希望，而是換一種方式繼續愛護。當醫療治療已無法改變病情時，我們幫助您的家人在最後的時光裡，依然能夠舒適、安祥、有尊嚴地生活。",
     "benefits": {
-      "title": "安寧療護的福利",
-      "description": "安寧療護的福利為患者和照護者帶來力量，在最具挑戰性的時期提供安慰和支持。"
+      "title": "安寧照護的意義",
+      "description": "安寧照護讓家人在這段艷難的旅程中，不再孤單面對。我們提供的不只是醫療照護，更是心靈的慰藉和陪伴。"
     },
     "decision": {
-      "title": "誰來作決定？",
-      "description": "患者、家庭成員和醫療保健提供者共同作出安寧療護的決定。這是一項尊重患者意願和家庭價值觀的醫療護理決定。"
+      "title": "由誰來做這個決定？",
+      "description": "這是一個家庭的決定。悤者、家人和醫師會一起討論，尊重患者的意願和家庭的價值觀，共同做出最適合的選擇。"
     },
     "eligibility": {
-      "title": "資格要求",
-      "description": "醫師根據六個月或更短的末期預後以及功能狀態下降情況，確定患者是否符合安寧療護資格。"
+      "title": "什麼時候適合？",
+      "description": "當醫師評估病情進展，認為生命時間可能只剩下6個月或更短時，且患者的身體狀況持續衰弱時，就可以考慮安寧照護。"
     },
-    "button": "了解更多我們的方法"
+    "button": "了解我們的照護理念"
   },
   "info": {
-    "badge": "實用信息",
-    "title": "常見問題",
-    "titleHighlight": "與資源",
-    "description": "獲得關於安寧療護、保險覆蓋和資格要求的常見問題解答。我們在這裡幫助指導您做出這個重要的決定。",
+    "badge": "常見問題",
+    "title": "您最關心的",
+    "titleHighlight": "問題解答",
+    "description": "我們理解您在做這個重要決定時的心情。以下是家屬們最常問的問題，希望能幫助您更好地了解安寧照護。",
     "faq": {
-      "title": "常見問題",
+      "title": "最常問的問題",
       "payment": {
-        "question": "誰支付安寧療護的費用？",
-        "answer": "聯邦醫療保險、加州醫療保險和大多數HMO和私人保險計劃最高可100%覆蓋安寧療護服務。我們處理所有保險文件和授權。"
+        "question": "費用問題怎麼辦？",
+        "answer": "請安心，聯邦醫療保險、加州醫療保險和絕大部分保險公司都會全額負擔安寧照護的費用。保險申請和授權等繁雜的手續，我們都會幫您處理。"
       },
       "eligibility": {
-        "question": "如何獲得安寧療護資格？",
-        "answer": "醫師根據六個月或更短的末期預後以及功能狀態下降情況來確定患者資格。我們與您的醫生合作評估資格。"
+        "question": "什麼時候可以申請？",
+        "answer": "當醫師評估病情，認為生命可能只剩6個月或更短的時間，且患者的日常生活能力逐漸下降時，就可以考慮。我們會和您的醫師一起評估適合性。"
       },
       "location": {
-        "question": "安寧療護在哪裡提供？",
-        "answer": "我們在患者選擇的任何地方提供服務 - 家中、護理設施、醫院、輔助生活中心，以及他們稱之為家的任何地方。"
+        "question": "可以在哪裡接受照護？",
+        "answer": "哪裡最像家，我們就在哪裡照護。不管是自己的家、護理之家、醫院或是其他任何地方，只要您覺得舒適，我們都能提供服務。"
       }
     },
     "conditions": {
-      "title": "符合資格的疾病",
-      "cancer": "癌症（晚期）",
+      "title": "適用的病情",
+      "cancer": "晚期癌症",
       "heart": "心臟病和循環系統疾病",
-      "dementia": "失智症/阿茲海默症",
-      "respiratory": "呼吸疾病（慢阻肺等）",
-      "stroke": "中風和偏癱"
+      "dementia": "失智症和阿茲海默症",
+      "respiratory": "慢性呼吸疾病（慢阻肺等）",
+      "stroke": "中風後遺症"
     }
   },
   "servicesPage": {

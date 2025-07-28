@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/motion";
 
 export function ContactSection() {
   const t = useTranslations();
@@ -14,28 +15,36 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section"
+      className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white"
     >
-      <div className="w-full px-4 md:px-8 lg:px-16 py-24">
-        <div className="text-center mb-16">
-          <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            {t("contact.badge")}
-          </Badge>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-            {t("contact.title")}
-            <br />
-            <span className="font-semibold text-primary-600">
-              {t("contact.titleHighlight")}
-            </span>
-          </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            {t("contact.description")}
-          </p>
-        </div>
+      <AnimatedSection animation="fadeInUp" delay={0.2}>
+        <div className="w-full px-4 md:px-8 lg:px-16 py-24">
+          <StaggerContainer className="text-center mb-16">
+            <StaggerItem>
+              <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                {t("contact.badge")}
+              </Badge>
+            </StaggerItem>
+            <StaggerItem>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
+                {t("contact.title")}
+                <br />
+                <span className="font-semibold text-primary-600">
+                  {t("contact.titleHighlight")}
+                </span>
+              </h2>
+            </StaggerItem>
+            <StaggerItem>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                {t("contact.description")}
+              </p>
+            </StaggerItem>
+          </StaggerContainer>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
-          {/* Contact Form */}
-          <Card className="border-0 bg-white shadow-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+            {/* Contact Form */}
+            <AnimatedSection animation="slideInLeft" delay={0.3}>
+              <Card className="border-0 bg-white shadow-2xl">
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold text-slate-800 mb-6">
                 {t("contact.form.title")}
@@ -91,11 +100,13 @@ export function ContactSection() {
                   {t("contact.form.submit")}
                 </Button>
               </form>
-            </CardContent>
-          </Card>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
 
-          {/* Contact Information */}
-          <div className="space-y-8">
+            {/* Contact Information */}
+            <AnimatedSection animation="slideInRight" delay={0.4}>
+              <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-6">
                 {t("contact.info.title")}
@@ -171,10 +182,12 @@ export function ContactSection() {
                   {t("contact.emergency.button")}
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

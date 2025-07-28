@@ -8,7 +8,7 @@ interface SectionProps {
   id?: string;
   padding?: "none" | "sm" | "md" | "lg" | "xl";
   background?: "white" | "gray" | "primary" | "secondary" | "transparent";
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
 }
 
 const paddingClasses = {
