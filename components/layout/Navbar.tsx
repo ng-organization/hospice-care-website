@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { MobileMenu } from "@/components/ui/MobileMenu";
 import { Phone, Menu, X } from "lucide-react";
 import Link from "next/link";
 
@@ -25,8 +26,8 @@ export function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-lg"
-          : "bg-accent-800/90 border-white/20"
+          ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg"
+          : "bg-primary-800/90 backdrop-blur-sm border-b border-white/20"
       }`}
     >
       <div className="w-full px-4 md:px-6 lg:px-8 xl:px-16">
@@ -39,7 +40,7 @@ export function Navbar() {
             />
             <span
               className={`text-lg sm:text-xl font-semibold transition-colors duration-300 ${
-                isScrolled ? "text-accent-800" : "text-white"
+                isScrolled ? "text-primary-800" : "text-white"
               }`}
             >
               {t("navigation.companyName")}
@@ -52,7 +53,7 @@ export function Navbar() {
               href={`/${locale}/services`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
+                  ? "text-primary-800 hover:text-primary-600"
                   : "text-white hover:text-gray-300"
               }`}
             >
@@ -62,7 +63,7 @@ export function Navbar() {
               href={`/${locale}/about`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
+                  ? "text-primary-800 hover:text-primary-600"
                   : "text-white hover:text-gray-300"
               }`}
             >
@@ -72,7 +73,7 @@ export function Navbar() {
               href={`/${locale}/areas`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
+                  ? "text-primary-800 hover:text-primary-600"
                   : "text-white hover:text-gray-300"
               }`}
             >
@@ -82,7 +83,7 @@ export function Navbar() {
               href="#dignity"
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
+                  ? "text-primary-800 hover:text-primary-600"
                   : "text-white hover:text-gray-300"
               }`}
             >
@@ -92,7 +93,7 @@ export function Navbar() {
               href="#info"
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
+                  ? "text-primary-800 hover:text-primary-600"
                   : "text-white hover:text-gray-300"
               }`}
             >
@@ -102,7 +103,7 @@ export function Navbar() {
               href="#contact"
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
+                  ? "text-primary-800 hover:text-primary-600"
                   : "text-white hover:text-gray-300"
               }`}
             >
@@ -112,8 +113,10 @@ export function Navbar() {
               <LanguageSwitcher isScrolled={isScrolled} />
             </div>
             <Button
+              variant="primary"
+              size="default"
               onClick={() => window.open("tel:909-321-2255", "_self")}
-              className="bg-primary-600 hover:bg-primary-700 text-white border-0 px-3 xl:px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm xl:text-base flex-shrink-0"
+              className="px-3 xl:px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm xl:text-base flex-shrink-0"
             >
               <Phone className="w-4 h-4 xl:mr-2" />
               <span className="hidden xl:inline ml-2">
@@ -129,15 +132,17 @@ export function Navbar() {
               <LanguageSwitcher isScrolled={isScrolled} />
             </div>
             <Button
+              variant="primary"
+              size="sm"
               onClick={() => window.open("tel:909-321-2255", "_self")}
-              className="bg-primary-600 hover:bg-primary-700 text-white border-0 px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm flex-shrink-0"
+              className="px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex-shrink-0"
             >
               <Phone className="w-4 h-4" />
               <span className="ml-1">Call</span>
             </Button>
             <button
               className={`p-2 transition-colors duration-300 ${
-                isScrolled ? "text-accent-800" : "text-white"
+                isScrolled ? "text-primary-800" : "text-white"
               }`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -152,14 +157,16 @@ export function Navbar() {
           {/* Mobile menu button - Shows below md: (below 768px) */}
           <div className="flex md:hidden items-center space-x-2">
             <Button
+              variant="primary"
+              size="icon"
               onClick={() => window.open("tel:909-321-2255", "_self")}
-              className="bg-primary-600 hover:bg-primary-700 text-white border-0 p-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex-shrink-0"
+              className="rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex-shrink-0"
             >
               <Phone className="w-4 h-4" />
             </Button>
             <button
               className={`p-2 transition-colors duration-300 ${
-                isScrolled ? "text-accent-800" : "text-white"
+                isScrolled ? "text-primary-800" : "text-white"
               }`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -173,100 +180,12 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation - Shows for both mobile and tablet when menu is open */}
-      {isMenuOpen && (
-        <div
-          className={`lg:hidden backdrop-blur-md border-t shadow-lg transition-all duration-300 ${
-            isScrolled
-              ? "bg-white/95 border-gray-200"
-              : "bg-accent-800/95 border-white/20"
-          }`}
-        >
-          <div className="px-4 py-4 space-y-4">
-            <a
-              href={`/${locale}/services`}
-              className={`block transition-colors py-2 ${
-                isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.services")}
-            </a>
-            <a
-              href={`/${locale}/about`}
-              className={`block transition-colors py-2 ${
-                isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.about")}
-            </a>
-            <a
-              href={`/${locale}/areas`}
-              className={`block transition-colors py-2 ${
-                isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.areas")}
-            </a>
-            <a
-              href="#dignity"
-              className={`block transition-colors py-2 ${
-                isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.dignity")}
-            </a>
-            <a
-              href="#info"
-              className={`block transition-colors py-2 ${
-                isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.info")}
-            </a>
-            <a
-              href="#contact"
-              className={`block transition-colors py-2 ${
-                isScrolled
-                  ? "text-accent-800 hover:text-accent-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.contact")}
-            </a>
-            <div className="pt-2 md:hidden">
-              <LanguageSwitcher isScrolled={isScrolled} />
-            </div>
-            <div className="md:hidden">
-              <Button
-                onClick={() => {
-                  window.open("tel:909-321-2255", "_self");
-                  setIsMenuOpen(false);
-                }}
-                className="w-full bg-primary-600 hover:bg-primary-700 text-white border-0 shadow-lg"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                {t("navigation.callNow")}
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Modern Mobile Menu Component */}
+      <MobileMenu
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        isScrolled={isScrolled}
+      />
     </nav>
   );
 }
