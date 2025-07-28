@@ -10,6 +10,13 @@
     "contact": "聯絡我們",
     "callNow": "立即致電"
   },
+  "common": {
+    "note": "注意",
+    "callButton": "致電 909-321-2255",
+    "contactUs": "聯絡我們",
+    "checkAvailability": "檢查服務可用性",
+    "call": "致電"
+  },
   "hero": {
     "badge": "聯邦醫療保險認證 • 24小時服務",
     "title": "生命安寧",
@@ -271,6 +278,127 @@
       "hospitals": "醫院",
       "longTerm": "長期護理機構",
       "boardCare": "寄宿與護理設施"
+    }
+  },
+  "areasPage": {
+    "hero": {
+      "badge": "服務覆蓋地區",
+      "title": "服務南加州",
+      "titleHighlight": "無論您身在何處為家",
+      "description": "諾安安寧療護自豪地為南加州四個主要縣市的家庭提供服務，在您選擇的舒適熟悉環境中提供慈悲的安寧療護。"
+    },
+    "counties": {
+      "badge": "覆蓋地區",
+      "title": "我們服務的",
+      "titleHighlight": "四個主要縣市",
+      "description": "我們的慈悲關懷遍及南加州人口最多的地區，確保家庭能在離家近的地方獲得優質的安寧療護服務。",
+      "serviceAreasLabel": "服務地區：",
+      "coverageTitle": "全面的南加州覆蓋",
+      "coverageDescription": "我們的服務區域橫跨四個主要縣市，涵蓋南加州人口最多的地區。我們策略性地定位，為從山區社區到沿海地區的家庭提供服務，確保在整個區域都能獲得優質的安寧療護。",
+      "items": [
+        {
+          "name": "聖貝納迪諾縣",
+          "description": "在加州最大的縣提供全面的安寧療護服務，從山區社區到沙漠地區。",
+          "cities": "包括阿普蘭、蘭喬庫卡蒙卡、方塔納、聖貝納迪諾、維克多維爾及周邊地區"
+        },
+        {
+          "name": "河濱縣",
+          "description": "為河濱縣多元化社區提供文化敏感和雙語安寧療護服務。",
+          "cities": "包括河濱、科羅納、莫雷諾谷、棕櫚泉、赫米特及周邊地區"
+        },
+        {
+          "name": "洛杉磯縣",
+          "description": "為全國人口最多縣市的家庭提供慈悲的安寧療護。",
+          "cities": "包括東洛杉磯、波莫納、西科維納、艾爾蒙地、阿罕布拉及周邊地區"
+        },
+        {
+          "name": "橙縣",
+          "description": "為橙縣家庭提供優質安寧療護服務，方便接觸我們的認證護理團隊。",
+          "cities": "包括安納海姆、聖塔安娜、爾灣、園林市、橙市及周邊地區"
+        }
+      ]
+    },
+    "office": {
+      "badge": "總部",
+      "title": "位於阿普蘭的",
+      "titleHighlight": "中心位置",
+      "description": "我們的總部策略性地位於阿普蘭，為我們服務的四個縣市的家庭提供便捷的接觸。",
+      "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
+      "directions": "從主要高速公路包括I-10、I-210和I-15都能輕鬆抵達",
+      "parking": "為所有訪客提供免費停車",
+      "addressTitle": "總部地址",
+      "accessTitle": "便捷交通",
+      "parkingTitle": "停車位提供",
+      "locationLabel": "阿普蘭中心位置"
+    },
+    "settings": {
+      "badge": "護理環境",
+      "title": "彈性護理",
+      "titleHighlight": "無論您需要我們在哪裡",
+      "description": "我們了解舒適來自熟悉的環境。這就是為什麼我們在對您和您家人來說最像家的環境中提供安寧療護。",
+      "coordinationTitle": "跨所有環境的護理協調",
+      "coordinationDescription": "無論您在哪裡接受護理，我們的跨領域團隊都與現有護理提供者密切合作，確保無縫、全面的安寧療護服務。我們與機構工作人員、家庭照顧者和其他醫療保健專業人員協調，提供尊重您喜好並維持您舒適的個人化護理。",
+      "features": {
+        "onCallSupport": "24/7隨叫隨到支援",
+        "carePlanCoordination": "護理計劃協調",
+        "familyCommunication": "家庭溝通",
+        "medicationManagement": "藥物管理"
+      },
+      "items": [
+        {
+          "name": "私人住宅",
+          "description": "在您自己家中的舒適和熟悉感，被親人和珍貴回憶包圍。",
+          "icon": "Home"
+        },
+        {
+          "name": "專業護理機構",
+          "description": "與機構工作人員的專業護理協調，確保全面的舒適護理。",
+          "icon": "Building"
+        },
+        {
+          "name": "輔助生活社區",
+          "description": "與輔助生活服務的無縫整合，維持您既定的日常生活。",
+          "icon": "Users"
+        },
+        {
+          "name": "寄宿與護理設施",
+          "description": "與寄宿和護理提供者的協作護理，確保個人化關注。",
+          "icon": "Heart"
+        },
+        {
+          "name": "醫院",
+          "description": "當需要專業支持時，與醫院工作人員協調住院安寧療護。",
+          "icon": "Hospital"
+        },
+        {
+          "name": "長期護理機構",
+          "description": "與長期護理服務整合的專業安寧療護，提供全面支持。",
+          "icon": "Shield"
+        }
+      ]
+    },
+    "contact": {
+      "badge": "服務可用性",
+      "title": "聯絡我們確認",
+      "titleHighlight": "您地區的服務",
+      "description": "雖然我們服務這四個主要縣市，但具體的服務可用性可能因地點而異。請聯絡我們確認您具體地區的覆蓋範圍並討論您家庭的需求。",
+      "phone": "909-321-2255",
+      "email": "info@iecommunityhospice.com",
+      "availability": "我們全天候24/7為緊急需求和諮詢提供服務",
+      "cards": {
+        "callTitle": "直接致電",
+        "callDescription": "與我們的護理協調員交談",
+        "emailTitle": "電子郵件諮詢",
+        "emailDescription": "向我們發送您的問題",
+        "availabilityTitle": "24/7 可用性"
+      },
+      "cta": {
+        "title": "準備開始了嗎？",
+        "description": "我們的團隊隨時為您提供幫助，了解您的選擇並確認您具體地區的服務可用性。今天就聯絡我們進行諮詢。",
+        "callButton": "立即致電",
+        "contactButton": "聯絡表格",
+        "note": "每個縣內具體地點的服務可用性可能有所不同。我們鼓勵您聯絡我們確認覆蓋範圍並討論您家庭的獨特需求。"
+      }
     }
   },
   "dignity": {

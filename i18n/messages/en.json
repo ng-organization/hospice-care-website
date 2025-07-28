@@ -273,6 +273,127 @@
       "boardCare": "Board & Care"
     }
   },
+  "areasPage": {
+    "hero": {
+      "badge": "Service Coverage Areas",
+      "title": "Serving Southern California",
+      "titleHighlight": "Wherever You Call Home",
+      "description": "IE Community Hospice proudly serves families across four major Southern California counties, providing compassionate hospice care in the comfort and familiarity of your chosen setting."
+    },
+    "counties": {
+      "badge": "Coverage Areas",
+      "title": "Four Major Counties",
+      "titleHighlight": "We Serve",
+      "description": "Our compassionate care extends across Southern California's most populated regions, ensuring families have access to quality hospice services close to home.",
+      "serviceAreasLabel": "Service Areas:",
+      "coverageTitle": "Comprehensive Southern California Coverage",
+      "coverageDescription": "Our service area spans across four major counties, covering the most populated regions of Southern California. We're strategically positioned to serve families from mountain communities to coastal areas, ensuring quality hospice care is accessible throughout the region.",
+      "items": [
+        {
+          "name": "San Bernardino County",
+          "description": "Comprehensive hospice services throughout the largest county in California, from mountain communities to desert regions.",
+          "cities": "Including Upland, Rancho Cucamonga, Fontana, San Bernardino, Victorville, and surrounding areas"
+        },
+        {
+          "name": "Riverside County",
+          "description": "Serving the diverse communities of Riverside County with culturally sensitive and bilingual hospice care.",
+          "cities": "Including Riverside, Corona, Moreno Valley, Palm Springs, Hemet, and surrounding areas"
+        },
+        {
+          "name": "Los Angeles County",
+          "description": "Bringing compassionate hospice care to families throughout the nation's most populous county.",
+          "cities": "Including East LA, Pomona, West Covina, El Monte, Alhambra, and surrounding areas"
+        },
+        {
+          "name": "Orange County",
+          "description": "Quality hospice services for Orange County families, with convenient access to our certified care team.",
+          "cities": "Including Anaheim, Santa Ana, Irvine, Garden Grove, Orange, and surrounding areas"
+        }
+      ]
+    },
+    "office": {
+      "badge": "Main Office",
+      "title": "Centrally Located",
+      "titleHighlight": "in Upland",
+      "description": "Our main office is strategically located in Upland, providing easy access for families across all four counties we serve.",
+      "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
+      "directions": "Easily accessible from major freeways including I-10, I-210, and I-15",
+      "parking": "Free parking available for all visitors",
+      "addressTitle": "Main Office Address",
+      "accessTitle": "Easy Access",
+      "parkingTitle": "Parking Available",
+      "locationLabel": "Central Upland Location"
+    },
+    "settings": {
+      "badge": "Care Settings",
+      "title": "Flexible Care",
+      "titleHighlight": "Wherever You Need Us",
+      "description": "We understand that comfort comes from familiar surroundings. That's why we provide hospice care in the setting that feels most like home to you and your family.",
+      "coordinationTitle": "Care Coordination Across All Settings",
+      "coordinationDescription": "Regardless of where you receive care, our interdisciplinary team works closely with existing care providers to ensure seamless, comprehensive hospice services. We coordinate with facility staff, family caregivers, and other healthcare professionals to deliver personalized care that honors your preferences and maintains your comfort.",
+      "features": {
+        "onCallSupport": "24/7 On-Call Support",
+        "carePlanCoordination": "Care Plan Coordination",
+        "familyCommunication": "Family Communication",
+        "medicationManagement": "Medication Management"
+      },
+      "items": [
+        {
+          "name": "Private Homes",
+          "description": "The comfort and familiarity of your own home, surrounded by loved ones and cherished memories.",
+          "icon": "Home"
+        },
+        {
+          "name": "Skilled Nursing Facilities",
+          "description": "Professional care coordination with facility staff to ensure comprehensive comfort care.",
+          "icon": "Building"
+        },
+        {
+          "name": "Assisted Living Communities",
+          "description": "Seamless integration with assisted living services to maintain your established routine.",
+          "icon": "Users"
+        },
+        {
+          "name": "Board & Care Facilities",
+          "description": "Collaborative care with board and care providers to ensure personalized attention.",
+          "icon": "Heart"
+        },
+        {
+          "name": "Hospitals",
+          "description": "Coordination with hospital staff during inpatient hospice care when specialized support is needed.",
+          "icon": "Hospital"
+        },
+        {
+          "name": "Long-term Care Facilities",
+          "description": "Expert hospice care integrated with long-term care services for comprehensive support.",
+          "icon": "Shield"
+        }
+      ]
+    },
+    "contact": {
+      "badge": "Service Availability",
+      "title": "Contact Us to Confirm",
+      "titleHighlight": "Service in Your Area",
+      "description": "While we serve these four major counties, specific service availability may vary by location. Contact us to confirm coverage in your specific area and discuss your family's needs.",
+      "phone": "909-321-2255",
+      "email": "info@iecommunityhospice.com",
+      "availability": "We're available 24/7 for urgent needs and consultations",
+      "cards": {
+        "callTitle": "Call Us Directly",
+        "callDescription": "Speak with our care coordinators",
+        "emailTitle": "Email Inquiry",
+        "emailDescription": "Send us your questions",
+        "availabilityTitle": "24/7 Availability"
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "description": "Our team is here to help you understand your options and confirm service availability in your specific area. Contact us today for a consultation.",
+        "callButton": "Call Now",
+        "contactButton": "Contact Form",
+        "note": "Service availability may vary by specific location within each county. We encourage you to contact us to confirm coverage and discuss your family's unique needs."
+      }
+    }
+  },
   "dignity": {
     "badge": "Death With Dignity",
     "title": "Living with Comfort,",

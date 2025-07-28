@@ -90,7 +90,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#areas"
+                  href={`/${locale}/areas`}
                   className="text-slate-300 hover:text-primary-400 transition-colors text-sm"
                 >
                   {t("footer.quickLinks.areas")}
