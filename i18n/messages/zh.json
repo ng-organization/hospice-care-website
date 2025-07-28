@@ -199,6 +199,319 @@
       "button": "立即致電 909-321-2255"
     }
   },
+  "contactPage": {
+    "hero": {
+      "badge": "聯絡我們",
+      "title": "我們隨時為您",
+      "titleHighlight": "提供幫助",
+      "description": "如果您對安寧照護、保險覆蓋有任何疑問，或想安排諮詢，請隨時與我們聯絡。我們富有同情心的團隊隨時準備為您和您的家人提供支持。"
+    },
+    "form": {
+      "badge": "聯絡我們",
+      "title": "發送訊息給我們",
+      "titleHighlight": "今天",
+      "description": "請填寫下方表格，我們會在工作日的24小時內回覆您。",
+      "formTitle": "發送訊息給我們",
+      "formDescription": "請填寫下方表格，我們會在工作日的24小時內回覆您。",
+      "firstName": "名字",
+      "firstNamePlaceholder": "請輸入您的名字",
+      "lastName": "姓氏",
+      "lastNamePlaceholder": "請輸入您的姓氏",
+      "phone": "電話號碼",
+      "phonePlaceholder": "(555) 123-4567",
+      "email": "電子郵件",
+      "emailPlaceholder": "your.email@example.com",
+      "inquiryType": "詢問類型",
+      "inquiryTypePlaceholder": "請選擇詢問類型",
+      "inquiryTypes": {
+        "service": "服務諮詢",
+        "referral": "病患轉介",
+        "other": "其他問題"
+              },
+        "message": "留言",
+        "messagePlaceholder": "請告訴我們如何為您和您的家人提供幫助...",
+        "submit": "發送訊息",
+        "inquiryType": "詢問類型",
+        "inquiryTypePlaceholder": "請選擇詢問類型",
+        "inquiryTypes": {
+          "service": "服務諮詢",
+          "referral": "病患轉介",
+          "other": "其他問題"
+        }
+    },
+    "info": {
+      "badge": "聯絡資訊",
+      "title": "多種方式",
+      "titleHighlight": "聯絡我們",
+      "description": "多種方式聯絡我們的團隊。我們全天候24小時為緊急需求提供服務，工作時間內處理一般詢問。",
+      "phone": {
+        "title": "24/7 支援專線",
+        "main": "909-321-2255",
+        "backup": "備用專線",
+        "note": "工作時間外有隨叫隨到的護士服務"
+      },
+      "email": {
+        "title": "電子郵件",
+        "address": "info@iecommunityhospice.com",
+        "note": "我們在工作時間內回覆（週一至週五 上午9點-下午5點）"
+      },
+      "office": {
+        "title": "總辦公室",
+        "hours": "週一至週五 上午9:00 - 下午5:00"
+      },
+      "manager": {
+        "title": "專案經理",
+        "description": "專案協調和特殊詢問的直接聯絡人。",
+        "methods": "聯絡方式",
+        "methodsList": "電子郵件、電話、簡訊"
+      }
+    },
+    "map": {
+      "badge": "拜訪我們的辦公室",
+      "title": "拜訪我們的",
+      "titleHighlight": "辦公室位置",
+      "description": "位於加州阿普蘭，我們為聖貝納迪諾、河濱、洛杉磯、橙縣和聖地亞哥縣的患者提供服務。",
+      "placeholder": {
+        "title": "Google 地圖整合",
+        "description": "顯示我們辦公室位置和路線的互動式地圖"
+      }
+    },
+    "emergency": {
+      "title": "緊急聯絡資訊",
+      "description": "如遇緊急醫療狀況，請先撥打911。工作時間外的緊急安寧照護需求：",
+      "medical": "醫療緊急情況",
+      "hospice": "緊急安寧照護"
+    }
+  },
+  "usefulInfoPage": {
+    "hero": {
+      "badge": "實用資訊",
+      "title": "您需要的",
+      "titleHighlight": "資源與解答",
+      "description": "在這個重要時刻，為您的家庭提供關於安寧照護、保險覆蓋、資格要求和實用資源的全面資訊。"
+    },
+    "faq": {
+      "badge": "常見問題",
+      "title": "詳細",
+      "titleHighlight": "問答",
+      "description": "針對家屬最常詢問的安寧照護、資格認定以及服務內容等問題，提供詳細解答。",
+      "items": {
+        "payment": {
+          "question": "誰來支付安寧照護費用？涵蓋哪些項目？",
+          "answer": "聯邦醫療保險、加州醫療保險和絕大部分私人保險公司都會100%負擔安寧照護的費用。這包括所有醫療設備、與末期診斷相關的藥物、護理照護和支援服務。我們會為您處理所有保險申請和授權手續。",
+          "note": "我們在開始照護前會先確認保險覆蓋範圍，絕不會讓您面臨意外的費用支出。"
+        },
+        "eligibility": {
+          "question": "什麼情況下可以申請安寧照護？",
+          "answer": "醫師必須判斷病人在疾病正常發展過程中，生命期限可能在6個月或更短時間內，且病人的身體功能狀態持續衰退。我們會與您的醫師密切合作來評估資格。",
+          "conditionsTitle": "常見的適用病情包括",
+          "conditions": {
+            "cancer": "晚期癌症",
+            "heart": "心臟病和循環系統疾病（心衰等）",
+            "dementia": "失智症/阿茲海默症",
+            "respiratory": "呼吸系統疾病（慢阻肺、呼吸衰竭等）",
+            "stroke": "中風和偏癱"
+          }
+        },
+        "location": {
+          "question": "安寧照護可以在哪裡提供？",
+          "answer": "我們在您稱之為家的任何地方提供照護 - 您的住所、專業護理機構、輔助生活社區、寄宿照護設施、醫院或長期照護機構。我們的目標是確保您在選擇的環境中得到舒適照護。"
+        },
+        "services": {
+          "question": "安寧照護包含哪些具體服務？",
+          "answer": "我們的全面安寧照護包括舒適照護所需的所有醫療服務、設備和支援：",
+          "list": {
+            "pain": "疼痛和症狀管理",
+            "nursing": "24小時隨叫隨到護理",
+            "aids": "安寧照護助理個人護理",
+            "social": "社工服務",
+            "bereavement": "喪親輔導",
+            "volunteer": "經過培訓的志願者支援",
+            "medication": "所有安寧照護相關藥物",
+            "equipment": "醫療設備和用品",
+            "therapy": "物理、職業和語言治療",
+            "dietary": "飲食諮詢和指導"
+          }
+        },
+        "family": {
+          "question": "安寧照護如何支援家庭成員？",
+          "answer": "我們提供全面的家庭支援，包括悲傷輔導、喘息照護、家庭教育和培訓、靈性輔導，以及在您親人離世後持續13個月的喪親服務。我們的團隊24/7全天候為病人和家屬提供支援。"
+        }
+      }
+    },
+    "resources": {
+      "badge": "教育資源",
+      "title": "教育",
+      "titleHighlight": "資源",
+      "description": "下載實用指南、表格和教育材料，更好地了解安寧照護，並在這段旅程中支援您的家庭。",
+      "items": {
+        "guide": {
+          "title": "安寧照護指南",
+          "description": "全面指南，解釋安寧照護理念、服務內容以及家屬可以期待的服務。",
+          "button": "下載指南"
+        },
+        "family": {
+          "title": "家庭支援手冊",
+          "description": "為家庭照護者提供的資源，包括自我照護技巧和悲傷支援資訊。",
+          "button": "下載手冊"
+        },
+        "forms": {
+          "title": "重要表格",
+          "description": "入院表格、預立醫療指示和其他安寧照護的重要文件。",
+          "button": "下載表格"
+        }
+      }
+    },
+    "community": {
+      "badge": "與我們連結",
+      "title": "與我們的社群",
+      "titleHighlight": "連結",
+      "description": "在社交媒體上關注我們，獲取更新、教育內容，並與我們社群中的其他家庭建立聯繫。",
+      "facebook": {
+        "title": "Facebook 頁面",
+        "description": "獲取更新、教育內容，並與我們的安寧照護社群建立聯繫。",
+        "button": "造訪 Facebook"
+      },
+      "chinese": {
+        "title": "華人社群",
+        "description": "與說中文的家庭建立聯繫，並以您的語言獲取資源。",
+        "button": "造訪 Chinese in LA"
+      }
+    },
+    "cta": {
+      "title": "還有其他問題嗎？",
+      "description": "我們富有同情心的團隊隨時為您解答關於安寧照護的任何疑問，並協助您做出這個重要決定。",
+      "callButton": "致電 909-321-2255",
+      "contactButton": "聯絡表格"
+    }
+  },
+  "dignityPage": {
+    "hero": {
+      "badge": "尊嚴照護",
+      "title": "讓每一個生命",
+      "titleHighlight": "都能美麗謝幕",
+      "description": "安寧照護不是放棄希望，而是將重點從治癒轉向舒適，確保生命的最後篇章能在尊嚴、平和與愛的圍繞中度過。"
+    },
+    "philosophy": {
+      "badge": "我們的理念",
+      "titleHighlight": "我們的照護理念",
+      "title": "我們的照護理念",
+      "description": "安寧照護不是放棄。當用盡所有治療辦法或方法不再奏效時，安寧照護提供另一種方式，讓病人在沒有治癒性治療的情況下，仍然能夠過著舒適、安寧、有尊嚴的生活。",
+      "additional": "我們相信每個人都應該在生命的最後時光中保持尊嚴、舒適，並與親人在一起。我們的方法專注於提升生活品質、管理症狀，並提供情感和靈性支持。",
+      "principles": {
+        "comfort": {
+          "title": "以舒適為中心的照護",
+          "description": "優先考慮疼痛緩解和症狀管理，確保最大程度的舒適和生活品質。"
+        },
+        "dignity": {
+          "title": "維護尊嚴",
+          "description": "尊重病人的自主權、個人價值觀，並在整個照護過程中維護尊嚴。"
+        },
+        "peace": {
+          "title": "創造安寧",
+          "description": "為病人和家屬營造寧靜、理解和情感支持的環境。"
+        }
+      },
+      "quote": "安寧照護的目標不是加速死亡，而是讓剩餘的時間盡可能有意義和舒適。",
+      "quoteAuthor": "諾安安寧療護理念"
+    },
+    "decision": {
+      "badge": "決策過程",
+      "titleHighlight": "決策過程",
+      "title": "決策過程",
+      "description": "開始安寧照護的決定是一個由病人、家屬和醫療提供者共同參與的協作過程。這是一個尊重病人意願和家庭價值觀的醫療照護決定。",
+      "steps": {
+        "collaboration": {
+          "title": "協作討論",
+          "description": "病人、家屬和醫療提供者根據醫療狀況和個人價值觀共同做出安寧照護的決定。"
+        },
+        "wishes": {
+          "title": "尊重病人意願",
+          "description": "如果病人能夠清楚溝通，安寧照護團隊會制定尊重和符合病人個人意願和偏好的照護計劃。"
+        },
+        "support": {
+          "title": "家庭支持",
+          "description": "當病人無法做決定時，指定的家庭成員或醫療代理人會在我們團隊的指導下做出醫療決定。"
+        }
+      },
+      "authority": {
+        "title": "決策權限",
+        "patient": {
+          "title": "病人溝通",
+          "description": "當病人能夠清楚溝通時，他們會指導自己的照護計劃並對治療偏好做出明智的決定。"
+        },
+        "family": {
+          "title": "家庭指定",
+          "description": "病人可以指定信任的家庭成員或醫療代理人在他們無法溝通時做出醫療決定。"
+        },
+        "hierarchy": {
+          "title": "決策層級",
+          "description": "通常先是配偶，然後是成年子女，遵循法律指導並尊重家庭動態。"
+        },
+        "guidance": {
+          "title": "專業指導",
+          "description": "我們的團隊在整個決策過程中提供專業指導和支持，確保做出明智的選擇。"
+        }
+      }
+    },
+    "eligibility": {
+      "badge": "資格認定與評估",
+      "titleHighlight": "評估過程",
+      "title": "資格認定與評估過程",
+      "description": "了解何時適合安寧照護以及評估過程如何運作，以確保病人在適當的時間獲得適當水平的照護。",
+      "criteria": {
+        "title": "資格標準",
+        "prognosis": {
+          "title": "末期預後",
+          "description": "醫師判斷病人在疾病正常發展過程中，生命預期可能在六個月或更短時間內。"
+        },
+        "decline": {
+          "title": "功能衰退",
+          "description": "功能狀態下降和末期疾病進展的證據，表明需要以舒適為中心的照護。"
+        },
+        "comfort": {
+          "title": "舒適照護重點",
+          "description": "病人和家屬選擇專注於舒適、生活品質和症狀管理，而不是治癒性治療。"
+        }
+      },
+      "assessment": {
+        "title": "評估過程",
+        "steps": {
+          "consultation": "與病人、家屬和現有醫療團隊的初步諮詢",
+          "medical": "全面的醫療審查和醫師的資格認證",
+          "team": "跨學科團隊評估病人需求和照護要求",
+          "plan": "制定專注於舒適和生活品質的個人化照護計劃"
+        },
+        "note": "我們的團隊與您現有的醫療提供者密切合作，確保順利過渡到安寧照護。"
+      }
+    },
+    "benefits": {
+      "badge": "安寧照護的益處",
+      "titleHighlight": "益處",
+      "title": "安寧照護的益處",
+      "description": "安寧照護的益處超越了醫療治療，提供全面的支持，在這個重要時刻為病人和照護者帶來力量。",
+      "items": {
+        "emotional": {
+          "title": "情感支持",
+          "description": "為病人和家庭成員在整個旅程中提供全面的悲傷輔導、靈性照護和情感支持。"
+        },
+        "family": {
+          "title": "家庭力量",
+          "description": "家庭教育、喘息照護和在您親人離世後持續13個月的喪親服務。"
+        },
+        "practical": {
+          "title": "實際益處",
+          "description": "24/7隨叫隨到支持、醫療設備、藥物和專業照護服務，全部由保險覆蓋。"
+        }
+      }
+    },
+    "cta": {
+      "title": "準備了解更多？",
+      "description": "我們富有同情心的團隊隨時為您解答問題，並幫助您了解安寧照護是否適合您的家庭。沒有開始照護的義務。",
+      "callButton": "致電 909-321-2255",
+      "learnButton": "了解我們的服務"
+    }
+  },
   "footer": {
     "description": "諾安安寧療護 - 聯邦認證的專業機構，專為南加州華人家庭提供雙語安寧照護服務，用心理解每個家庭的文化背景和需要。",
     "badges": {
@@ -538,5 +851,9 @@
       "ctaPrimary": "致電 909-321-2255",
       "ctaSecondary": "立即聯絡我們"
     }
+  },
+  "common": {
+    "callButton": "致電 909-321-2255",
+    "contactUs": "聯絡我們"
   }
 }

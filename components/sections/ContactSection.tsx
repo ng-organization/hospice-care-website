@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/motion";
 
@@ -83,6 +84,22 @@ export function ContactSection() {
                     type="tel"
                     className="border-secondary-200 focus:border-primary-400 rounded-lg h-12"
                   />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-slate-700">
+                    {t("contact.form.inquiryType")}
+                  </label>
+                  <Select>
+                    <SelectTrigger className="border-secondary-200 focus:border-primary-400 rounded-lg h-12">
+                      <SelectValue placeholder={t("contact.form.inquiryTypePlaceholder")} />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="service">{t("contact.form.inquiryTypes.service")}</SelectItem>
+                      <SelectItem value="referral">{t("contact.form.inquiryTypes.referral")}</SelectItem>
+                      <SelectItem value="other">{t("contact.form.inquiryTypes.other")}</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 <div className="space-y-2">

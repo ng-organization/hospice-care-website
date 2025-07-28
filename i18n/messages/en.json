@@ -166,7 +166,14 @@
       "phone": "Phone",
       "message": "Message",
       "messagePlaceholder": "How can we help you and your family?",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "inquiryType": "Type of Inquiry",
+      "inquiryTypePlaceholder": "Select inquiry type",
+      "inquiryTypes": {
+        "service": "Service Inquiry",
+        "referral": "Patient Referral",
+        "other": "Other Questions"
+      }
     },
     "info": {
       "title": "Contact Information",
@@ -190,6 +197,314 @@
       "title": "24/7 Emergency Support",
       "description": "For medical emergencies, call 911. For urgent hospice care needs:",
       "button": "Call 909-321-2255"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Contact Us",
+      "title": "We're Here to Help",
+      "titleHighlight": "Every Step of the Way",
+      "description": "Reach out to us anytime with questions about hospice care, insurance coverage, or to schedule a consultation. Our compassionate team is ready to support you and your family."
+    },
+    "form": {
+      "badge": "Contact Us",
+      "title": "Send Us a Message",
+      "titleHighlight": "Today",
+      "description": "Fill out the form below and we'll get back to you within 24 hours during business days.",
+      "formTitle": "Send Us a Message",
+      "formDescription": "Fill out the form below and we'll get back to you within 24 hours during business days.",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "(555) 123-4567",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "inquiryType": "Type of Inquiry",
+      "inquiryTypePlaceholder": "Select inquiry type",
+      "inquiryTypes": {
+        "service": "Service Inquiry",
+        "referral": "Patient Referral",
+        "other": "Other Questions"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you and your family...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "badge": "Contact Information",
+      "title": "Multiple Ways",
+      "titleHighlight": "to Reach Us",
+      "description": "Multiple ways to reach our team. We're available 24/7 for urgent needs and during business hours for general inquiries.",
+      "phone": {
+        "title": "24/7 Support Line",
+        "main": "909-321-2255",
+        "backup": "Backup Line",
+        "note": "On-call nurse available outside business hours"
+      },
+      "email": {
+        "title": "Email Us",
+        "address": "info@iecommunityhospice.com",
+        "note": "We respond during business hours (Mon-Fri 9AM-5PM)"
+      },
+      "office": {
+        "title": "Main Office",
+        "hours": "Monday-Friday 9:00 AM - 5:00 PM"
+      },
+      "manager": {
+        "title": "Project Manager",
+        "description": "Direct contact for project coordination and special inquiries.",
+        "methods": "Available via",
+        "methodsList": "Email, Phone Call, Text Message"
+      }
+    },
+    "map": {
+      "badge": "Visit Our Office",
+      "title": "Visit Our",
+      "titleHighlight": "Office Location",
+      "description": "Located in Upland, California, we serve patients throughout San Bernardino, Riverside, Los Angeles, Orange, and San Diego counties.",
+      "placeholder": {
+        "title": "Google Maps Integration",
+        "description": "Interactive map showing our office location and directions"
+      }
+    },
+    "emergency": {
+      "title": "Emergency Contact Information",
+      "description": "For immediate medical emergencies, always call 911 first. For urgent hospice care needs outside business hours:",
+      "medical": "Medical Emergency",
+      "hospice": "Urgent Hospice Care"
+    }
+  },
+  "usefulInfoPage": {
+    "hero": {
+      "badge": "Useful Information",
+      "title": "Resources & Answers",
+      "titleHighlight": "You Need",
+      "description": "Find comprehensive information about hospice care, insurance coverage, eligibility requirements, and helpful resources for families during this important time."
+    },
+    "faq": {
+      "badge": "Frequently Asked Questions",
+      "title": "Comprehensive",
+      "titleHighlight": "FAQ",
+      "description": "Detailed answers to the questions families ask most about hospice care, eligibility, and what to expect from our services.",
+      "items": {
+        "payment": {
+          "question": "Who pays for hospice care and what costs are covered?",
+          "answer": "Medicare, Medi-Cal, and most HMO and private insurance plans cover hospice services up to 100%. This includes all medical equipment, medications related to the terminal diagnosis, nursing care, and support services. We handle all insurance paperwork and authorization processes for you.",
+          "note": "We verify coverage before starting care and will never surprise you with unexpected costs."
+        },
+        "eligibility": {
+          "question": "How does someone qualify for hospice care?",
+          "answer": "A physician must determine that a patient has a terminal prognosis of six months or less if the disease runs its normal course, and the patient's functional status is declining. We work closely with your doctor to assess eligibility.",
+          "conditionsTitle": "Common qualifying conditions include",
+          "conditions": {
+            "cancer": "Cancer (advanced stages)",
+            "heart": "Heart disease and circulatory conditions (heart failure, etc.)",
+            "dementia": "Dementia/Alzheimer's disease",
+            "respiratory": "Respiratory diseases (COPD, respiratory failure, etc.)",
+            "stroke": "Stroke and paralysis"
+          }
+        },
+        "location": {
+          "question": "Where can hospice care be provided?",
+          "answer": "We provide care wherever you call home - your own residence, skilled nursing facilities, assisted living communities, board and care facilities, hospitals, or long-term care facilities. Our goal is to ensure comfort in your chosen environment."
+        },
+        "services": {
+          "question": "What specific services are included in hospice care?",
+          "answer": "Our comprehensive hospice care includes all medical services, equipment, and support needed for comfort care:",
+          "list": {
+            "pain": "Pain and symptom management",
+            "nursing": "24-hour on-call nursing",
+            "aids": "Hospice aides for personal care",
+            "social": "Social worker services",
+            "bereavement": "Bereavement counseling",
+            "volunteer": "Trained volunteer support",
+            "medication": "All hospice-related medications",
+            "equipment": "Medical equipment and supplies",
+            "therapy": "Physical, occupational, and speech therapy",
+            "dietary": "Dietary consultation and guidance"
+          }
+        },
+        "family": {
+          "question": "How does hospice care support family members?",
+          "answer": "We provide comprehensive family support including grief counseling, respite care, family education and training, spiritual counseling, and bereavement services that continue for 13 months after your loved one's passing. Our team is available 24/7 to support both patients and families."
+        }
+      }
+    },
+    "resources": {
+      "badge": "Educational Resources",
+      "title": "Educational",
+      "titleHighlight": "Resources",
+      "description": "Download helpful guides, forms, and educational materials to better understand hospice care and support your family through this journey.",
+      "items": {
+        "guide": {
+          "title": "Hospice Care Guide",
+          "description": "Comprehensive guide explaining hospice philosophy, services, and what families can expect.",
+          "button": "Download Guide"
+        },
+        "family": {
+          "title": "Family Support Handbook",
+          "description": "Resources for family caregivers, including self-care tips and grief support information.",
+          "button": "Download Handbook"
+        },
+        "forms": {
+          "title": "Important Forms",
+          "description": "Intake forms, advance directives, and other important documents for hospice care.",
+          "button": "Download Forms"
+        }
+      }
+    },
+    "community": {
+      "badge": "Connect With Us",
+      "title": "Connect With Our",
+      "titleHighlight": "Community",
+      "description": "Follow us on social media for updates, educational content, and connection with other families in our community.",
+      "facebook": {
+        "title": "Facebook Page",
+        "description": "Get updates, educational content, and connect with our hospice care community.",
+        "button": "Visit Facebook"
+      },
+      "chinese": {
+        "title": "Chinese Community",
+        "description": "Connect with Chinese-speaking families and access resources in your language.",
+        "button": "Visit Chinese in LA"
+      }
+    },
+    "cta": {
+      "title": "Still Have Questions?",
+      "titleHighlight": "",
+      "description": "Our compassionate team is here to answer any questions you may have about hospice care and help guide you through this important decision.",
+      "callButton": "Call 909-321-2255",
+      "contactButton": "Contact Form"
+    }
+  },
+  "dignityPage": {
+    "hero": {
+      "badge": "Death with Dignity",
+      "title": "Living with Comfort,",
+      "titleHighlight": "Peace & Dignity",
+      "description": "Hospice care is not about giving up hope - it's about changing the focus from cure to comfort, ensuring that life's final chapter is lived with dignity, peace, and surrounded by love."
+    },
+    "philosophy": {
+      "badge": "Our Philosophy",
+      "titleHighlight": "Our Philosophy",
+      "title": "Our Philosophy of Care",
+      "description": "Hospice care is not giving up. When all treatment options have been exhausted or methods are no longer effective, hospice care provides another way for patients to live comfortably, peacefully, and with dignity without curative care.",
+      "additional": "We believe that every person deserves to live their final days with dignity, comfort, and in the presence of their loved ones. Our approach focuses on enhancing quality of life, managing symptoms, and providing emotional and spiritual support.",
+      "principles": {
+        "comfort": {
+          "title": "Comfort-Focused Care",
+          "description": "Prioritizing pain relief and symptom management to ensure maximum comfort and quality of life."
+        },
+        "dignity": {
+          "title": "Preserving Dignity",
+          "description": "Respecting patient autonomy, personal values, and maintaining dignity throughout the care process."
+        },
+        "peace": {
+          "title": "Creating Peace",
+          "description": "Fostering an environment of tranquility, understanding, and emotional support for patients and families."
+        }
+      },
+      "quote": "The goal of hospice care is not to hasten death, but to make the time remaining as meaningful and comfortable as possible.",
+      "quoteAuthor": "IE Community Hospice Philosophy"
+    },
+    "decision": {
+      "badge": "Decision Making",
+      "titleHighlight": "Decision Process",
+      "title": "The Decision-Making Process",
+      "description": "Making the decision to begin hospice care is a collaborative process involving patients, families, and healthcare providers. This is a medical care decision that honors patient wishes and family values.",
+      "steps": {
+        "collaboration": {
+          "title": "Collaborative Discussion",
+          "description": "Patients, family members, and healthcare providers work together to make the hospice care decision based on medical condition and personal values."
+        },
+        "wishes": {
+          "title": "Honoring Patient Wishes",
+          "description": "If the patient can clearly communicate, the hospice team develops a care plan that respects and honors the patient's personal wishes and preferences."
+        },
+        "support": {
+          "title": "Family Support",
+          "description": "When patients cannot make decisions, designated family members or healthcare proxies make medical decisions with guidance from our team."
+        }
+      },
+      "authority": {
+        "title": "Decision-Making Authority",
+        "patient": {
+          "title": "Patient Communication",
+          "description": "When patients can clearly communicate, they direct their own care plan and make informed decisions about their treatment preferences."
+        },
+        "family": {
+          "title": "Family Designation",
+          "description": "Patients can designate trusted family members or healthcare proxies to make medical decisions when they are unable to communicate."
+        },
+        "hierarchy": {
+          "title": "Decision Hierarchy",
+          "description": "Typically follows spouse first, then adult children, following legal guidelines and respecting family dynamics."
+        },
+        "guidance": {
+          "title": "Professional Guidance",
+          "description": "Our team provides expert guidance and support throughout the decision-making process, ensuring informed choices."
+        }
+      }
+    },
+    "eligibility": {
+      "badge": "Eligibility & Assessment",
+      "titleHighlight": "Assessment Process",
+      "title": "Eligibility & Assessment Process",
+      "description": "Understanding when hospice care is appropriate and how the assessment process works to ensure patients receive the right level of care at the right time.",
+      "criteria": {
+        "title": "Eligibility Criteria",
+        "prognosis": {
+          "title": "Terminal Prognosis",
+          "description": "Physicians determine if a patient has a terminal prognosis of six months or less if the disease runs its normal course."
+        },
+        "decline": {
+          "title": "Functional Decline",
+          "description": "Evidence of declining functional status and progression of the terminal illness, indicating the need for comfort-focused care."
+        },
+        "comfort": {
+          "title": "Comfort Care Focus",
+          "description": "Patient and family choose to focus on comfort, quality of life, and symptom management rather than curative treatments."
+        }
+      },
+      "assessment": {
+        "title": "Assessment Process",
+        "steps": {
+          "consultation": "Initial consultation with patient, family, and current healthcare team",
+          "medical": "Comprehensive medical review and physician certification of eligibility",
+          "team": "Interdisciplinary team assessment of patient needs and care requirements",
+          "plan": "Development of personalized care plan focusing on comfort and quality of life"
+        },
+        "note": "Our team works closely with your existing healthcare providers to ensure a smooth transition to hospice care."
+      }
+    },
+    "benefits": {
+      "badge": "Benefits of Hospice Care",
+      "titleHighlight": "Benefits",
+      "title": "Benefits of Hospice Care",
+      "description": "The benefits of hospice care extend beyond medical treatment, providing comprehensive support that brings strength to patients and their caregivers during this important time.",
+      "items": {
+        "emotional": {
+          "title": "Emotional Support",
+          "description": "Comprehensive grief counseling, spiritual care, and emotional support for both patients and family members throughout the journey."
+        },
+        "family": {
+          "title": "Family Strength",
+          "description": "Family education, respite care, and bereavement services that continue for 13 months after your loved one's passing."
+        },
+        "practical": {
+          "title": "Practical Benefits",
+          "description": "24/7 on-call support, medical equipment, medications, and professional care services all covered by insurance."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Learn More?",
+      "titleHighlight": "",
+      "description": "Our compassionate team is here to answer your questions and help you understand if hospice care is right for your family. There's no obligation to start care.",
+      "callButton": "Call 909-321-2255",
+      "learnButton": "Learn About Our Services"
     }
   },
   "footer": {
@@ -531,5 +846,9 @@
       "ctaPrimary": "Call 909-321-2255",
       "ctaSecondary": "Contact Us Today"
     }
+  },
+  "common": {
+    "callButton": "Call 909-321-2255",
+    "contactUs": "Contact Us"
   }
 }

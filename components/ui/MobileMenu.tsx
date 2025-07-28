@@ -50,9 +50,9 @@ export function MobileMenu({ isOpen, onClose, isScrolled }: MobileMenuProps) {
     { href: `/${locale}/services`, label: t("navigation.services") },
     { href: `/${locale}/about`, label: t("navigation.about") },
     { href: `/${locale}/areas`, label: t("navigation.areas") },
-    { href: "#dignity", label: t("navigation.dignity") },
-    { href: "#info", label: t("navigation.info") },
-    { href: "#contact", label: t("navigation.contact") },
+    { href: `/${locale}/death-with-dignity`, label: t("navigation.dignity") },
+    { href: `/${locale}/useful-information`, label: t("navigation.info") },
+    { href: `/${locale}/contact`, label: t("navigation.contact") },
   ];
 
   if (!isOpen) return null;

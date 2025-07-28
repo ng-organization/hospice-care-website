@@ -80,7 +80,7 @@ export function Navbar() {
               {t("navigation.areas")}
             </a>
             <a
-              href="#dignity"
+              href={`/${locale}/death-with-dignity`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
                   ? "text-primary-800 hover:text-primary-600"
@@ -90,7 +90,7 @@ export function Navbar() {
               {t("navigation.dignity")}
             </a>
             <a
-              href="#info"
+              href={`/${locale}/useful-information`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
                   ? "text-primary-800 hover:text-primary-600"
@@ -100,7 +100,7 @@ export function Navbar() {
               {t("navigation.info")}
             </a>
             <a
-              href="#contact"
+              href={`/${locale}/contact`}
               className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
                 isScrolled
                   ? "text-primary-800 hover:text-primary-600"
