@@ -1,6 +1,5 @@
 ## 1. Home Page
 
-```markdown
 # Home Page Structure
 
 ## Hero Section
@@ -12,6 +11,11 @@
 ## What is IE Community Hospice?
 IE Community Hospice is a program designed to meet the special needs of patients and their loved ones in time of crisis due to terminal illness for which they do not elect aggressive treatment.
 
+## Our Advantages
+- Patient-Centered, Personalized Care Plans
+- Bilingual Staff and Chinese-Speaking Home Visit Services
+- Family Care Education and Training
+
 ## Our Services at a Glance
 - Pain Management
 - 24-Hour On-Call Nursing
@@ -21,6 +25,8 @@ IE Community Hospice is a program designed to meet the special needs of patients
 - Volunteer Program
 - Medication Services
 - Equipment Services
+- Therapy Services
+- Dietary Consultation
 
 ## Who is Eligible for Hospice Care?
 ### Patients facing these life-limiting illnesses or conditions:
@@ -36,11 +42,9 @@ IE Community Hospice is a program designed to meet the special needs of patients
 - Email: info@iecommunityhospice.com
 - Office Hours: Monday to Friday 9:00 AM - 5:00 PM
 - On-Call Nurse available outside office hours
-```
 
 ## 2. About Us
 
-```markdown
 # About Us
 
 ## Our Mission
@@ -71,11 +75,9 @@ Pursuant to Title VI of the Civil Right Act of 1964, Section 504 of the Rehabili
 
 ## Company Logo
 [IE_Hospice_Logo.jpg - Company logo to be inserted]
-```
 
 ## 3. Services
 
-```markdown
 # Our Services
 
 ## Comprehensive Care Services
@@ -110,6 +112,12 @@ All hospice-related medication management
 ### 8. Equipment Services
 Necessary medical equipment to ensure patient comfort
 
+### 9. Therapy Services
+Providing therapy services to assist patients.
+
+### 10. Dietary Consultation
+Offering dietary consultation and guidance.
+
 ## Levels of Care
 ### Different levels of care based on patient needs:
 - **Routine Care**: Daily care needs
@@ -119,16 +127,15 @@ Necessary medical equipment to ensure patient comfort
 
 ## Interdisciplinary Team
 Our experienced interdisciplinary team comprises:
-- Doctors
-- Nurses
-- Social Workers
-- Counselors
-- Volunteers
-```
+- Medical Doctor & Nurse Practitioner
+- Skilled Nursing (RN & LVN)
+- Hospice Aides
+- Clinical Social Workers
+- Spiritual Counselors & Chaplains
+- Trained Volunteers
 
 ## 4. Areas
 
-```markdown
 # Coverage Areas by County
 
 ## Counties We Serve
@@ -139,6 +146,7 @@ IE Community Hospice proudly serves the following Southern California regions:
 - **Riverside County**
 - **Los Angeles County**
 - **Orange County**
+- **San Diego County**
 
 ## Main Office Location
 600 N. Mountain Ave, Suite D105
@@ -157,11 +165,9 @@ We provide care wherever you call home:
 To inquire about service availability in your area:
 - Phone: 909-321-2255
 - Email: info@iecommunityhospice.com
-```
 
 ## 5. Death With Dignity
 
-```markdown
 # Death With Dignity
 
 ## Our Philosophy
@@ -185,17 +191,16 @@ Physicians determine if a patient qualifies for hospice care based on:
 
 ## Important Information
 [not enough information - Need more specific information about death with dignity policies and procedures]
-```
 
 ## 6. Useful Information
 
-```markdown
 # Useful Information
 
 ## Frequently Asked Questions
 
 ### Who Pays for Hospice Care?
 - Medicare and HMO's
+- Medi-Cal
 - Private Pay
 - Most insurance plans cover hospice services
 
@@ -219,11 +224,9 @@ We provide services wherever the patient chooses, including homes, care faciliti
 Follow us for more information:
 - Facebook: [Need Facebook page link]
 - Chinese in LA.com: [Need specific link]
-```
 
 ## 7. Contact Us
 
-```markdown
 # Contact Us
 
 ## Contact Information
@@ -234,6 +237,7 @@ Follow us for more information:
 Upland, CA 91786
 
 **Phone:** 909-321-2255
+**Phone 2:** 909-256-4705
 **Fax:** 909-351-0151
 **Email:** info@iecommunityhospice.com
 
@@ -264,22 +268,3 @@ Contact methods available:
 ## Emergency Contact
 For medical emergencies, please call 911
 24-Hour Nurse Hotline: [not enough information - Need 24-hour hotline number]
-```
-
-## Development Notes:
-
-1. **Bilingual Support**: Website needs Chinese/English language toggle
-2. **Responsive Design**: Mobile, tablet, and desktop compatibility
-3. **Accessibility**: Ensure easy use for elderly and disabled users
-4. **SEO Optimization**: Optimize for keywords like "hospice care", "end-of-life care"
-5. **Social Media Integration**: Integrate Facebook and Chinese in LA.com
-6. **Contact Form**: Backend support needed for email functionality
-7. **Map Integration**: Use Google Maps API for location display
-
-## Missing Information Flagged:
-- Death With Dignity page specific policy content
-- 24-hour nurse hotline number
-- Facebook and Chinese in LA.com specific links
-- Educational resources and downloadable forms
-- More information about team members
-- Specific details about Medicare/insurance coverage processes
