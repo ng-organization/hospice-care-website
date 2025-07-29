@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useTranslations, useLocale } from "next-intl";
-import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/language-switcher";
-import { MobileMenu } from "@/components/ui/MobileMenu";
-import { Phone, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { CurvedMobileMenu } from "@/components/ui/CurvedMobileMenu";
+import { Phone } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function Navbar() {
   const t = useTranslations();
@@ -21,6 +21,10 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav
@@ -131,57 +135,62 @@ export function Navbar() {
             <div className="flex-shrink-0">
               <LanguageSwitcher isScrolled={isScrolled} />
             </div>
-            <Button
-              variant="primary"
-              size="sm"
-              onClick={() => window.open("tel:909-321-2255", "_self")}
-              className="px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex-shrink-0"
+            {/* Curved Menu Button for Tablet */}
+            <div
+              onClick={handleMenuClick}
+              className="w-12 h-12 flex items-center justify-center cursor-pointer bg-transparent"
             >
-              <Phone className="w-4 h-4" />
-              <span className="ml-1">Call</span>
-            </Button>
-            <button
-              className={`p-2 transition-colors duration-300 ${
-                isScrolled ? "text-primary-800" : "text-white"
-              }`}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+              <div className="relative w-8 h-6 flex flex-col justify-between items-center">
+                <span
+                  className={`block h-1 w-7 transition-transform duration-300 ${
+                    isMenuOpen ? "rotate-45 translate-y-2" : ""
+                  } ${isScrolled ? "bg-black" : "bg-white"}`}
+                ></span>
+                <span
+                  className={`block h-1 w-7 transition-opacity duration-300 ${
+                    isMenuOpen ? "opacity-0" : ""
+                  } ${isScrolled ? "bg-black" : "bg-white"}`}
+                ></span>
+                <span
+                  className={`block h-1 w-7 transition-transform duration-300 ${
+                    isMenuOpen ? "-rotate-45 -translate-y-3" : ""
+                  } ${isScrolled ? "bg-black" : "bg-white"}`}
+                ></span>
+              </div>
+            </div>
           </div>
 
           {/* Mobile menu button - Shows below md: (below 768px) */}
           <div className="flex md:hidden items-center space-x-2">
-            <Button
-              variant="primary"
-              size="icon"
-              onClick={() => window.open("tel:909-321-2255", "_self")}
-              className="rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex-shrink-0"
+            {/* Curved Menu Button for Mobile */}
+            <div
+              onClick={handleMenuClick}
+              className="w-12 h-12 flex items-center justify-center cursor-pointer bg-transparent"
             >
-              <Phone className="w-4 h-4" />
-            </Button>
-            <button
-              className={`p-2 transition-colors duration-300 ${
-                isScrolled ? "text-primary-800" : "text-white"
-              }`}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+              <div className="relative w-8 h-6 flex flex-col justify-between items-center">
+                <span
+                  className={`block h-1 w-7 transition-transform duration-300 ${
+                    isMenuOpen ? "rotate-45 translate-y-2" : ""
+                  } ${isScrolled ? "bg-black" : "bg-white"}`}
+                ></span>
+                <span
+                  className={`block h-1 w-7 transition-opacity duration-300 ${
+                    isMenuOpen ? "opacity-0" : ""
+                  } ${isScrolled ? "bg-black" : "bg-white"}`}
+                ></span>
+                <span
+                  className={`block h-1 w-7 transition-transform duration-300 ${
+                    isMenuOpen ? "-rotate-45 -translate-y-3" : ""
+                  } ${isScrolled ? "bg-black" : "bg-white"}`}
+                ></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Modern Mobile Menu Component */}
-      <MobileMenu
+      {/* Curved Mobile Menu Component */}
+      <CurvedMobileMenu
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
         isScrolled={isScrolled}
