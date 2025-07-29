@@ -126,7 +126,6 @@ export function Navbar() {
 
             {/* Call Button */}
             <Button
-              variant="default"
               size="sm"
               onClick={() => window.open("tel:909-321-2255", "_self")}
               className={cn(
