@@ -76,7 +76,7 @@ export function Footer() {
   const copyright = t("footer.legal.copyright", { year: new Date().getFullYear() });
 
   return (
-    <div className="mt-auto w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white relative overflow-hidden">
+    <div className="mt-12 w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-900/10 to-secondary-900/10"></div>
       

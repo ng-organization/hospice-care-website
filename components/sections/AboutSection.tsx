@@ -3,7 +3,11 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/motion";
+import {
+  AnimatedSection,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/motion";
 import { Check } from "lucide-react";
 
 export function AboutSection() {
@@ -56,27 +60,33 @@ export function AboutSection() {
                   <div className="flex flex-row gap-6 items-start">
                     <Check className="w-4 h-4 mt-2 text-primary" />
                     <div className="flex flex-col gap-1">
-                      <p className="font-medium text-gray-800">5+ Years Experience</p>
+                      <p className="font-medium text-gray-800">
+                        {t("about.features.experience.title")}
+                      </p>
                       <p className="text-muted-foreground text-sm">
-                        Serving families with compassionate care for over 5 years.
+                        {t("about.features.experience.description")}
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-6 items-start">
                     <Check className="w-4 h-4 mt-2 text-primary" />
                     <div className="flex flex-col gap-1">
-                      <p className="font-medium text-gray-800">24/7 Support</p>
+                      <p className="font-medium text-gray-800">
+                        {t("about.features.support.title")}
+                      </p>
                       <p className="text-muted-foreground text-sm">
-                        Round-the-clock care and support when you need it most.
+                        {t("about.features.support.description")}
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-6 items-start">
                     <Check className="w-4 h-4 mt-2 text-primary" />
                     <div className="flex flex-col gap-1">
-                      <p className="font-medium text-gray-800">Bilingual Care</p>
+                      <p className="font-medium text-gray-800">
+                        {t("about.features.bilingual.title")}
+                      </p>
                       <p className="text-muted-foreground text-sm">
-                        English and Traditional Chinese speaking staff available.
+                        {t("about.features.bilingual.description")}
                       </p>
                     </div>
                   </div>
@@ -85,7 +95,7 @@ export function AboutSection() {
 
               <StaggerItem>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
+                  <Button
                     variant="primary"
                     size="lg"
                     className="px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105"

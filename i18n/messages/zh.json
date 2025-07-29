@@ -65,6 +65,20 @@
       "families": "個服務縣市",
       "experience": "全天候守護"
     },
+    "features": {
+      "experience": {
+        "title": "5年以上經驗",
+        "description": "超過五年為家庭提供充滿愛心的照護服務。"
+      },
+      "support": {
+        "title": "24小時支援",
+        "description": "在您最需要的時候提供全天候的照護和支持。"
+      },
+      "bilingual": {
+        "title": "雙語照護",
+        "description": "提供英語和繁體中文雙語服務的專業醫護人員。"
+      }
+    },
     "buttons": {
       "meetTeam": "認識我們的專業團隊",
       "viewCredentials": "了解我們的專業認證"

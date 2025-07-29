@@ -59,6 +59,20 @@
       "families": "Counties Served",
       "experience": "Years of Service"
     },
+    "features": {
+      "experience": {
+        "title": "5+ Years Experience",
+        "description": "Serving families with compassionate care for over 5 years."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock care and support when you need it most."
+      },
+      "bilingual": {
+        "title": "Bilingual Care",
+        "description": "English and Traditional Chinese speaking staff available."
+      }
+    },
     "buttons": {
       "meetTeam": "Meet Our Team",
       "viewCredentials": "View Certifications"
