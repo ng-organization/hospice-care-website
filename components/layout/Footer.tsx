@@ -89,18 +89,6 @@ export function Footer() {
           copyright={copyright}
           legalLinks={legalLinks}
         />
-        
-        {/* Medicare Certification Badge */}
-        <div className="border-t border-slate-700/50 px-4 md:px-8 lg:px-16 py-6">
-          <div className="container mx-auto">
-            <div className="bg-white/5 rounded-lg p-4 border border-white/10 max-w-md">
-              <p className="text-white text-sm font-semibold mb-1">
-                Medicare Certified
-              </p>
-              <p className="text-slate-300 text-xs">CMS Certified Provider</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

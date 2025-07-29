@@ -73,50 +73,7 @@ export function ServiceAreasSection() {
           </Card>
         </div>
 
-        <div className="text-center">
-          <Card className="border-0 bg-gradient-to-br from-secondary-50 to-white shadow-2xl max-w-4xl mx-auto">
-            <CardContent className="p-12">
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">
-                {t("areas.office.title")}
-              </h3>
-              <div className="flex items-center justify-center space-x-2 text-lg text-slate-600 mb-6">
-                <MapPin className="w-5 h-5 text-primary-600" />
-                <p className="whitespace-pre-line">
-                  {t("areas.office.address")}
-                </p>
-              </div>
-              <p className="text-slate-600 leading-relaxed mb-8">
-                {t("areas.settings.description")}
-              </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-slate-600">
-                <div className="text-center">
-                  <Home className="w-6 h-6 mx-auto mb-2 text-primary-600" />
-                  <span>{t("areas.settings.home")}</span>
-                </div>
-                <div className="text-center">
-                  <Shield className="w-6 h-6 mx-auto mb-2 text-primary-600" />
-                  <span>{t("areas.settings.skilled")}</span>
-                </div>
-                <div className="text-center">
-                  <Users className="w-6 h-6 mx-auto mb-2 text-primary-600" />
-                  <span>{t("areas.settings.assisted")}</span>
-                </div>
-                <div className="text-center">
-                  <Stethoscope className="w-6 h-6 mx-auto mb-2 text-primary-600" />
-                  <span>{t("areas.settings.hospitals")}</span>
-                </div>
-                <div className="text-center">
-                  <Clock className="w-6 h-6 mx-auto mb-2 text-primary-600" />
-                  <span>{t("areas.settings.longTerm")}</span>
-                </div>
-                <div className="text-center">
-                  <Home className="w-6 h-6 mx-auto mb-2 text-primary-600" />
-                  <span>{t("areas.settings.boardCare")}</span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        {/* Removed the Main Office Location card */}
       </div>
     </section>
   );
