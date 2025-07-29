@@ -2,7 +2,15 @@
 
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 import { CurvedMobileMenu } from "@/components/ui/CurvedMobileMenu";
+import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -11,8 +19,8 @@ import { useEffect, useState } from "react";
 export function Navbar() {
   const t = useTranslations();
   const locale = useLocale();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,163 +34,135 @@ export function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navigationItems = [
+    {
+      title: t("navigation.services"),
+      href: `/${locale}/services`,
+    },
+    {
+      title: t("navigation.about"),
+      href: `/${locale}/about`,
+    },
+    {
+      title: t("navigation.areas"),
+      href: `/${locale}/areas`,
+    },
+    {
+      title: t("navigation.dignity"),
+      href: `/${locale}/death-with-dignity`,
+    },
+    {
+      title: t("navigation.info"),
+      href: `/${locale}/useful-information`,
+    },
+    {
+      title: t("navigation.contact"),
+      href: `/${locale}/contact`,
+    },
+  ];
+
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <header
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-500 ease-in-out",
         isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg"
-          : "bg-primary-800/90 backdrop-blur-sm border-b border-white/20"
-      }`}
+          ? "bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-lg shadow-gray-900/5"
+          : "bg-white/10 backdrop-blur-md border-b border-white/20"
+      )}
     >
-      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-16">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <Link 
+            href={`/${locale}`} 
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          >
             <img
               src="/assets/logo.png"
               alt="IE Community Hospice Logo"
               className="w-8 h-8"
             />
             <span
-              className={`text-lg sm:text-xl font-semibold transition-colors duration-300 ${
-                isScrolled ? "text-primary-800" : "text-white"
-              }`}
+              className={cn(
+                "text-lg font-semibold transition-colors duration-300 hidden sm:block",
+                isScrolled ? "text-slate-900" : "text-white"
+              )}
             >
               {t("navigation.companyName")}
             </span>
           </Link>
 
-          {/* Desktop Navigation - Now shows from lg: (1024px+) */}
-          <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
-            <a
-              href={`/${locale}/services`}
-              className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
-                isScrolled
-                  ? "text-primary-800 hover:text-primary-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-            >
-              {t("navigation.services")}
-            </a>
-            <a
-              href={`/${locale}/about`}
-              className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
-                isScrolled
-                  ? "text-primary-800 hover:text-primary-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-            >
-              {t("navigation.about")}
-            </a>
-            <a
-              href={`/${locale}/areas`}
-              className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
-                isScrolled
-                  ? "text-primary-800 hover:text-primary-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-            >
-              {t("navigation.areas")}
-            </a>
-            <a
-              href={`/${locale}/death-with-dignity`}
-              className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
-                isScrolled
-                  ? "text-primary-800 hover:text-primary-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-            >
-              {t("navigation.dignity")}
-            </a>
-            <a
-              href={`/${locale}/useful-information`}
-              className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
-                isScrolled
-                  ? "text-primary-800 hover:text-primary-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-            >
-              {t("navigation.info")}
-            </a>
-            <a
-              href={`/${locale}/contact`}
-              className={`text-sm xl:text-base transition-all duration-300 whitespace-nowrap ${
-                isScrolled
-                  ? "text-primary-800 hover:text-primary-600"
-                  : "text-white hover:text-gray-300"
-              }`}
-            >
-              {t("navigation.contact")}
-            </a>
-            <div className="flex-shrink-0">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center">
+            <NavigationMenu>
+              <NavigationMenuList className="space-x-2">
+                {navigationItems.map((item) => (
+                  <NavigationMenuItem key={item.href}>
+                    <Link href={item.href} legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={cn(
+                          navigationMenuTriggerStyle(),
+                          "transition-all duration-300 bg-transparent hover:bg-white/20 focus:bg-white/20",
+                          isScrolled
+                            ? "text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:bg-slate-100"
+                            : "text-white/90 hover:text-white"
+                        )}
+                      >
+                        {item.title}
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
+
+          {/* Right side actions */}
+          <div className="flex items-center space-x-3">
+            {/* Language Switcher - Hidden on mobile */}
+            <div className="hidden md:block">
               <LanguageSwitcher isScrolled={isScrolled} />
             </div>
+
+            {/* Call Button */}
             <Button
-              variant="primary"
-              size="default"
+              variant="default"
+              size="sm"
               onClick={() => window.open("tel:909-321-2255", "_self")}
-              className="px-3 xl:px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm xl:text-base flex-shrink-0"
+              className={cn(
+                "rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105",
+                isScrolled
+                  ? "bg-primary-600 hover:bg-primary-700 text-white"
+                  : "bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm"
+              )}
             >
-              <Phone className="w-4 h-4 xl:mr-2" />
-              <span className="hidden xl:inline ml-2">
-                {t("navigation.callNow")}
-              </span>
-              <span className="xl:hidden">Call</span>
+              <Phone className="w-4 h-4 lg:mr-2" />
+              <span className="hidden lg:inline">{t("navigation.callNow")}</span>
             </Button>
-          </div>
 
-          {/* Tablet Navigation - Shows from md: to lg: (768px-1023px) */}
-          <div className="hidden md:flex lg:hidden items-center space-x-2">
-            <div className="flex-shrink-0">
-              <LanguageSwitcher isScrolled={isScrolled} />
-            </div>
-            {/* Curved Menu Button for Tablet */}
-            <div
-              onClick={handleMenuClick}
-              className="w-12 h-12 flex items-center justify-center cursor-pointer bg-transparent"
-            >
-              <div className="relative w-8 h-6 flex flex-col justify-between items-center">
-                <span
-                  className={`block h-1 w-7 transition-transform duration-300 ${
-                    isMenuOpen ? "rotate-45 translate-y-2" : ""
-                  } ${isScrolled ? "bg-black" : "bg-white"}`}
-                ></span>
-                <span
-                  className={`block h-1 w-7 transition-opacity duration-300 ${
-                    isMenuOpen ? "opacity-0" : ""
-                  } ${isScrolled ? "bg-black" : "bg-white"}`}
-                ></span>
-                <span
-                  className={`block h-1 w-7 transition-transform duration-300 ${
-                    isMenuOpen ? "-rotate-45 -translate-y-3" : ""
-                  } ${isScrolled ? "bg-black" : "bg-white"}`}
-                ></span>
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile menu button - Shows below md: (below 768px) */}
-          <div className="flex md:hidden items-center space-x-2">
-            {/* Curved Menu Button for Mobile */}
-            <div
-              onClick={handleMenuClick}
-              className="w-12 h-12 flex items-center justify-center cursor-pointer bg-transparent"
-            >
-              <div className="relative w-8 h-6 flex flex-col justify-between items-center">
-                <span
-                  className={`block h-1 w-7 transition-transform duration-300 ${
-                    isMenuOpen ? "rotate-45 translate-y-2" : ""
-                  } ${isScrolled ? "bg-black" : "bg-white"}`}
-                ></span>
-                <span
-                  className={`block h-1 w-7 transition-opacity duration-300 ${
-                    isMenuOpen ? "opacity-0" : ""
-                  } ${isScrolled ? "bg-black" : "bg-white"}`}
-                ></span>
-                <span
-                  className={`block h-1 w-7 transition-transform duration-300 ${
-                    isMenuOpen ? "-rotate-45 -translate-y-3" : ""
-                  } ${isScrolled ? "bg-black" : "bg-white"}`}
-                ></span>
+            {/* Mobile Menu Button - Original Implementation */}
+            <div className="flex lg:hidden items-center space-x-2">
+              <div
+                onClick={handleMenuClick}
+                className="w-12 h-12 flex items-center justify-center cursor-pointer bg-transparent"
+              >
+                <div className="relative w-8 h-6 flex flex-col justify-between items-center">
+                  <span
+                    className={`block h-1 w-7 transition-transform duration-300 ${
+                      isMenuOpen ? "rotate-45 translate-y-2" : ""
+                    } ${isScrolled ? "bg-slate-700" : "bg-white"}`}
+                  ></span>
+                  <span
+                    className={`block h-1 w-7 transition-opacity duration-300 ${
+                      isMenuOpen ? "opacity-0" : ""
+                    } ${isScrolled ? "bg-slate-700" : "bg-white"}`}
+                  ></span>
+                  <span
+                    className={`block h-1 w-7 transition-transform duration-300 ${
+                      isMenuOpen ? "-rotate-45 -translate-y-3" : ""
+                    } ${isScrolled ? "bg-slate-700" : "bg-white"}`}
+                  ></span>
+                </div>
               </div>
             </div>
           </div>
@@ -195,6 +175,6 @@ export function Navbar() {
         onClose={() => setIsMenuOpen(false)}
         isScrolled={isScrolled}
       />
-    </nav>
+    </header>
   );
 }
