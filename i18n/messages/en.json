@@ -198,6 +198,29 @@
       "title": "24/7 Emergency Support",
       "description": "For medical emergencies, call 911. For urgent hospice care needs:",
       "button": "Call 909-321-2255"
+    },
+    "direct": {
+      "title": "Direct Contact",
+      "emergency": "Emergency Support",
+      "available24": "Available 24/7 for urgent needs",
+      "email": "Email Us",
+      "emailResponse": "We'll respond within 24 hours",
+      "hours": "Office Hours",
+      "businessHours": "Monday - Friday: 9:00 AM - 5:00 PM",
+      "afterHours": "24/7 nurse on-call available",
+      "callNow": "Call Now"
+    },
+    "location": {
+      "title": "Office Location",
+      "office": "Main Office",
+      "address": "600 N. Mountain Ave, Suite D105",
+      "cityState": "Upland, CA 91786",
+      "directions": "Get Directions",
+      "immediateNeeds": "For Immediate Needs",
+      "immediateNeedsDescription": "Don't hesitate to reach out 24/7",
+      "callEmergency": "Call 909-321-2255",
+      "serviceArea": "Service Areas",
+      "serviceAreaDescription": "We proudly serve San Bernardino, Riverside, Los Angeles, Orange, and San Diego Counties with comprehensive hospice care services."
     }
   },
   "contactPage": {

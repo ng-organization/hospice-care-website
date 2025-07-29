@@ -204,6 +204,29 @@
       "title": "緊急情況",
       "description": "如遇醫療緊急情況請打 911。如需安寧療護緊急協助，請馬上連絡：",
       "button": "立即致電 909-321-2255"
+    },
+    "direct": {
+      "title": "直接聯絡",
+      "emergency": "緊急支援",
+      "available24": "全天候24/7為緊急需求服務",
+      "email": "電子郵件",
+      "emailResponse": "我們將在24小時內回覆",
+      "hours": "辦公時間",
+      "businessHours": "週一至週五：上午9:00 - 下午5:00",
+      "afterHours": "24/7護理師隨時待命",
+      "callNow": "立即致電"
+    },
+    "location": {
+      "title": "辦公室地址",
+      "office": "主要辦公室",
+      "address": "600 N. Mountain Ave, Suite D105",
+      "cityState": "Upland, CA 91786",
+      "directions": "獲取路線",
+      "immediateNeeds": "緊急需求",
+      "immediateNeedsDescription": "請隨時24/7聯絡我們",
+      "callEmergency": "致電 909-321-2255",
+      "serviceArea": "服務地區",
+      "serviceAreaDescription": "我們自豪地為聖貝納迪諾縣、河濱縣、洛杉磯縣、橙縣和聖地亞哥縣提供全面的安寧療護服務。"
     }
   },
   "contactPage": {
