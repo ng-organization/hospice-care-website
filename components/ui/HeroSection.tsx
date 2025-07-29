@@ -1,10 +1,10 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Phone, CheckCircle, Award, Clock } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/motion";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Award, CheckCircle, Clock, Phone } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
 interface HeroSectionProps {
   variant?: "home" | "page";
@@ -159,6 +159,9 @@ export function HeroSection({
           <div className="absolute bottom-20 right-10 w-32 h-32 bg-white/5 rounded-full blur-xl animate-float-delayed"></div>
         </>
       )}
+
+      {/* Fade border for smooth transition to next section */}
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-10"></div>
     </section>
   );
 }
