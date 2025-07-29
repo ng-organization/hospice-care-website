@@ -103,7 +103,7 @@ export function ContactMapSection() {
             </StaggerItem>
             <StaggerItem>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                For over 15 years, we've been a trusted partner to families in the Upland area, providing compassionate hospice care when it matters most.
+                For over 15 years, we&apos;ve been a trusted partner to families in the Upland area, providing compassionate hospice care when it matters most.
               </p>
             </StaggerItem>
           </StaggerContainer>
@@ -137,7 +137,7 @@ export function ContactMapSection() {
                   What Families <span className="font-semibold text-primary-600">Are Saying</span>
                 </h3>
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                  Real stories from families we've had the privilege to serve
+                  Real stories from families we&apos;ve had the privilege to serve
                 </p>
               </div>
             </StaggerItem>
@@ -153,7 +153,7 @@ export function ContactMapSection() {
                         ))}
                       </div>
                       <blockquote className="text-slate-700 italic mb-6 leading-relaxed">
-                        "{testimonial.quote}"
+                        &ldquo;{testimonial.quote}&rdquo;
                       </blockquote>
                       <div className="flex items-center">
                         <div className="w-12 h-12 rounded-full overflow-hidden mr-4">

@@ -7,11 +7,11 @@ export function LocationsSection() {
   const t = useTranslations();
 
   const locationIcons = [
-    <Home className="w-6 h-6" />,
-    <Hospital className="w-6 h-6" />,
-    <Building className="w-6 h-6" />,
-    <Users className="w-6 h-6" />,
-    <Heart className="w-6 h-6" />,
+    <Home key="home" className="w-6 h-6" />,
+    <Hospital key="hospital" className="w-6 h-6" />,
+    <Building key="building" className="w-6 h-6" />,
+    <Users key="users" className="w-6 h-6" />,
+    <Heart key="heart" className="w-6 h-6" />,
   ];
 
   return (

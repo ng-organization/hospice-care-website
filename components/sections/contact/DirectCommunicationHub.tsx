@@ -146,7 +146,7 @@ export function DirectCommunicationHub() {
                   Meet Our <span className="font-semibold text-primary-600">Care Team</span>
                 </h3>
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                  Real people who understand and care about your family's journey
+                  Real people who understand and care about your family&apos;s journey
                 </p>
               </div>
             </StaggerItem>

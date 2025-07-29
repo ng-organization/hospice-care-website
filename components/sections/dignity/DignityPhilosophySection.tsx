@@ -87,7 +87,7 @@ export function DignityPhilosophySection() {
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <blockquote className="text-center">
                     <p className="text-lg font-light italic mb-4 leading-relaxed">
-                      "{t("dignityPage.philosophy.quote")}"
+                      &ldquo;{t("dignityPage.philosophy.quote")}&rdquo;
                     </p>
                     <footer className="text-white/80 font-medium">
                       {t("dignityPage.philosophy.quoteAuthor")}

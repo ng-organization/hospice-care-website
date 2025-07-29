@@ -83,7 +83,7 @@ export function TestimonialsSection() {
               </div>
 
               <blockquote className="text-2xl text-slate-700 leading-relaxed mb-8 italic font-light">
-                "{testimonials[currentTestimonial].content}"
+                &ldquo;{testimonials[currentTestimonial].content}&rdquo;
               </blockquote>
 
               <div>
