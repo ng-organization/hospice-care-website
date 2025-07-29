@@ -7,7 +7,9 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate-translations": "tsx scripts/validate-translations.ts",
+    "check": "pnpm typecheck && pnpm validate-translations"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -69,6 +71,7 @@
     "@types/react-dom": "^19",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.20.3",
     "typescript": "^5"
   }
 }
