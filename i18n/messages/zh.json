@@ -8,14 +8,14 @@
     "dignity": "尊嚴照護",
     "info": "常見問題",
     "contact": "聯絡我們",
-    "callNow": "馬上致電"
+    "callNow": "馬上致電",
+    "mobileMenu": "導覽選單"
   },
   "common": {
     "note": "請注意",
     "callButton": "立即致電 909-321-2255",
     "contactUs": "聯絡我們",
-    "checkAvailability": "詢問服務是否適用",
-    "call": "電話詢問"
+    "checkAvailability": "詢問服務是否適用"
   },
   "hero": {
     "badge": "聯邦醫療保險認證 • 全天候服務",
@@ -171,6 +171,13 @@
       "lastName": "家族姓氏",
       "email": "電子信箱",
       "phone": "聯絡電話",
+      "inquiryType": "詢問類型",
+      "inquiryTypePlaceholder": "請選擇詢問類型",
+      "inquiryTypes": {
+        "service": "服務諮詢",
+        "referral": "病患轉介",
+        "other": "其他問題"
+      },
       "message": "您想說的話",
       "messagePlaceholder": "請告訴我們您的情況，我們希望能夠幫到您和家人...",
       "submit": "發送訊息"
@@ -227,17 +234,10 @@
         "service": "服務諮詢",
         "referral": "病患轉介",
         "other": "其他問題"
-              },
-        "message": "留言",
-        "messagePlaceholder": "請告訴我們如何為您和您的家人提供幫助...",
-        "submit": "發送訊息",
-        "inquiryType": "詢問類型",
-        "inquiryTypePlaceholder": "請選擇詢問類型",
-        "inquiryTypes": {
-          "service": "服務諮詢",
-          "referral": "病患轉介",
-          "other": "其他問題"
-        }
+      },
+      "message": "留言",
+      "messagePlaceholder": "請告訴我們如何為您和您的家人提供幫助...",
+      "submit": "發送訊息"
     },
     "info": {
       "badge": "聯絡資訊",
@@ -380,6 +380,7 @@
     },
     "cta": {
       "title": "還有其他問題嗎？",
+      "titleHighlight": "",
       "description": "我們富有同情心的團隊隨時為您解答關於安寧照護的任何疑問，並協助您做出這個重要決定。",
       "callButton": "致電 909-321-2255",
       "contactButton": "聯絡表格"
@@ -507,6 +508,7 @@
     },
     "cta": {
       "title": "準備了解更多？",
+      "titleHighlight": "",
       "description": "我們富有同情心的團隊隨時為您解答問題，並幫助您了解安寧照護是否適合您的家庭。沒有開始照護的義務。",
       "callButton": "致電 909-321-2255",
       "learnButton": "了解我們的服務"
@@ -546,7 +548,8 @@
       "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
       "hours": "辦公時間",
       "hoursDetail": "週一至週五：上午9:00 - 下午5:00",
-      "emergency": "24小時護士值班服務"
+      "emergency": "24小時護士值班服務",
+      "availableHours": "24/7全天候緊急需求服務"
     },
     "certifications": {
       "title": "認證與合規",
@@ -851,9 +854,5 @@
       "ctaPrimary": "致電 909-321-2255",
       "ctaSecondary": "立即聯絡我們"
     }
-  },
-  "common": {
-    "callButton": "致電 909-321-2255",
-    "contactUs": "聯絡我們"
   }
 }

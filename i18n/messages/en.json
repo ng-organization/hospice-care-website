@@ -8,7 +8,8 @@
     "dignity": "Death With Dignity",
     "info": "Useful Information",
     "contact": "Contact Us",
-    "callNow": "Call Now"
+    "callNow": "Call Now",
+    "mobileMenu": "Navigation Menu"
   },
   "hero": {
     "badge": "Medicare & Medi-Cal Certified • 24/7 Availability",
@@ -541,7 +542,8 @@
       "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
       "hours": "Office Hours",
       "hoursDetail": "Monday - Friday: 9:00 AM - 5:00 PM",
-      "emergency": "24/7 Nurse On-Call Available"
+      "emergency": "24/7 Nurse On-Call Available",
+      "availableHours": "Available 24/7 for urgent needs"
     },
     "certifications": {
       "title": "Certifications & Compliance",
@@ -849,6 +851,8 @@
   },
   "common": {
     "callButton": "Call 909-321-2255",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "note": "Note",
+    "checkAvailability": "Check Availability"
   }
 }

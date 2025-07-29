@@ -135,10 +135,10 @@ export function MobileMenu({ isOpen, onClose, isScrolled }: MobileMenuProps) {
 
           {/* Contact Information */}
           <div className="mt-8 text-center text-sm text-gray-600">
-            <p className="mb-2">{t("footer.phone")}: (909) 321-2255</p>
-            <p className="mb-2">{t("footer.email")}: info@iecommunity.com</p>
+            <p className="mb-2">{t("footer.contact.phone")}: (909) 321-2255</p>
+            <p className="mb-2">{t("footer.contact.email")}: info@iecommunity.com</p>
             <p className="text-xs opacity-75">
-              {t("footer.availableHours")}
+              {t("footer.contact.availableHours")}
             </p>
           </div>
         </div>
