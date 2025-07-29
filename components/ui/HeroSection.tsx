@@ -60,7 +60,7 @@ export function HeroSection({
 
   return (
     <section
-      className={`section-full-width relative ${heightClass} bg-cover bg-center bg-no-repeat flex items-center justify-center`}
+      className={`section-full-width relative ${heightClass} bg-cover bg-top bg-no-repeat flex items-center justify-center`}
       style={{
         backgroundImage: `url('${backgroundImage}')`,
       }}

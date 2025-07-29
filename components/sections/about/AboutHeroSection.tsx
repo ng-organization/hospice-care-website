@@ -1,5 +1,5 @@
-import { useLocale, useTranslations } from "next-intl";
 import { HeroSection } from "@/components/ui/HeroSection";
+import { useLocale, useTranslations } from "next-intl";
 
 export function AboutHeroSection() {
   const t = useTranslations();
@@ -15,6 +15,7 @@ export function AboutHeroSection() {
       description={t("aboutPage.hero.description")}
       primaryButtonText={t("common.callButton")}
       secondaryButtonText={t("common.contactUs")}
+      customHeight="h-[75vh]"
     />
   );
 }

@@ -1,32 +1,25 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Mail, MapPin } from "lucide-react";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/motion";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Clock, Heart, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function ContactSection() {
   const t = useTranslations();
 
   return (
-    <section
-      id="contact"
-      className="min-h-screen w-full bg-gradient-to-br from-secondary-50/30 to-white"
-    >
-      <AnimatedSection animation="fadeInUp" delay={0.2}>
-        <div className="w-full px-4 md:px-8 lg:px-16 py-24">
-          <StaggerContainer className="text-center mb-16">
-            <StaggerItem>
-              <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+    <section className="section-background" id="contact">
+      <div className="section-content">
+        <StaggerContainer className="space-y-16">
+          {/* Header */}
+          <StaggerItem>
+            <div className="text-center max-w-4xl mx-auto">
+              <Badge className="bg-primary-100 text-accent-800 px-6 py-3 rounded-full text-sm font-medium mb-6">
                 {t("contact.badge")}
               </Badge>
-            </StaggerItem>
-            <StaggerItem>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
                 {t("contact.title")}
                 <br />
@@ -34,177 +27,167 @@ export function ContactSection() {
                   {t("contact.titleHighlight")}
                 </span>
               </h2>
-            </StaggerItem>
-            <StaggerItem>
-              <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 {t("contact.description")}
               </p>
-            </StaggerItem>
-          </StaggerContainer>
+            </div>
+          </StaggerItem>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
-            {/* Contact Form */}
+            {/* Direct Contact Information */}
             <AnimatedSection animation="slideInLeft" delay={0.3}>
-              <Card className="border-0 bg-white shadow-2xl">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">
-                {t("contact.form.title")}
-              </h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-slate-700">
-                      {t("contact.form.firstName")}
-                    </label>
-                    <Input className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
+              <Card className="border-0 bg-white shadow-2xl h-full">
+                <CardContent className="p-8 h-full flex flex-col">
+                  <div className="flex items-center gap-3 mb-8">
+                    <Heart className="w-8 h-8 text-primary-600" />
+                    <h3 className="text-2xl font-semibold text-slate-800">
+                      {t("contact.direct.title")}
+                    </h3>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-slate-700">
-                      {t("contact.form.lastName")}
-                    </label>
-                    <Input className="border-secondary-200 focus:border-primary-400 rounded-lg h-12" />
+
+                  <div className="space-y-8 flex-1">
+                    {/* Emergency Contact */}
+                    <div className="group">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-200 group-hover:scale-110 transition-all duration-300">
+                          <Phone className="w-7 h-7 text-primary-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-slate-800 mb-2 text-lg">
+                            {t("contact.direct.emergency")}
+                          </h4>
+                          <Button
+                            onClick={() => window.open("tel:909-321-2255", "_self")}
+                            variant="ghost"
+                            className="p-0 h-auto text-2xl font-bold text-primary-600 hover:text-primary-700 mb-2"
+                          >
+                            909-321-2255
+                          </Button>
+                          <p className="text-slate-600 text-sm">
+                            {t("contact.direct.available24")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Email Contact */}
+                    <div className="group">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-14 h-14 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-secondary-200 group-hover:scale-110 transition-all duration-300">
+                          <Mail className="w-7 h-7 text-secondary-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-slate-800 mb-2 text-lg">
+                            {t("contact.direct.email")}
+                          </h4>
+                          <Button
+                            onClick={() => window.open("mailto:info@iecommunity.com", "_self")}
+                            variant="ghost"
+                            className="p-0 h-auto text-xl font-semibold text-secondary-600 hover:text-secondary-700 mb-2"
+                          >
+                            info@iecommunity.com
+                          </Button>
+                          <p className="text-slate-600 text-sm">
+                            {t("contact.direct.emailResponse")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Office Hours */}
+                    <div className="group">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-14 h-14 bg-accent-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent-200 group-hover:scale-110 transition-all duration-300">
+                          <Clock className="w-7 h-7 text-accent-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-slate-800 mb-2 text-lg">
+                            {t("contact.direct.hours")}
+                          </h4>
+                          <p className="text-lg text-slate-700 mb-1">
+                            {t("contact.direct.businessHours")}
+                          </p>
+                          <p className="text-slate-600 text-sm">
+                            {t("contact.direct.afterHours")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-700">
-                    {t("contact.form.email")}
-                  </label>
-                  <Input
-                    type="email"
-                    className="border-secondary-200 focus:border-primary-400 rounded-lg h-12"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-700">
-                    {t("contact.form.phone")}
-                  </label>
-                  <Input
-                    type="tel"
-                    className="border-secondary-200 focus:border-primary-400 rounded-lg h-12"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-700">
-                    {t("contact.form.inquiryType")}
-                  </label>
-                  <Select>
-                    <SelectTrigger className="border-secondary-200 focus:border-primary-400 rounded-lg h-12">
-                      <SelectValue placeholder={t("contact.form.inquiryTypePlaceholder")} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="service">{t("contact.form.inquiryTypes.service")}</SelectItem>
-                      <SelectItem value="referral">{t("contact.form.inquiryTypes.referral")}</SelectItem>
-                      <SelectItem value="other">{t("contact.form.inquiryTypes.other")}</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-700">
-                    {t("contact.form.message")}
-                  </label>
-                  <Textarea
-                    rows={4}
-                    className="border-secondary-200 focus:border-primary-400 rounded-lg resize-none"
-                    placeholder={t("contact.form.messagePlaceholder")}
-                  />
-                </div>
-
-                <Button className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105">
-                  {t("contact.form.submit")}
-                </Button>
-              </form>
+                  {/* Call Now Button */}
+                  <div className="mt-8 pt-6 border-t border-gray-100">
+                    <Button
+                      onClick={() => window.open("tel:909-321-2255", "_self")}
+                      className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+                    >
+                      <Phone className="w-5 h-5 mr-2" />
+                      {t("contact.direct.callNow")}
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </AnimatedSection>
 
-            {/* Contact Information */}
-            <AnimatedSection animation="slideInRight" delay={0.4}>
-              <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">
-                {t("contact.info.title")}
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary-600" />
+            {/* Office Location */}
+            <AnimatedSection animation="slideInRight" delay={0.5}>
+              <Card className="border-0 bg-white shadow-2xl h-full">
+                <CardContent className="p-8 h-full flex flex-col">
+                  <div className="flex items-center gap-3 mb-8">
+                    <MapPin className="w-8 h-8 text-accent-600" />
+                    <h3 className="text-2xl font-semibold text-slate-800">
+                      {t("contact.location.title")}
+                    </h3>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-800 text-lg">
-                      {t("contact.info.phone.title")}
-                    </h4>
-                    <p className="text-slate-600 text-lg">
-                      {t("contact.info.phone.number")}
-                    </p>
-                    <p className="text-sm text-slate-500">
-                      {t("contact.info.phone.note")}
-                    </p>
-                  </div>
-                </div>
 
-                <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-800 text-lg">
-                      {t("contact.info.email.title")}
-                    </h4>
-                    <p className="text-slate-600 text-lg">
-                      {t("contact.info.email.address")}
-                    </p>
-                    <p className="text-sm text-slate-500">
-                      {t("contact.info.email.note")}
-                    </p>
-                  </div>
-                </div>
+                  <div className="flex-1">
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-slate-800 mb-3 text-lg">
+                        {t("contact.location.office")}
+                      </h4>
+                      <Button
+                        onClick={() => window.open("https://maps.google.com/?q=600+N.+Mountain+Ave,+Suite+D105,+Upland,+CA+91786", "_blank")}
+                        variant="ghost"
+                        className="p-0 h-auto text-left"
+                      >
+                        <div className="text-slate-700 hover:text-slate-900 transition-colors leading-relaxed">
+                          600 N. Mountain Ave, Suite D105<br />
+                          Upland, CA 91786
+                        </div>
+                      </Button>
+                    </div>
 
-                <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-800 text-lg">
-                      {t("contact.info.address.title")}
-                    </h4>
-                    <p className="text-slate-600 text-lg whitespace-pre-line">
-                      {t("contact.info.address.address")}
-                    </p>
-                    <p className="text-sm text-slate-500">
-                      {t("contact.info.address.note")}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-slate-800 mb-3 text-lg">
+                        {t("contact.location.serviceArea")}
+                      </h4>
+                      <p className="text-slate-600 leading-relaxed">
+                        {t("contact.location.serviceAreaDescription")}
+                      </p>
+                    </div>
 
-            {/* Emergency Contact */}
-            <Card className="border-2 border-red-200 bg-red-50/50">
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-red-800 mb-2 text-lg">
-                  {t("contact.emergency.title")}
-                </h4>
-                <p className="text-red-700 mb-4">
-                  {t("contact.emergency.description")}
-                </p>
-                <Button
-                  onClick={() => window.open("tel:909-321-2255", "_self")}
-                  className="bg-primary-600 hover:bg-primary-700 text-white transition-all duration-300 hover:scale-105"
-                >
-                  <Phone className="w-4 h-4 mr-2" />
-                  {t("contact.emergency.button")}
-                </Button>
-              </CardContent>
+                    <div className="bg-gray-50 rounded-xl p-6">
+                      <h4 className="font-semibold text-slate-800 mb-3">
+                        {t("contact.location.immediateNeeds")}
+                      </h4>
+                      <p className="text-slate-600 text-sm mb-4">
+                        {t("contact.location.immediateNeedsDescription")}
+                      </p>
+                      <Button
+                        onClick={() => window.open("tel:909-321-2255", "_self")}
+                        className="w-full bg-accent-600 hover:bg-accent-700 text-white py-3 rounded-lg"
+                      >
+                        <Phone className="w-4 h-4 mr-2" />
+                        {t("contact.location.callEmergency")}
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
               </Card>
-              </div>
             </AnimatedSection>
           </div>
-        </div>
-      </AnimatedSection>
+        </StaggerContainer>
+      </div>
     </section>
   );
 }
