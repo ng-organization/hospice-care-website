@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Feature1 } from "@/components/ui/cta2";
 import {
   Download,
   FileText,
@@ -159,31 +160,18 @@ export function UsefulInfoResourcesSection() {
       </section>
 
       {/* Contact CTA */}
-      <section className="w-full bg-primary-600 observe-section">
-        <div className="w-full px-4 md:px-8 lg:px-16 py-24 flex items-center justify-center">
-          <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-6">
-              {t("usefulInfoPage.cta.title")}
-              <br />
-              <span className="font-semibold">
-                {t("usefulInfoPage.cta.titleHighlight")}
-              </span>
-            </h2>
-            <p className="text-primary-100 text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              {t("usefulInfoPage.cta.description")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button
-                size="lg"
-                className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                {t("usefulInfoPage.cta.callButton")}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Feature1
+        title={`${t("usefulInfoPage.cta.title")} ${t(
+          "usefulInfoPage.cta.titleHighlight"
+        )}`}
+        description={t("usefulInfoPage.cta.description")}
+        imageSrc="/image_asset/20250725_1123_Realistic Doctor Consultation_remix_01k11d2jzke1w8mxrazmkk5kny.webp"
+        imageAlt="Hospice care support team"
+        buttonPrimary={{
+          label: t("usefulInfoPage.cta.callButton"),
+          href: "tel:+1234567890",
+        }}
+      />
     </>
   );
 }
