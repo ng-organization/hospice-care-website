@@ -2,7 +2,16 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Download, FileText, Users, Heart, Facebook, ExternalLink, Phone, ArrowRight } from "lucide-react";
+import {
+  Download,
+  FileText,
+  Users,
+  Heart,
+  Facebook,
+  ExternalLink,
+  Phone,
+  ArrowRight,
+} from "lucide-react";
 
 export function UsefulInfoResourcesSection() {
   const t = useTranslations();
@@ -109,36 +118,36 @@ export function UsefulInfoResourcesSection() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8 text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Facebook className="w-8 h-8 text-blue-600" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.community.facebook.title")}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6">
+                  <p className="text-slate-600 text-sm mb-6 flex-grow">
                     {t("usefulInfoPage.community.facebook.description")}
                   </p>
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Button className="bg-primary-600 hover:bg-primary-700 text-white mt-auto">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     {t("usefulInfoPage.community.facebook.button")}
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8 text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Users className="w-8 h-8 text-red-600" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.community.chinese.title")}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6">
+                  <p className="text-slate-600 text-sm mb-6 flex-grow">
                     {t("usefulInfoPage.community.chinese.description")}
                   </p>
-                  <Button className="bg-red-600 hover:bg-red-700 text-white">
+                  <Button className="bg-primary-600 hover:bg-primary-700 text-white mt-auto">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     {t("usefulInfoPage.community.chinese.button")}
                   </Button>
@@ -150,8 +159,8 @@ export function UsefulInfoResourcesSection() {
       </section>
 
       {/* Contact CTA */}
-      <section className="min-h-[60vh] w-full bg-primary-600 observe-section">
-        <div className="w-full px-4 md:px-8 lg:px-16 py-24">
+      <section className="w-full bg-primary-600 observe-section">
+        <div className="w-full px-4 md:px-8 lg:px-16 py-24 flex items-center justify-center">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-6">
               {t("usefulInfoPage.cta.title")}
@@ -164,13 +173,12 @@ export function UsefulInfoResourcesSection() {
               {t("usefulInfoPage.cta.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105">
+              <Button
+                size="lg"
+                className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105"
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 {t("usefulInfoPage.cta.callButton")}
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-full transition-all duration-300 bg-transparent">
-                <ArrowRight className="w-5 h-5 mr-2" />
-                {t("usefulInfoPage.cta.contactButton")}
               </Button>
             </div>
           </div>
@@ -178,4 +186,4 @@ export function UsefulInfoResourcesSection() {
       </section>
     </>
   );
-} 
+}
