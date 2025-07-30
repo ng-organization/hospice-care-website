@@ -44,7 +44,7 @@ export function ContactHeroSection() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white from-0% via-white/30 via-20% to-transparent to-100% z-10"></div>
     </section>
   );
-} 
+}

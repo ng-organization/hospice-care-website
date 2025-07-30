@@ -39,7 +39,7 @@ export function HeroSection({
   const locale = useLocale();
 
   const isHomePage = variant === "home";
-  const defaultHeight = isHomePage ? "h-screen" : "h-[60vh]";
+  const defaultHeight = isHomePage ? "h-screen" : "h-[75vh]";
   const heightClass = customHeight || defaultHeight;
 
   const handlePrimaryClick = () => {
@@ -73,7 +73,11 @@ export function HeroSection({
 
       {/* Hero Content */}
       <div className="section-content relative z-10 text-center">
-        <StaggerContainer className={`space-y-8 ${isHomePage ? 'max-w-5xl mx-auto' : 'max-w-4xl mx-auto'}`}>
+        <StaggerContainer
+          className={`space-y-8 ${
+            isHomePage ? "max-w-5xl mx-auto" : "max-w-4xl mx-auto"
+          }`}
+        >
           <StaggerItem>
             <Badge className="bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
               {badgeText}
@@ -81,29 +85,29 @@ export function HeroSection({
           </StaggerItem>
 
           <StaggerItem>
-            <h1 className={`font-light text-white leading-tight ${
-              isHomePage 
-                ? 'text-4xl sm:text-5xl lg:text-7xl' 
-                : 'text-3xl sm:text-4xl lg:text-6xl'
-            }`}>
+            <h1
+              className={`font-light text-white leading-tight ${
+                isHomePage
+                  ? "text-4xl sm:text-5xl lg:text-7xl"
+                  : "text-3xl sm:text-4xl lg:text-6xl"
+              }`}
+            >
               {title}
               {titleHighlight && (
                 <>
                   <br />
-                  <span className="font-semibold">
-                    {titleHighlight}
-                  </span>
+                  <span className="font-semibold">{titleHighlight}</span>
                 </>
               )}
             </h1>
           </StaggerItem>
 
           <StaggerItem>
-            <p className={`text-white/90 mx-auto leading-relaxed ${
-              isHomePage 
-                ? 'text-xl max-w-4xl' 
-                : 'text-lg max-w-3xl'
-            }`}>
+            <p
+              className={`text-white/90 mx-auto leading-relaxed ${
+                isHomePage ? "text-xl max-w-4xl" : "text-lg max-w-3xl"
+              }`}
+            >
               {description}
             </p>
           </StaggerItem>
@@ -161,7 +165,7 @@ export function HeroSection({
       )}
 
       {/* Fade border for smooth transition to next section */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white from-0% via-white/30 via-20% to-transparent to-100% z-10"></div>
     </section>
   );
 }
