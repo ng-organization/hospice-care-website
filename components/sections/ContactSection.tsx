@@ -11,7 +11,7 @@ export function ContactSection() {
   const t = useTranslations();
 
   return (
-    <section className="section-background" id="contact">
+    <section className="section-background py-24" id="contact">
       <div className="section-content">
         <StaggerContainer className="space-y-16">
           {/* Header */}
