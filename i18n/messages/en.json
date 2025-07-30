@@ -528,12 +528,24 @@
           "description": "Comprehensive grief counseling, spiritual care, and emotional support for both patients and family members throughout the journey."
         },
         "family": {
-          "title": "Family Strength",
+          "title": "Family Support",
           "description": "Family education, respite care, and bereavement services that continue for 13 months after your loved one's passing."
         },
         "practical": {
-          "title": "Practical Benefits",
+          "title": "Practical Planning",
           "description": "24/7 on-call support, medical equipment, medications, and professional care services all covered by insurance."
+        },
+        "comfort": {
+          "title": "Comfort and Peace",
+          "description": "Prioritizing pain relief and symptom management to ensure maximum comfort and quality of life."
+        },
+        "control": {
+          "title": "Personal Control",
+          "description": "Respecting patient autonomy and personal choices in their care decisions."
+        },
+        "legal": {
+          "title": "Legal Clarity",
+          "description": "Clear understanding of healthcare directives and legal aspects of end-of-life care."
         }
       }
     },

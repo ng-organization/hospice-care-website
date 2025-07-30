@@ -99,15 +99,9 @@ export function AboutSection() {
                     variant="primary"
                     size="lg"
                     className="px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105"
+                    onClick={() => window.open("tel:909-321-2255", "_self")}
                   >
-                    {t("about.buttons.meetTeam")}
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    className="px-8 py-4 rounded-full text-lg transition-all duration-300"
-                  >
-                    {t("about.buttons.viewCredentials")}
+                    {t("common.callButton")}
                   </Button>
                 </div>
               </StaggerItem>
