@@ -7,6 +7,7 @@ import { LucideIcon } from "lucide-react";
 interface SocialLink {
   name: string;
   href: string;
+  Icon?: LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
 }
 
 interface FooterLink {
@@ -24,6 +25,7 @@ interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
   brand: {
     name: string;
     description: string;
+    logo?: string;
   };
   socialLinks: SocialLink[];
   columns: FooterColumn[];
@@ -45,28 +47,39 @@ export const Footer = React.forwardRef<HTMLDivElement, FooterProps>(
         <div className="max-w-screen-xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
             <div className="lg:col-span-5">
-              <a href="#" className="text-2xl font-semibold text-white">
-                {brand.name}
+              <a href="#" className="flex items-center gap-3 mb-4">
+                {brand.logo && (
+                  <img 
+                    src={brand.logo} 
+                    alt={`${brand.name} Logo`}
+                    className="h-10 w-auto"
+                  />
+                )}
+                <span className="text-2xl font-semibold text-white">
+                  {brand.name}
+                </span>
               </a>
               <p className="text-sm text-white/70 mt-3 max-w-sm leading-relaxed">
                 {brand.description}
               </p>
 
-              <p className="text-sm font-light text-white/60 mt-6">
-                {socialLinks.map((link, index) => (
-                  <React.Fragment key={link.name}>
-                    <a
-                      className="hover:text-white/95 transition-colors"
-                      target="_blank"
-                      href={link.href}
-                      rel="noopener noreferrer"
-                    >
-                      {link.name}
-                    </a>
-                    {index < socialLinks.length - 1 && " • "}
-                  </React.Fragment>
+              <div className="flex items-center gap-4 mt-6">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-white/60 hover:text-white/95 transition-colors group"
+                    title={link.name}
+                  >
+                    {link.Icon && (
+                      <link.Icon className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                    )}
+                    <span className="text-sm">{link.name}</span>
+                  </a>
                 ))}
-              </p>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:col-span-7 gap-8 lg:gap-12">
