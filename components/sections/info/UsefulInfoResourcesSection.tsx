@@ -7,7 +7,7 @@ import {
   Download,
   FileText,
   Users,
-  Heart,
+  Eye,
   Facebook,
   ExternalLink,
   Phone,
@@ -39,7 +39,7 @@ export function UsefulInfoResourcesSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
@@ -48,13 +48,19 @@ export function UsefulInfoResourcesSection() {
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.resources.items.guide.title")}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-4">
+                  <p className="text-slate-600 text-sm mb-6">
                     {t("usefulInfoPage.resources.items.guide.description")}
                   </p>
-                  <Button variant="outline" size="sm" className="w-full">
-                    <Download className="w-4 h-4 mr-2" />
-                    {t("usefulInfoPage.resources.items.guide.button")}
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" className="flex-1">
+                      <Eye className="w-4 h-4 mr-2" />
+                      Preview
+                    </Button>
+                    <Button variant="outline" size="sm" className="flex-1">
+                      <Download className="w-4 h-4 mr-2" />
+                      {t("usefulInfoPage.resources.items.guide.button")}
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -66,31 +72,19 @@ export function UsefulInfoResourcesSection() {
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.resources.items.family.title")}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-4">
+                  <p className="text-slate-600 text-sm mb-6">
                     {t("usefulInfoPage.resources.items.family.description")}
                   </p>
-                  <Button variant="outline" size="sm" className="w-full">
-                    <Download className="w-4 h-4 mr-2" />
-                    {t("usefulInfoPage.resources.items.family.button")}
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mb-4">
-                    <Heart className="w-6 h-6 text-accent-600" />
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" className="flex-1">
+                      <Eye className="w-4 h-4 mr-2" />
+                      Preview
+                    </Button>
+                    <Button variant="outline" size="sm" className="flex-1">
+                      <Download className="w-4 h-4 mr-2" />
+                      {t("usefulInfoPage.resources.items.family.button")}
+                    </Button>
                   </div>
-                  <h3 className="font-semibold text-slate-800 mb-3">
-                    {t("usefulInfoPage.resources.items.forms.title")}
-                  </h3>
-                  <p className="text-slate-600 text-sm mb-4">
-                    {t("usefulInfoPage.resources.items.forms.description")}
-                  </p>
-                  <Button variant="outline" size="sm" className="w-full">
-                    <Download className="w-4 h-4 mr-2" />
-                    {t("usefulInfoPage.resources.items.forms.button")}
-                  </Button>
                 </CardContent>
               </Card>
             </div>
