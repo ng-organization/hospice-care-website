@@ -241,6 +241,24 @@
       "callEmergency": "致電 909-321-2255",
       "serviceArea": "服務地區",
       "serviceAreaDescription": "我們自豪地為聖貝納迪諾縣、河濱縣、洛杉磯縣、橙縣和聖地亞哥縣提供全面的安寧療護服務。"
+    },
+    "splitSection": {
+      "subtitle": "詳細資訊",
+      "phone": {
+        "backup": "備用",
+        "availability": "24/7 全天候安寧療護服務"
+      },
+      "email": {
+        "responseTime": "辦公時間內 2-4 小時內回覆"
+      },
+      "location": {
+        "hours": "週一至週五：上午 9:00 - 下午 5:00"
+      },
+      "mapOverlay": {
+        "title": "我們的辦公室",
+        "closeLabel": "關閉浮層",
+        "hours": "週一至五：上午 9:00 - 下午 5:00"
+      }
     }
   },
   "contactPage": {

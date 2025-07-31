@@ -235,6 +235,24 @@
       "callEmergency": "Call 909-321-2255",
       "serviceArea": "Service Areas",
       "serviceAreaDescription": "We proudly serve San Bernardino, Riverside, Los Angeles, Orange, and San Diego Counties with comprehensive hospice care services."
+    },
+    "splitSection": {
+      "subtitle": "Information",
+      "phone": {
+        "backup": "Backup",
+        "availability": "Available 24/7 for hospice care needs"
+      },
+      "email": {
+        "responseTime": "Response within 2-4 hours during business hours"
+      },
+      "location": {
+        "hours": "Monday - Friday: 9:00 AM - 5:00 PM"
+      },
+      "mapOverlay": {
+        "title": "Our Office",
+        "closeLabel": "Close overlay",
+        "hours": "Mon-Fri: 9:00 AM - 5:00 PM"
+      }
     }
   },
   "contactPage": {
