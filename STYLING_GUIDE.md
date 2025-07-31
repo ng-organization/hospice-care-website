@@ -1,5 +1,8 @@
 # IE Community Hospice Styling Guide
 
+> 📚 **相关规范**: 查看 [开发规范索引](./STANDARDS_INDEX.md) 获取完整的项目规范列表  
+> 🏗️ **布局规范**: 配合 [布局标准指南](./LAYOUT_STANDARDS.md) 使用以获得最佳效果
+
 ## Table of Contents
 1. [Brand Overview](#brand-overview)
 2. [Color System](#color-system)
