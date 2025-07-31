@@ -97,25 +97,6 @@ export function OfficeSection() {
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-
-              {/* Office Info Overlay */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <Card className="bg-white/95 backdrop-blur-sm border-0">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <MapPin className="w-5 h-5 text-secondary-600 flex-shrink-0" />
-                      <div>
-                        <p className="font-semibold text-slate-800 text-sm">
-                          IE Community Hospice
-                        </p>
-                        <p className="text-slate-600 text-xs">
-                          {t("areasPage.office.locationLabel")}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
 
             {/* Decorative elements */}

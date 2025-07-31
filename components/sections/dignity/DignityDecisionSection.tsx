@@ -17,7 +17,7 @@ export function DignityDecisionSection() {
   return (
     <>
       {/* Decision Making Process */}
-      <section className="min-h-[80vh] w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section">
+      {/* <section className="min-h-[80vh] w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section">
         <div className="w-full px-4 md:px-8 lg:px-16 py-24">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -147,10 +147,10 @@ export function DignityDecisionSection() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Eligibility & Assessment */}
-      <section className="min-h-[80vh] w-full bg-white observe-section">
+      {/* <section className="min-h-[80vh] w-full bg-white observe-section">
         <div className="w-full px-4 md:px-8 lg:px-16 py-24">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -280,7 +280,7 @@ export function DignityDecisionSection() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits & CTA */}
       <section className="min-h-[80vh] w-full bg-gradient-to-br from-accent-50/30 to-white observe-section">
