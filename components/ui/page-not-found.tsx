@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+// import { useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Home } from "lucide-react";
 
 // Combined component for 404 page
 export default function NotFoundPage() {
@@ -18,6 +18,7 @@ export default function NotFoundPage() {
 // 1. Message Display Component
 function MessageDisplay() {
   const router = useRouter();
+  // const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -35,28 +36,58 @@ function MessageDisplay() {
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="text-[35px] font-semibold text-white m-[1%]">
+        <div className="text-[35px] font-semibold text-black m-[1%]">
           Page Not Found
         </div>
-        <div className="text-[80px] font-bold text-white m-[1%]">
+        <div className="text-[80px] font-bold text-black m-[1%]">
           404
         </div>
-        <div className="text-[15px] w-1/2 min-w-[40%] text-center text-white m-[1%]">
+        <div className="text-[15px] w-1/2 min-w-[40%] text-center text-black m-[1%]">
           The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
         </div>
         <div className="flex gap-6 mt-8">
           <button
             onClick={() => router.back()}
-            className="text-white border-2 border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out px-6 py-2 h-auto text-base font-medium flex items-center gap-2 hover:scale-105 rounded"
+            // onClick={() => navigate(-1)}
+            className="text-black border-2 border-black rounded-md hover:bg-white hover:text-black transition-all duration-300 ease-in-out px-6 py-2 h-auto text-base font-medium flex items-center gap-2 hover:scale-105"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="transition-transform group-hover:translate-x-1"
+            >
+              <path d="m12 19-7-7 7-7"/>
+              <path d="M19 12H5"/>
+            </svg>
             Go Back
           </button>
           <button
             onClick={() => router.push("/")}
-            className="bg-white text-black hover:bg-gray-200 transition-all duration-300 ease-in-out px-6 py-2 h-auto text-base font-medium flex items-center gap-2 hover:scale-105 rounded"
+            // onClick={() => navigate("/")}
+            className="bg-white border-2 border-black rounded-md text-black hover:bg-gray-200 transition-all duration-300 ease-in-out px-6 py-2 h-auto text-base font-medium flex items-center gap-2 hover:scale-105"
           >
-            <Home className="w-5 h-5" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="transition-transform group-hover:translate-x-1"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
             Go Home
           </button>
         </div>
@@ -65,11 +96,11 @@ function MessageDisplay() {
   );
 }
 
-// 2. Characters Animation Component - Using CSS animations instead of external SVGs
-type AnimatedElement = {
+// 2. Characters Animation Component
+type StickFigure = {
   top?: string;
   bottom?: string;
-  character: string;
+  src: string;
   transform?: string;
   speedX: number;
   speedRotation?: number;
@@ -79,41 +110,41 @@ function CharactersAnimation() {
   const charactersRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Define animated elements with emoji characters instead of external SVGs
-    const elements: AnimatedElement[] = [
+    // Define stick figures with their properties
+    const stickFigures: StickFigure[] = [
       {
         top: '0%',
-        character: '🏃‍♂️',
+        src: 'https://raw.githubusercontent.com/RicardoYare/imagenes/9ef29f5bbe075b1d1230a996d87bca313b9b6a63/sticks/stick0.svg',
         transform: 'rotateZ(-90deg)',
         speedX: 1500,
       },
       {
         top: '10%',
-        character: '🤸‍♀️',
+        src: 'https://raw.githubusercontent.com/RicardoYare/imagenes/9ef29f5bbe075b1d1230a996d87bca313b9b6a63/sticks/stick1.svg',
         speedX: 3000,
         speedRotation: 2000,
       },
       {
         top: '20%',
-        character: '🏃‍♀️',
+        src: 'https://raw.githubusercontent.com/RicardoYare/imagenes/9ef29f5bbe075b1d1230a996d87bca313b9b6a63/sticks/stick2.svg',
         speedX: 5000,
         speedRotation: 1000,
       },
       {
         top: '25%',
-        character: '🚶‍♂️',
+        src: 'https://raw.githubusercontent.com/RicardoYare/imagenes/9ef29f5bbe075b1d1230a996d87bca313b9b6a63/sticks/stick0.svg',
         speedX: 2500,
         speedRotation: 1500,
       },
       {
         top: '35%',
-        character: '🧘‍♀️',
+        src: 'https://raw.githubusercontent.com/RicardoYare/imagenes/9ef29f5bbe075b1d1230a996d87bca313b9b6a63/sticks/stick0.svg',
         speedX: 2000,
         speedRotation: 300,
       },
       {
         bottom: '5%',
-        character: '🕴️',
+        src: 'https://raw.githubusercontent.com/RicardoYare/imagenes/9ef29f5bbe075b1d1230a996d87bca313b9b6a63/sticks/stick3.svg',
         speedX: 0, // No horizontal movement
       },
     ];
@@ -123,44 +154,44 @@ function CharactersAnimation() {
       charactersRef.current.innerHTML = '';
     }
 
-    // Create and animate each element
-    elements.forEach((element, index) => {
-      const char = document.createElement('div');
-      char.classList.add('characters');
-      char.style.position = 'absolute';
-      char.style.fontSize = '4rem';
-      char.style.userSelect = 'none';
+    // Create and animate each stick figure
+    stickFigures.forEach((figure, index) => {
+      const stick = document.createElement('img');
+      stick.classList.add('characters');
+      stick.style.position = 'absolute';
+      stick.style.width = '18%';
+      stick.style.height = '18%';
 
       // Set position
-      if (element.top) char.style.top = element.top;
-      if (element.bottom) char.style.bottom = element.bottom;
+      if (figure.top) stick.style.top = figure.top;
+      if (figure.bottom) stick.style.bottom = figure.bottom;
       
-      // Set character content
-      char.textContent = element.character;
+      // Set image source
+      stick.src = figure.src;
       
       // Set initial transform if specified
-      if (element.transform) char.style.transform = element.transform;
+      if (figure.transform) stick.style.transform = figure.transform;
 
       // Append to the container
-      charactersRef.current?.appendChild(char);
+      charactersRef.current?.appendChild(stick);
 
-      // Skip animation for the last element (index 5)
+      // Skip animation for the last figure (index 5)
       if (index === 5) return;
 
       // Horizontal movement animation
-      char.animate(
+      stick.animate(
         [{ left: '100%' }, { left: '-20%' }],
-        { duration: element.speedX, easing: 'linear', fill: 'forwards' }
+        { duration: figure.speedX, easing: 'linear', fill: 'forwards' }
       );
 
-      // Skip rotation for the first element (index 0)
+      // Skip rotation for the first figure (index 0)
       if (index === 0) return;
 
       // Rotation animation
-      if (element.speedRotation) {
-        char.animate(
+      if (figure.speedRotation) {
+        stick.animate(
           [{ transform: 'rotate(0deg)' }, { transform: 'rotate(-360deg)' }],
-          { duration: element.speedRotation, iterations: Infinity, easing: 'linear' }
+          { duration: figure.speedRotation, iterations: Infinity, easing: 'linear' }
         );
       }
     });
@@ -180,11 +211,7 @@ function CharactersAnimation() {
         charactersRef.current.innerHTML = '';
         
         // Re-create animations after resize
-        setTimeout(() => {
-          if (charactersRef.current) {
-            charactersRef.current.dispatchEvent(new Event('contentchanged'));
-          }
-        }, 100);
+        charactersRef.current.dispatchEvent(new Event('contentchanged'));
       }
     };
 
@@ -209,7 +236,7 @@ interface Circulo {
 
 function CircleAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const requestIdRef = useRef<number>();
+  const requestIdRef = useRef<number | undefined>(undefined);
   const timerRef = useRef(0);
   const circulosRef = useRef<Circulo[]>([]);
 
@@ -249,7 +276,7 @@ function CircleAnimation() {
     const distanceX = canvas.width / 80;
     const growthRate = canvas.width / 1000;
     
-    context.fillStyle = 'rgba(255, 255, 255, 0.8)';
+    context.fillStyle = 'white';
     context.clearRect(0, 0, canvas.width, canvas.height);
     
     circulosRef.current.forEach((circulo) => {
@@ -307,7 +334,7 @@ function CircleAnimation() {
       
       const context = canvas.getContext('2d');
       if (context) {
-        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.reset();
       }
       
       initArr();
