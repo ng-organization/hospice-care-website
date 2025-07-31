@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,6 +16,42 @@ import {
 
 export function UsefulInfoResourcesSection() {
   const t = useTranslations();
+  const locale = useLocale();
+
+  // Determine resource file paths based on locale
+  const getResourcePaths = () => {
+    if (locale === "zh") {
+      return {
+        guide: "/resources/安寧療護指南.pdf",
+        family: "/resources/臨終關懷家庭支援手冊.pdf",
+      };
+    } else {
+      return {
+        guide: "/resources/Hospice Care Guide.pdf",
+        family: "/resources/Hospice Family Support Handbook.pdf",
+      };
+    }
+  };
+
+  const resourcePaths = getResourcePaths();
+
+  const handleDownload = (filePath: string, fileName: string) => {
+    try {
+      // Create a link element and trigger download/view
+      const link = document.createElement("a");
+      link.href = filePath;
+      link.download = fileName;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Error downloading file:", error);
+      // Fallback: just open in new tab
+      window.open(filePath, "_blank");
+    }
+  };
 
   return (
     <>
@@ -51,11 +87,19 @@ export function UsefulInfoResourcesSection() {
                     {t("usefulInfoPage.resources.items.guide.description")}
                   </p>
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Eye className="w-4 h-4 mr-2" />
-                      Preview
-                    </Button>
-                    <Button variant="outline" size="sm" className="flex-1">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() =>
+                        handleDownload(
+                          resourcePaths.guide,
+                          locale === "zh"
+                            ? "安寧療護指南.pdf"
+                            : "Hospice Care Guide.pdf"
+                        )
+                      }
+                    >
                       <Download className="w-4 h-4 mr-2" />
                       {t("usefulInfoPage.resources.items.guide.button")}
                     </Button>
@@ -75,11 +119,19 @@ export function UsefulInfoResourcesSection() {
                     {t("usefulInfoPage.resources.items.family.description")}
                   </p>
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Eye className="w-4 h-4 mr-2" />
-                      Preview
-                    </Button>
-                    <Button variant="outline" size="sm" className="flex-1">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() =>
+                        handleDownload(
+                          resourcePaths.family,
+                          locale === "zh"
+                            ? "臨終關懷家庭支援手冊.pdf"
+                            : "Hospice Family Support Handbook.pdf"
+                        )
+                      }
+                    >
                       <Download className="w-4 h-4 mr-2" />
                       {t("usefulInfoPage.resources.items.family.button")}
                     </Button>
@@ -151,8 +203,6 @@ export function UsefulInfoResourcesSection() {
           </div>
         </div>
       </section>
-
-
     </>
   );
 }
