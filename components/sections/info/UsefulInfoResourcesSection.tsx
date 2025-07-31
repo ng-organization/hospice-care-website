@@ -28,8 +28,7 @@ export function UsefulInfoResourcesSection() {
                 {t("usefulInfoPage.resources.badge")}
               </Badge>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-                {t("usefulInfoPage.resources.title")}
-                <br />
+                {t("usefulInfoPage.resources.title")}{" "}
                 <span className="font-semibold text-secondary-600">
                   {t("usefulInfoPage.resources.titleHighlight")}
                 </span>
@@ -39,16 +38,16 @@ export function UsefulInfoResourcesSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 max-w-5xl mx-auto">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
                     <FileText className="w-6 h-6 text-primary-600" />
                   </div>
-                  <h3 className="font-semibold text-slate-800 mb-3">
+                  <h3 className="text-lg font-semibold text-slate-800 mb-4">
                     {t("usefulInfoPage.resources.items.guide.title")}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6">
+                  <p className="text-slate-600 text-base mb-6 leading-relaxed">
                     {t("usefulInfoPage.resources.items.guide.description")}
                   </p>
                   <div className="flex gap-2">
@@ -69,10 +68,10 @@ export function UsefulInfoResourcesSection() {
                   <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mb-4">
                     <Users className="w-6 h-6 text-secondary-600" />
                   </div>
-                  <h3 className="font-semibold text-slate-800 mb-3">
+                  <h3 className="text-lg font-semibold text-slate-800 mb-4">
                     {t("usefulInfoPage.resources.items.family.title")}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6">
+                  <p className="text-slate-600 text-base mb-6 leading-relaxed">
                     {t("usefulInfoPage.resources.items.family.description")}
                   </p>
                   <div className="flex gap-2">
