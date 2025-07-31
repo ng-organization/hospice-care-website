@@ -51,7 +51,6 @@ export function Footer() {
         { name: t("footer.quickLinks.services"), Icon: Heart, href: `/${locale}/services` },
         { name: t("footer.quickLinks.areas"), Icon: MapPin, href: `/${locale}/areas` },
         { name: t("footer.quickLinks.dignity"), Icon: HeartHandshake, href: `/${locale}/death-with-dignity` },
-        { name: t("footer.quickLinks.info"), Icon: Info, href: `/${locale}/useful-information` },
         { name: t("footer.quickLinks.contact"), Icon: Phone, href: `/${locale}/contact` },
       ],
     },
@@ -62,8 +61,6 @@ export function Footer() {
         { name: t("footer.services.pain"), Icon: Stethoscope, href: `/${locale}/services#pain-management` },
         { name: t("footer.services.family"), Icon: Users, href: `/${locale}/services#family-support` },
         { name: t("footer.services.bereavement"), Icon: Flower2, href: `/${locale}/services#bereavement` },
-        { name: t("footer.services.continuous"), Icon: Clock, href: `/${locale}/services#continuous-care` },
-        { name: t("footer.services.respite"), Icon: Heart, href: `/${locale}/services#respite-care` },
       ],
     },
     {
@@ -71,19 +68,8 @@ export function Footer() {
       links: [
         { name: t("footer.contact.phone"), Icon: Phone, href: "tel:909-321-2255" },
         { name: t("footer.contact.email"), Icon: Mail, href: "mailto:INFO@IECOMMUNITYHOSPICE.COM" },
-        { name: "600 N. Mountain Ave, Suite D105", Icon: MapPin, href: "#" },
-        { name: "Upland, CA 91786", Icon: MapPin, href: "#" },
+        { name: "600 N. Mountain Ave, Suite D105, Upland, CA 91786", Icon: MapPin, href: "#" },
         { name: t("footer.contact.hoursDetail"), Icon: Clock, href: "#" },
-        { name: t("footer.contact.emergency"), Icon: AlertCircle, href: "#" },
-      ],
-    },
-    {
-      title: t("footer.certifications.title"),
-      links: [
-        { name: t("footer.certifications.medicare"), Icon: Award, href: "#certifications" },
-        { name: t("footer.certifications.cms"), Icon: CheckCircle, href: "#certifications" },
-        { name: t("footer.certifications.civilRights"), Icon: Scale, href: "#civil-rights" },
-        { name: t("footer.certifications.hipaa"), Icon: Shield, href: "#hipaa" },
       ],
     },
   ];
@@ -97,12 +83,32 @@ export function Footer() {
 
   const copyright = t("footer.legal.copyright", { year: new Date().getFullYear() });
 
+  const certifications = [
+    { name: t("footer.certifications.medicare"), Icon: Award },
+    { name: t("footer.certifications.cms"), Icon: CheckCircle },
+    { name: t("footer.certifications.hipaa"), Icon: Shield },
+  ];
+
   return (
     <div className="w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-900/10 to-secondary-900/10"></div>
       
       <div className="relative z-10">
+        {/* Certifications Bar */}
+        <div className="border-b border-white/10">
+          <div className="max-w-screen-xl mx-auto px-4 lg:px-8 py-4">
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+              {certifications.map(({ name, Icon }) => (
+                <div key={name} className="flex items-center text-white/70">
+                  <Icon className="h-4 w-4 mr-2" />
+                  <span>{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        
         <UIFooter
           brand={brand}
           socialLinks={socialLinks}

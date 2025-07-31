@@ -32,6 +32,13 @@ IE Community Hospice's visual design embodies compassion, professionalism, and t
 - **Professional Healthcare**: Medical credibility with approachable design
 - **Responsive Experience**: Seamless across all devices
 
+### Design Rules
+1. **Maximum 3 colors per page**: Primary, Secondary, and one supporting color
+2. **Color hierarchy**: Primary for main actions, Secondary for supporting elements
+3. **Accessibility first**: Maintain WCAG AA contrast ratios (4.5:1 minimum)
+4. **Content Layout**: Text should breathe - avoid clustering
+5. **Button Variants**: Maximum 3 button styles (Primary, Secondary, Text)
+
 ---
 
 ## Color System
@@ -220,10 +227,40 @@ Based on rem units (1rem = 16px):
 - **Mobile**: py-12 (3rem)
 - **Hero Sections**: Full height (h-screen) or custom heights
 
+### Full-Width Sections
+All sections should utilize the full viewport width with proper internal spacing:
+
+```css
+.section-full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+```
+
 ### Grid System
 - **Default Grid**: 12 columns with gap-6
 - **Card Grids**: grid-cols-1 md:grid-cols-2 lg:grid-cols-3
 - **Feature Grids**: grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+
+### Hero Section Variants
+
+#### Homepage Hero
+- **Height**: Full viewport (100vh)
+- **Background**: Full-width background image with overlay
+- **Content**: Centered with primary CTA
+- **Style**: Bold, welcoming, brand-focused
+
+#### Page Hero (About, Services, Areas)
+- **Height**: 60vh or fixed height based on content
+- **Background**: Subtle background or solid color
+- **Content**: Page title, breadcrumb, brief description
+- **Style**: Clean, informative, page-specific
 
 ---
 
@@ -305,17 +342,51 @@ text-sm text-gray-500 mt-1
 ```
 
 ### Navigation Patterns
+
+#### Desktop Navigation
 ```css
 /* Desktop Nav Links */
 text-gray-600 hover:text-secondary-600
 font-medium transition-colors
 
+/* Sticky Navbar */
+position: fixed
+background: rgba(38, 49, 89, 0.9)
+backdrop-filter: blur(8px)
+height: 64px minimum
+z-index: 50
+
+/* Scrolled State */
+background: rgba(255, 255, 255, 0.95)
+border-bottom: 1px solid #E5E7EB
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+```
+
+#### Mobile Menu Design
+**Design Requirements**:
+- **Style**: Elegant and minimal design
+- **Layout**: Full-screen or 3/4 screen slide-out from right
+- **Background**: Remaining 1/4 screen darkened to highlight menu
+- **Typography**: Centered text with capitalized first letters
+- **Scrolling**: Scrollable content if exceeds screen height
+- **Close mechanism**: 
+  - Borderless close button (×) symbol preferred
+  - Click outside menu area to dismiss
+  - ESC key support
+
+**Technical Specifications**:
+```css
 /* Mobile Menu */
 fixed top-0 right-0
-width: 75vw max-width: 400px
+width: 75vw /* Mobile: 75% of viewport */
+max-width: 400px /* Tablet: fixed width */
 transform: translateX(100%) /* closed */
 transform: translateX(0) /* open */
 transition: transform 300ms ease-out
+z-index: 9999
+
+/* Backdrop Overlay */
+background: rgba(0, 0, 0, 0.5)
 ```
 
 ---
@@ -570,6 +641,62 @@ focus-visible:ring-offset-2
 
 ---
 
+## CSS Custom Properties
+
+### Design Tokens
+```css
+:root {
+  /* Colors */
+  --color-primary: #263159;
+  --color-secondary: #2472C5;
+  --color-white: #FFFFFF;
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-900: #111827;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Typography */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  
+  /* Borders */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+```
+
+---
+
+## Performance Guidelines
+
+### Image Optimization
+- **Format**: WebP with PNG/JPG fallbacks
+- **Responsive images**: Multiple sizes with srcset
+- **Lazy loading**: Implement for below-fold content
+- **Compression**: Optimize for web without quality loss
+
+### CSS Performance
+- **Minimize custom CSS**: Leverage Tailwind utilities
+- **Critical CSS**: Inline critical styles
+- **Unused CSS**: Remove unused styles
+- **CSS minification**: Compress for production
+
+---
+
 ## Implementation Notes
 
 1. **Consistency**: Always use the defined color variables and spacing scale
@@ -577,5 +704,6 @@ focus-visible:ring-offset-2
 3. **Testing**: Test on multiple devices and browsers
 4. **Documentation**: Keep this guide updated with new patterns
 5. **Collaboration**: Share updates with the team
+6. **Maintenance**: Regular quarterly design reviews and accessibility audits
 
 This styling guide serves as the foundation for maintaining visual consistency across the IE Community Hospice website. All new components and pages should follow these guidelines to ensure a cohesive user experience.

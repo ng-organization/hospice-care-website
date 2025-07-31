@@ -18,15 +18,10 @@
 
 ### 🎨 样式设计指南  
 - **文件**: [STYLING_GUIDE.md](./STYLING_GUIDE.md)
-- **用途**: 颜色系统、字体、组件样式、动画效果
-- **适用范围**: UI组件、主题设计
-- **关键词**: `colors`, `typography`, `components`, `animations`
-
-### 📝 样式指导原则
-- **文件**: [styling-guideline.md](./styling-guideline.md)
-- **用途**: 按钮设计、移动端菜单、布局系统
-- **适用范围**: 交互组件、移动端适配
-- **关键词**: `buttons`, `mobile-menu`, `layout-system`
+- **用途**: 颜色系统、字体、组件样式、动画效果、按钮设计、移动端菜单
+- **适用范围**: UI组件、主题设计、交互组件、移动端适配
+- **关键词**: `colors`, `typography`, `components`, `animations`, `buttons`, `mobile-menu`
+- **备注**: 已整合 `styling-guideline.md` 的所有内容
 
 ---
 
@@ -41,8 +36,7 @@
 | 规范名称 | 文件路径 | 主要内容 | 状态 |
 |---------|---------|---------|------|
 | 布局标准 | `LAYOUT_STANDARDS.md` | 容器结构、响应式布局、间距系统 | ✅ 完成 |
-| 样式指南 | `STYLING_GUIDE.md` | 颜色、字体、组件、动画 | ✅ 完成 |
-| 交互规范 | `styling-guideline.md` | 按钮、菜单、表单设计 | ✅ 完成 |
+| 样式指南 | `STYLING_GUIDE.md` | 颜色、字体、组件、动画、按钮、菜单、表单设计 | ✅ 完成 |
 
 ### 🔧 技术规范 
 | 规范名称 | 文件路径 | 主要内容 | 状态 |
@@ -70,12 +64,12 @@
 
 #### 🎨 **设计UI组件**
 1. **颜色系统** → [STYLING_GUIDE.md](./STYLING_GUIDE.md) - 颜色规范
-2. **按钮设计** → [styling-guideline.md](./styling-guideline.md) - 按钮系统
+2. **按钮设计** → [STYLING_GUIDE.md](./STYLING_GUIDE.md) - 按钮系统
 3. **卡片布局** → [LAYOUT_STANDARDS.md](./LAYOUT_STANDARDS.md) - 组件布局模式
 
 #### 📱 **移动端优化**
 1. **响应式布局** → [LAYOUT_STANDARDS.md](./LAYOUT_STANDARDS.md) - 移动端优化规范
-2. **移动端菜单** → [styling-guideline.md](./styling-guideline.md) - 移动菜单设计
+2. **移动端菜单** → [STYLING_GUIDE.md](./STYLING_GUIDE.md) - 移动菜单设计
 3. **触摸友好** → [LAYOUT_STANDARDS.md](./LAYOUT_STANDARDS.md) - 触摸友好设计
 
 #### 🌈 **主题和样式**
@@ -88,7 +82,7 @@
 #### **组件开发**
 - Section组件 → `LAYOUT_STANDARDS.md`
 - UI组件 → `STYLING_GUIDE.md`
-- 交互组件 → `styling-guideline.md`
+- 交互组件 → `STYLING_GUIDE.md`
 
 #### **页面开发**  
 - 页面结构 → `project-guide-en.md`

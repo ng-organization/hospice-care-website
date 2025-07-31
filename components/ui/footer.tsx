@@ -39,20 +39,20 @@ export const Footer = React.forwardRef<HTMLDivElement, FooterProps>(
     return (
       <div
         ref={ref}
-        className={cn("pt-24", className)}
+        className={cn("pt-16 pb-6", className)}
         {...props}
       >
         <div className="max-w-screen-xl mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <a href="#" className="text-xl font-semibold text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+            <div className="lg:col-span-5">
+              <a href="#" className="text-2xl font-semibold text-white">
                 {brand.name}
               </a>
-              <p className="text-sm text-white/80 mt-2">
+              <p className="text-sm text-white/70 mt-3 max-w-sm leading-relaxed">
                 {brand.description}
               </p>
 
-              <p className="text-sm font-light text-white/70 mt-3.5">
+              <p className="text-sm font-light text-white/60 mt-6">
                 {socialLinks.map((link, index) => (
                   <React.Fragment key={link.name}>
                     <a
@@ -69,18 +69,18 @@ export const Footer = React.forwardRef<HTMLDivElement, FooterProps>(
               </p>
             </div>
 
-            <div className="grid grid-cols-1 mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:col-span-8 lg:mt-0 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:col-span-7 gap-8 lg:gap-12">
               {columns.map(({ title, links }) => (
                 <div key={title}>
-                  <h3 className="text-sm font-semibold text-white mb-4">{title}</h3>
-                  <ul className="space-y-2.5">
+                  <h3 className="text-sm font-semibold text-white mb-6 uppercase tracking-wider">{title}</h3>
+                  <ul className="space-y-3">
                     {links.map(({ name, Icon, href }) => (
                       <li key={name}>
                         <a
                           href={href || "#"}
-                          className="text-sm transition-all text-white/75 hover:text-white/95 group flex items-center"
+                          className="text-sm transition-all text-white/60 hover:text-white group flex items-center"
                         >
-                          <Icon className="h-4 w-4 mr-1.5 transition-all text-white/75 group-hover:text-white/95" />
+                          <Icon className="h-3.5 w-3.5 mr-2 transition-all text-white/40 group-hover:text-white/70" />
                           {name}
                         </a>
                       </li>
@@ -92,10 +92,10 @@ export const Footer = React.forwardRef<HTMLDivElement, FooterProps>(
           </div>
 
           {(copyright || legalLinks) && (
-            <div className="mt-20 border-t border-white/20 pt-6 pb-8">
+            <div className="mt-16 border-t border-white/10 pt-8">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 {copyright && (
-                  <p className="text-xs text-white/60 order-2 md:order-1">{copyright}</p>
+                  <p className="text-xs text-white/50 order-2 md:order-1">{copyright}</p>
                 )}
                 {legalLinks && legalLinks.length > 0 && (
                   <div className="flex flex-wrap gap-4 text-xs order-1 md:order-2">
@@ -103,7 +103,7 @@ export const Footer = React.forwardRef<HTMLDivElement, FooterProps>(
                       <a
                         key={link.name}
                         href={link.href}
-                        className="text-white/60 hover:text-white/90 transition-colors"
+                        className="text-white/50 hover:text-white/80 transition-colors"
                       >
                         {link.name}
                       </a>
