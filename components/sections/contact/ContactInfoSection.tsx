@@ -84,29 +84,32 @@ export function ContactInfoSection() {
   return (
     <>
       {/* Floating Contact Bar */}
-      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="bg-white shadow-2xl rounded-full px-6 py-3 flex items-center gap-4 border border-gray-200">
-          <div className="flex items-center gap-2">
+      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 px-4 w-full max-w-lg">
+        <div className="bg-white shadow-2xl rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 sm:gap-4 border border-gray-200">
+          <div className="flex items-center gap-1 sm:gap-2">
             <div className={`w-3 h-3 rounded-full ${isOfficeHours ? 'bg-green-500 animate-pulse' : 'bg-amber-500'}`}></div>
-            <span className="text-sm font-medium text-slate-700">
+            <span className="text-xs sm:text-sm font-medium text-slate-700 hidden sm:block">
               {isOfficeHours ? 'We\'re Available' : '24/7 Emergency'}
+            </span>
+            <span className="text-xs font-medium text-slate-700 sm:hidden">
+              {isOfficeHours ? 'Available' : '24/7'}
             </span>
           </div>
           <div className="h-4 w-px bg-gray-300"></div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
             <a 
               href="tel:909-321-2255" 
-              className="flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105"
+              className="flex items-center gap-1 sm:gap-2 bg-primary-600 hover:bg-primary-700 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 hover:scale-105"
             >
-              <Phone className="w-4 h-4" />
-              Call
+              <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">Call</span>
             </a>
             <a 
               href="sms:909-321-2255" 
-              className="flex items-center gap-2 bg-secondary-600 hover:bg-secondary-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105"
+              className="flex items-center gap-1 sm:gap-2 bg-secondary-600 hover:bg-secondary-700 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 hover:scale-105"
             >
-              <MessageCircle className="w-4 h-4" />
-              Text
+              <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">Text</span>
             </a>
           </div>
         </div>
