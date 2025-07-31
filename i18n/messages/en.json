@@ -305,6 +305,76 @@
       "placeholder": {
         "title": "Google Maps Integration",
         "description": "Interactive map showing our office location and directions"
+      },
+      "communityTrust": {
+        "badge": "Community & Trust",
+        "title": "Trusted in Our",
+        "titleHighlight": "Community",
+        "description": "For over 15 years, we've been a trusted partner to families in the Upland area, providing compassionate hospice care when it matters most."
+      },
+      "trustIndicators": {
+        "licensed": {
+          "title": "Licensed & Certified",
+          "description": "State-licensed hospice care provider with full Medicare certification"
+        },
+        "hipaa": {
+          "title": "HIPAA Compliant",
+          "description": "Your privacy and health information are protected with the highest security standards"
+        },
+        "compassionate": {
+          "title": "Compassionate Care",
+          "description": "Over 15 years of providing dignified, family-centered hospice care"
+        },
+        "support": {
+          "title": "24/7 Support Team",
+          "description": "Round-the-clock availability with experienced healthcare professionals"
+        }
+      },
+      "testimonials": [
+        {
+          "quote": "The care team treated my mother with such dignity and respect. They made her final months peaceful and comfortable.",
+          "author": "Maria S.",
+          "relationship": "Daughter"
+        },
+        {
+          "quote": "Professional, compassionate, and always available when we needed them. They supported our entire family through this difficult time.",
+          "author": "Robert T.",
+          "relationship": "Husband"
+        },
+        {
+          "quote": "From the first consultation to the final goodbye, they were there for us. Their expertise and kindness made all the difference.",
+          "author": "Jennifer L.",
+          "relationship": "Son"
+        }
+      ],
+      "communityPresence": [
+        {
+          "title": "Upland Community",
+          "description": "Proudly serving families in Upland and surrounding areas since 2008",
+          "detail": "600 N. Mountain Ave, Suite D105"
+        },
+        {
+          "title": "Local Partnerships",
+          "description": "Collaborating with area hospitals, physicians, and healthcare facilities",
+          "detail": "Network of 15+ partner facilities"
+        },
+        {
+          "title": "Community Events",
+          "description": "Regular grief support groups and community education programs",
+          "detail": "Monthly community workshops"
+        }
+      ],
+      "sections": {
+        "testimonialTitle": "What Families",
+        "testimonialTitleHighlight": "Are Saying",
+        "impactTitle": "Our",
+        "impactTitleHighlight": "Community Impact",
+        "visitTitle": "Visit Our Office"
+      },
+      "accessibility": {
+        "testimonialImageAlt": "Portrait of {author}, {relationship}",
+        "previousSlide": "Previous slide",
+        "nextSlide": "Next slide"
       }
     },
     "emergency": {

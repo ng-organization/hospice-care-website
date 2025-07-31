@@ -311,6 +311,76 @@
       "placeholder": {
         "title": "Google 地圖整合",
         "description": "顯示我們辦公室位置和路線的互動式地圖"
+      },
+      "communityTrust": {
+        "badge": "社區信任",
+        "title": "社區中值得",
+        "titleHighlight": "信賴的夥伴",
+        "description": "超過15年來，我們一直是阿普蘭地區家庭值得信賴的夥伴，在最重要的時刻提供充滿愛心的安寧療護。"
+      },
+      "trustIndicators": {
+        "licensed": {
+          "title": "持牌認證",
+          "description": "經州政府許可的安寧療護機構，具備完整聯邦醫療保險認證"
+        },
+        "hipaa": {
+          "title": "HIPAA合規",
+          "description": "您的隱私和健康資訊受到最高安全標準的保護"
+        },
+        "compassionate": {
+          "title": "慈悲關懷",
+          "description": "超過15年為家庭提供有尊嚴、以家庭為中心的安寧療護"
+        },
+        "support": {
+          "title": "24小時支援團隊",
+          "description": "經驗豐富的醫療專業人員全天候隨時為您服務"
+        }
+      },
+      "testimonials": [
+        {
+          "quote": "護理團隊以如此尊嚴和尊重對待我的母親。他們讓她最後的幾個月過得安寧舒適。",
+          "author": "王女士",
+          "relationship": "女兒"
+        },
+        {
+          "quote": "專業、慈悲，總是在我們需要時提供幫助。他們在這個艱難的時期支持我們整個家庭。",
+          "author": "李先生",
+          "relationship": "丈夫"
+        },
+        {
+          "quote": "從第一次諮詢到最後的告別，他們都陪伴著我們。他們的專業知識和善良讓一切都不同了。",
+          "author": "陳女士",
+          "relationship": "兒子"
+        }
+      ],
+      "communityPresence": [
+        {
+          "title": "阿普蘭社區",
+          "description": "自2008年以來自豪地為阿普蘭及周邊地區的家庭提供服務",
+          "detail": "600 N. Mountain Ave, Suite D105"
+        },
+        {
+          "title": "本地合作夥伴",
+          "description": "與地區醫院、醫師和醫療保健機構合作",
+          "detail": "15家以上合作夥伴機構網絡"
+        },
+        {
+          "title": "社區活動",
+          "description": "定期舉辦悲傷支援小組和社區教育計劃",
+          "detail": "每月社區工作坊"
+        }
+      ],
+      "sections": {
+        "testimonialTitle": "家屬們的",
+        "testimonialTitleHighlight": "心聲分享",
+        "impactTitle": "我們的",
+        "impactTitleHighlight": "社區影響",
+        "visitTitle": "拜訪我們的辦公室"
+      },
+      "accessibility": {
+        "testimonialImageAlt": "{author}的肖像，{relationship}",
+        "previousSlide": "上一張投影片",
+        "nextSlide": "下一張投影片"
       }
     },
     "emergency": {

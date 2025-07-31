@@ -13,72 +13,51 @@ export function ContactMapSection() {
   const trustIndicators = [
     {
       icon: Award,
-      title: "Licensed & Certified",
-      description: "State-licensed hospice care provider with full Medicare certification",
+      title: t("contactPage.map.trustIndicators.licensed.title"),
+      description: t("contactPage.map.trustIndicators.licensed.description"),
       bgColor: "from-amber-50 to-amber-100/50",
       iconColor: "text-amber-600"
     },
     {
       icon: Shield,
-      title: "HIPAA Compliant",
-      description: "Your privacy and health information are protected with the highest security standards",
+      title: t("contactPage.map.trustIndicators.hipaa.title"),
+      description: t("contactPage.map.trustIndicators.hipaa.description"),
       bgColor: "from-blue-50 to-blue-100/50",
       iconColor: "text-blue-600"
     },
     {
       icon: Heart,
-      title: "Compassionate Care",
-      description: "Over 15 years of providing dignified, family-centered hospice care",
+      title: t("contactPage.map.trustIndicators.compassionate.title"),
+      description: t("contactPage.map.trustIndicators.compassionate.description"),
       bgColor: "from-red-50 to-red-100/50",
       iconColor: "text-red-600"
     },
     {
       icon: Users,
-      title: "24/7 Support Team",
-      description: "Round-the-clock availability with experienced healthcare professionals",
+      title: t("contactPage.map.trustIndicators.support.title"),
+      description: t("contactPage.map.trustIndicators.support.description"),
       bgColor: "from-green-50 to-green-100/50",
       iconColor: "text-green-600"
     }
   ];
 
-  const testimonials = [
-    {
-      quote: "The care team treated my mother with such dignity and respect. They made her final months peaceful and comfortable.",
-      author: "Maria S.",
-      relationship: "Daughter",
-      image: "/image_asset/20250724_1034_Realistic Care Interaction_remix_01k11a9631e8rv6vmsdb2qbgkh.webp"
-    },
-    {
-      quote: "Professional, compassionate, and always available when we needed them. They supported our entire family through this difficult time.",
-      author: "Robert T.",
-      relationship: "Husband",
-      image: "/image_asset/20250724_1452_Realistic Caring Interaction_remix_01k0z6m6yke1av5srhgz6j4c9c.webp"
-    },
-    {
-      quote: "From the first consultation to the final goodbye, they were there for us. Their expertise and kindness made all the difference.",
-      author: "Jennifer L.",
-      relationship: "Son",
-      image: "/image_asset/20250724_1137_Quilting Companions in Detail_remix_01k0yvf6vvfjs87kafjp4gsnqs.webp"
-    }
+  const testimonials = t("contactPage.map.testimonials") as unknown as Array<{
+    quote: string;
+    author: string;
+    relationship: string;
+  }>;
+
+  const testimonialImages = [
+    "/image_asset/20250724_1034_Realistic Care Interaction_remix_01k11a9631e8rv6vmsdb2qbgkh.webp",
+    "/image_asset/20250724_1452_Realistic Caring Interaction_remix_01k0z6m6yke1av5srhgz6j4c9c.webp",
+    "/image_asset/20250724_1137_Quilting Companions in Detail_remix_01k0yvf6vvfjs87kafjp4gsnqs.webp"
   ];
 
-  const communityPresence = [
-    {
-      title: "Upland Community",
-      description: "Proudly serving families in Upland and surrounding areas since 2008",
-      detail: "600 N. Mountain Ave, Suite D105"
-    },
-    {
-      title: "Local Partnerships",
-      description: "Collaborating with area hospitals, physicians, and healthcare facilities",
-      detail: "Network of 15+ partner facilities"
-    },
-    {
-      title: "Community Events",
-      description: "Regular grief support groups and community education programs",
-      detail: "Monthly community workshops"
-    }
-  ];
+  const communityPresence = t("contactPage.map.communityPresence") as unknown as Array<{
+    title: string;
+    description: string;
+    detail: string;
+  }>;
 
   return (
     <section className="min-h-screen w-full bg-gradient-to-br from-gray-50 via-white to-secondary-50/20 observe-section">
@@ -89,21 +68,21 @@ export function ContactMapSection() {
           <StaggerContainer className="text-center mb-20">
             <StaggerItem>
               <Badge className="bg-accent-100 text-accent-800 px-6 py-3 rounded-full text-lg font-medium mb-6">
-                Community & Trust
+                {t("contactPage.map.communityTrust.badge")}
               </Badge>
             </StaggerItem>
             <StaggerItem>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
-                Trusted in Our
+                {t("contactPage.map.communityTrust.title")}
                 <br />
                 <span className="font-semibold text-accent-600">
-                  Community
+                  {t("contactPage.map.communityTrust.titleHighlight")}
                 </span>
               </h2>
             </StaggerItem>
             <StaggerItem>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                For over 15 years, we've been a trusted partner to families in the Upland area, providing compassionate hospice care when it matters most.
+                {t("contactPage.map.communityTrust.description")}
               </p>
             </StaggerItem>
           </StaggerContainer>
@@ -134,7 +113,7 @@ export function ContactMapSection() {
             <StaggerItem>
               <div className="text-center mb-12">
                 <h3 className="text-3xl font-light text-slate-800 mb-4">
-                  What Families <span className="font-semibold text-primary-600">Are Saying</span>
+                  {t("contactPage.map.sections.testimonialTitle")} <span className="font-semibold text-primary-600">{t("contactPage.map.sections.testimonialTitleHighlight")}</span>
                 </h3>
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                   Real stories from families we've had the privilege to serve
@@ -158,7 +137,7 @@ export function ContactMapSection() {
                       <div className="flex items-center">
                         <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                           <img
-                            src={testimonial.image}
+                            src={testimonialImages[index]}
                             alt={`${testimonial.author}, ${testimonial.relationship}`}
                             className="w-full h-full object-cover"
                           />
@@ -184,7 +163,7 @@ export function ContactMapSection() {
             <StaggerItem>
               <div className="text-center mb-12">
                 <h3 className="text-3xl font-light text-slate-800 mb-4">
-                  Our <span className="font-semibold text-secondary-600">Community Impact</span>
+                  {t("contactPage.map.sections.impactTitle")} <span className="font-semibold text-secondary-600">{t("contactPage.map.sections.impactTitleHighlight")}</span>
                 </h3>
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                   Deeply rooted in the Upland community and surrounding areas
@@ -219,7 +198,7 @@ export function ContactMapSection() {
               <div className="relative h-96 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
                 <div className="text-center text-slate-700 relative z-10">
                   <MapPin className="w-16 h-16 mx-auto mb-6 text-primary-600" />
-                  <h4 className="text-2xl font-semibold mb-4">Visit Our Office</h4>
+                  <h4 className="text-2xl font-semibold mb-4">{t("contactPage.map.sections.visitTitle")}</h4>
                   <p className="text-lg mb-2">600 N. Mountain Ave, Suite D105</p>
                   <p className="text-lg mb-6">Upland, CA 91786</p>
                   <div className="flex items-center justify-center gap-2 mb-6">
