@@ -14,7 +14,7 @@ export function DignitySection() {
       className="min-h-[80vh] w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section"
     >
       <div className="w-full px-4 md:px-8 lg:px-16 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           <div className="space-y-8">
             <div>
               <Badge className="bg-secondary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
