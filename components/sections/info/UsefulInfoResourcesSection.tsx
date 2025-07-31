@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Feature1 } from "@/components/ui/cta2";
+
 import {
   Download,
   FileText,
@@ -159,19 +159,7 @@ export function UsefulInfoResourcesSection() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <Feature1
-        title={`${t("usefulInfoPage.cta.title")} ${t(
-          "usefulInfoPage.cta.titleHighlight"
-        )}`}
-        description={t("usefulInfoPage.cta.description")}
-        imageSrc="/image_asset/20250725_1123_Realistic Doctor Consultation_remix_01k11d2jzke1w8mxrazmkk5kny.webp"
-        imageAlt="Hospice care support team"
-        buttonPrimary={{
-          label: t("usefulInfoPage.cta.callButton"),
-          href: "tel:+1234567890",
-        }}
-      />
+
     </>
   );
 }

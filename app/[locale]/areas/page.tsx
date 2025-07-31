@@ -1,6 +1,6 @@
 "use client";
 
-import { AreasCTASection } from "@/components/sections/areas/AreasCTASection";
+import { CTA } from "@/components/ui/call-to-action";
 import { AreasHeroSection } from "@/components/sections/areas/AreasHeroSection";
 import { CareSettingsSection } from "@/components/sections/areas/CareSettingsSection";
 import { CountiesSection } from "@/components/sections/areas/CountiesSection";
@@ -15,7 +15,7 @@ export default function AreasPage() {
         <CountiesSection />
         <OfficeSection />
         <CareSettingsSection />
-        <AreasCTASection />
+        <CTA variant="areas" />
       </main>
     </PageTransition>
   );
