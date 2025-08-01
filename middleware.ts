@@ -14,9 +14,9 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
-     * - Static asset directories
+     * - Static asset directories and file extensions
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|resources|assets|image_asset).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|resources|assets|image_asset|pdf\\.worker\\.min\\.mjs|manifest\\.json|cmaps).*)',
     '/',
     '/(zh|en)/:path*'
   ]
