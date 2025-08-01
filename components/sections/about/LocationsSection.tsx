@@ -1,10 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building, Heart, Home, Hospital, Users } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getContentImage } from "@/lib/utils";
 
 export function LocationsSection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   const locationIcons = [
     <Home className="w-6 h-6" />,
@@ -65,7 +67,7 @@ export function LocationsSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/image_asset/20250724_1131_温馨家庭探访_remix_01k0yv594bfy1vs06ygah5s0qn.webp"
+                src={getContentImage(locale, "location-visit")}
                 alt="Warm family visit showing home care"
                 className="w-full h-[600px] object-cover"
               />

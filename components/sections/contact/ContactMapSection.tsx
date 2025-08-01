@@ -1,14 +1,16 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Award, Shield, Users, Star, MapPin, Building, Clock } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/motion";
+import { getContentImage } from "@/lib/utils";
 
 export function ContactMapSection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   const trustIndicators = [
     {
@@ -48,9 +50,9 @@ export function ContactMapSection() {
   }>;
 
   const testimonialImages = [
-    "/image_asset/20250724_1034_Realistic Care Interaction_remix_01k11a9631e8rv6vmsdb2qbgkh.webp",
-    "/image_asset/20250724_1452_Realistic Caring Interaction_remix_01k0z6m6yke1av5srhgz6j4c9c.webp",
-    "/image_asset/20250724_1137_Quilting Companions in Detail_remix_01k0yvf6vvfjs87kafjp4gsnqs.webp"
+    getContentImage(locale, "contact-map-1"),
+    getContentImage(locale, "contact-map-2"),
+    getContentImage(locale, "contact-map-3")
   ];
 
   const communityPresence = t("contactPage.map.communityPresence") as unknown as Array<{

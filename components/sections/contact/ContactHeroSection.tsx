@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
+import { getHeroImage } from "@/lib/utils";
 
 export function ContactHeroSection() {
   const t = useTranslations();
@@ -12,7 +13,7 @@ export function ContactHeroSection() {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/image_asset/20250724_1131_温馨家庭探访_remix_01k0yv594bfy1vs06ygah5s0qn.webp"
+          src={getHeroImage(locale, "/contact")}
           alt="Compassionate hospice care visit showing warmth and dignity"
           className="w-full h-full object-cover"
         />

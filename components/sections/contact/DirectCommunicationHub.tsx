@@ -1,14 +1,16 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Phone, MessageCircle, Mail, Video, Clock, User, Heart, Users } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/motion";
+import { getContentImage } from "@/lib/utils";
 
 export function DirectCommunicationHub() {
   const t = useTranslations();
+  const locale = useLocale();
 
   const communicationMethods = [
     {
@@ -62,14 +64,14 @@ export function DirectCommunicationHub() {
       name: "Haydee Agojo",
       role: "Care Manager",
       specialty: "Family Support & Care Planning",
-      image: "/image_asset/20250724_1445_Realistic Healthcare Portrait_remix_01k0z67dw8f99s2362jmy2mf9p.webp",
+      image: getContentImage(locale, "contact-communication"),
       contact: "Direct: 909-321-2255"
     },
     {
       name: "Care Team",
       role: "24/7 Support",
       specialty: "Emergency & Urgent Care",
-      image: "/image_asset/20250724_1452_Realistic Caring Interaction_remix_01k0z6m6yke1av5srhgz6j4c9c.webp",
+      image: getContentImage(locale, "contact-communication"),
       contact: "Emergency: 909-321-2255"
     }
   ];

@@ -1,12 +1,14 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Users, Stethoscope } from "lucide-react";
+import { getContentImage } from "@/lib/utils";
 
 export function DignitySection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section
@@ -85,7 +87,7 @@ export function DignitySection() {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-secondary-100 to-primary-100 rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/image_asset/20250724_1445_Realistic Healthcare Portrait_remix_01k0z67dw8f99s2362jmy2mf9p.webp"
+                src={getContentImage(locale, "dignity-care")}
                 alt="Compassionate hospice care providing dignity and comfort"
                 className="w-full h-full object-cover"
               />
