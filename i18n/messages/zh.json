@@ -241,6 +241,24 @@
       "callEmergency": "致電 909-321-2255",
       "serviceArea": "服務地區",
       "serviceAreaDescription": "我們自豪地為聖貝納迪諾縣、河濱縣、洛杉磯縣、橙縣和聖地亞哥縣提供全面的安寧療護服務。"
+    },
+    "splitSection": {
+      "subtitle": "詳細資訊",
+      "phone": {
+        "backup": "備用",
+        "availability": "24/7 全天候安寧療護服務"
+      },
+      "email": {
+        "responseTime": "辦公時間內 2-4 小時內回覆"
+      },
+      "location": {
+        "hours": "週一至週五：上午 9:00 - 下午 5:00"
+      },
+      "mapOverlay": {
+        "title": "我們的辦公室",
+        "closeLabel": "關閉浮層",
+        "hours": "週一至五：上午 9:00 - 下午 5:00"
+      }
     }
   },
   "contactPage": {
@@ -311,6 +329,76 @@
       "placeholder": {
         "title": "Google 地圖整合",
         "description": "顯示我們辦公室位置和路線的互動式地圖"
+      },
+      "communityTrust": {
+        "badge": "社區信任",
+        "title": "社區中值得",
+        "titleHighlight": "信賴的夥伴",
+        "description": "超過15年來，我們一直是阿普蘭地區家庭值得信賴的夥伴，在最重要的時刻提供充滿愛心的安寧療護。"
+      },
+      "trustIndicators": {
+        "licensed": {
+          "title": "持牌認證",
+          "description": "經州政府許可的安寧療護機構，具備完整聯邦醫療保險認證"
+        },
+        "hipaa": {
+          "title": "HIPAA合規",
+          "description": "您的隱私和健康資訊受到最高安全標準的保護"
+        },
+        "compassionate": {
+          "title": "慈悲關懷",
+          "description": "超過15年為家庭提供有尊嚴、以家庭為中心的安寧療護"
+        },
+        "support": {
+          "title": "24小時支援團隊",
+          "description": "經驗豐富的醫療專業人員全天候隨時為您服務"
+        }
+      },
+      "testimonials": [
+        {
+          "quote": "護理團隊以如此尊嚴和尊重對待我的母親。他們讓她最後的幾個月過得安寧舒適。",
+          "author": "王女士",
+          "relationship": "女兒"
+        },
+        {
+          "quote": "專業、慈悲，總是在我們需要時提供幫助。他們在這個艱難的時期支持我們整個家庭。",
+          "author": "李先生",
+          "relationship": "丈夫"
+        },
+        {
+          "quote": "從第一次諮詢到最後的告別，他們都陪伴著我們。他們的專業知識和善良讓一切都不同了。",
+          "author": "陳女士",
+          "relationship": "兒子"
+        }
+      ],
+      "communityPresence": [
+        {
+          "title": "阿普蘭社區",
+          "description": "自2008年以來自豪地為阿普蘭及周邊地區的家庭提供服務",
+          "detail": "600 N. Mountain Ave, Suite D105"
+        },
+        {
+          "title": "本地合作夥伴",
+          "description": "與地區醫院、醫師和醫療保健機構合作",
+          "detail": "15家以上合作夥伴機構網絡"
+        },
+        {
+          "title": "社區活動",
+          "description": "定期舉辦悲傷支援小組和社區教育計劃",
+          "detail": "每月社區工作坊"
+        }
+      ],
+      "sections": {
+        "testimonialTitle": "家屬們的",
+        "testimonialTitleHighlight": "心聲分享",
+        "impactTitle": "我們的",
+        "impactTitleHighlight": "社區影響",
+        "visitTitle": "拜訪我們的辦公室"
+      },
+      "accessibility": {
+        "testimonialImageAlt": "{author}的肖像，{relationship}",
+        "previousSlide": "上一張投影片",
+        "nextSlide": "下一張投影片"
       }
     },
     "emergency": {
@@ -534,12 +622,24 @@
           "description": "為病人和家庭成員在整個旅程中提供全面的悲傷輔導、靈性照護和情感支持。"
         },
         "family": {
-          "title": "家庭力量",
+          "title": "家庭支持",
           "description": "家庭教育、喘息照護和在您親人離世後持續13個月的喪親服務。"
         },
         "practical": {
-          "title": "實際益處",
+          "title": "實用規劃",
           "description": "24/7隨叫隨到支持、醫療設備、藥物和專業照護服務，全部由保險覆蓋。"
+        },
+        "comfort": {
+          "title": "舒適與安寧",
+          "description": "優先考慮疼痛緩解和症狀管理，確保最大程度的舒適和生活品質。"
+        },
+        "control": {
+          "title": "個人控制",
+          "description": "尊重病人的自主權和在照護決定中的個人選擇。"
+        },
+        "legal": {
+          "title": "法律明確性",
+          "description": "清楚了解醫療指示和生命終結照護的法律層面。"
         }
       }
     },
@@ -890,6 +990,52 @@
       "description": "我們的團隊24/7全天候為您解答問題，並幫助確定安寧療護是否適合您或您的親人。",
       "ctaPrimary": "致電 909-321-2255",
       "ctaSecondary": "立即聯絡我們"
+    }
+  },
+  "common": {
+    "callButton": "致電 909-321-2255",
+    "contactUs": "聯絡我們",
+    "note": "備註",
+    "checkAvailability": "查看可用性"
+  },
+  "faqSection": {
+    "badge": "常見問題",
+    "title": "常見問題解答",
+    "description": "獲取有關安寧療護、我們的服務以及我們如何在這個重要時刻支持您和您的親人的常見問題答案。",
+    "contactButton": "有任何問題嗎？請聯絡我們",
+    "items": {
+      "payment": {
+        "question": "安寧療護費用如何支付？",
+        "answer": "大部分安寧療護費用由Medicare、Medicaid和私人保險承擔。我們直接與保險提供商合作，為家庭減少自付費用。我們的入院團隊將驗證您的福利並預先說明任何潛在費用。"
+      },
+      "eligibility": {
+        "question": "誰有資格接受安寧療護？",
+        "answer": "安寧療護適用於患有危及生命疾病且預後為六個月或更少時間的個人（如果疾病按正常過程發展）。常見疾病包括癌症、心臟病、失智症、呼吸系統疾病和中風併發症。"
+      },
+      "location": {
+        "question": "安寧療護在哪裡提供？",
+        "answer": "安寧療護可以在患者稱為家的任何地方提供——無論是自己的住所、家人的家、輔助生活設施或療養院。我們也有住院設施，適用於需要更密集醫療管理的情況。"
+      },
+      "services": {
+        "question": "安寧療護包括哪些服務？",
+        "answer": "我們的全面安寧療護服務包括疼痛和症狀管理、護理照護、個人護理協助、社工支持、心靈關懷、醫療設備和用品、與安寧診斷相關的藥物以及為家庭提供的喪親支持。"
+      },
+      "family": {
+        "question": "安寧療護如何支持家庭成員？",
+        "answer": "我們為家庭成員提供廣泛支持，包括照護教育、情感和精神支持、暫息照護為家庭照護者提供休息，以及在失去親人後持續長達13個月的喪親諮詢。"
+      },
+      "timing": {
+        "question": "什麼時候是考慮安寧療護的正確時機？",
+        "answer": "安寧療護開始得越早，患者和家庭受益越多。當治療性治療不再有效或不再需要時，當舒適成為主要目標時，或當頻繁住院時，應考慮安寧療護。進行這個對話永遠不會太早。"
+      },
+      "team": {
+        "question": "安寧療護團隊包括哪些人？",
+        "answer": "我們的跨學科團隊包括醫生、護士、家庭健康助理、社工、牧師、志願者以及根據需要的其他專家。每個團隊成員都帶來獨特的專業知識，確保為患者和家庭提供全面、富有同情心的護理。"
+      },
+      "quality": {
+        "question": "您如何確保生活品質？",
+        "answer": "我們專注於有效管理疼痛和症狀，支持情感和精神需求，盡可能維持尊嚴和獨立性，並幫助患者參與有意義的活動和關係。生活品質是我們所做一切的核心。"
+      }
     }
   }
 }

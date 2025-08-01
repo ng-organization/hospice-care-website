@@ -50,7 +50,7 @@ export function TestimonialsSection() {
     >
       <AnimatedSection animation="fadeInUp" delay={0.2}>
         <div className="w-full px-4 md:px-8 lg:px-16 py-24">
-          <StaggerContainer className="text-center mb-16">
+          <StaggerContainer className="text-center mb-16 max-w-7xl mx-auto">
             <StaggerItem>
               <Badge className="bg-primary-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 {t("testimonials.badge")}

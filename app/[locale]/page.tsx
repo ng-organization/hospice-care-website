@@ -1,7 +1,7 @@
 "use client";
 
 import { AboutSection } from "@/components/sections/AboutSection";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { CTA } from "@/components/ui/call-to-action";
 import { DignitySection } from "@/components/sections/DignitySection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { InfoSection } from "@/components/sections/InfoSection";
@@ -29,7 +29,7 @@ export default function HospiceCareWebsite() {
         <SectionDivider />
         <InfoSection />
         <SectionDivider />
-        <ContactSection />
+        <CTA variant="default" />
       </main>
     </PageTransition>
   );

@@ -235,6 +235,24 @@
       "callEmergency": "Call 909-321-2255",
       "serviceArea": "Service Areas",
       "serviceAreaDescription": "We proudly serve San Bernardino, Riverside, Los Angeles, Orange, and San Diego Counties with comprehensive hospice care services."
+    },
+    "splitSection": {
+      "subtitle": "Information",
+      "phone": {
+        "backup": "Backup",
+        "availability": "Available 24/7 for hospice care needs"
+      },
+      "email": {
+        "responseTime": "Response within 2-4 hours during business hours"
+      },
+      "location": {
+        "hours": "Monday - Friday: 9:00 AM - 5:00 PM"
+      },
+      "mapOverlay": {
+        "title": "Our Office",
+        "closeLabel": "Close overlay",
+        "hours": "Mon-Fri: 9:00 AM - 5:00 PM"
+      }
     }
   },
   "contactPage": {
@@ -305,6 +323,76 @@
       "placeholder": {
         "title": "Google Maps Integration",
         "description": "Interactive map showing our office location and directions"
+      },
+      "communityTrust": {
+        "badge": "Community & Trust",
+        "title": "Trusted in Our",
+        "titleHighlight": "Community",
+        "description": "For over 15 years, we've been a trusted partner to families in the Upland area, providing compassionate hospice care when it matters most."
+      },
+      "trustIndicators": {
+        "licensed": {
+          "title": "Licensed & Certified",
+          "description": "State-licensed hospice care provider with full Medicare certification"
+        },
+        "hipaa": {
+          "title": "HIPAA Compliant",
+          "description": "Your privacy and health information are protected with the highest security standards"
+        },
+        "compassionate": {
+          "title": "Compassionate Care",
+          "description": "Over 15 years of providing dignified, family-centered hospice care"
+        },
+        "support": {
+          "title": "24/7 Support Team",
+          "description": "Round-the-clock availability with experienced healthcare professionals"
+        }
+      },
+      "testimonials": [
+        {
+          "quote": "The care team treated my mother with such dignity and respect. They made her final months peaceful and comfortable.",
+          "author": "Maria S.",
+          "relationship": "Daughter"
+        },
+        {
+          "quote": "Professional, compassionate, and always available when we needed them. They supported our entire family through this difficult time.",
+          "author": "Robert T.",
+          "relationship": "Husband"
+        },
+        {
+          "quote": "From the first consultation to the final goodbye, they were there for us. Their expertise and kindness made all the difference.",
+          "author": "Jennifer L.",
+          "relationship": "Son"
+        }
+      ],
+      "communityPresence": [
+        {
+          "title": "Upland Community",
+          "description": "Proudly serving families in Upland and surrounding areas since 2008",
+          "detail": "600 N. Mountain Ave, Suite D105"
+        },
+        {
+          "title": "Local Partnerships",
+          "description": "Collaborating with area hospitals, physicians, and healthcare facilities",
+          "detail": "Network of 15+ partner facilities"
+        },
+        {
+          "title": "Community Events",
+          "description": "Regular grief support groups and community education programs",
+          "detail": "Monthly community workshops"
+        }
+      ],
+      "sections": {
+        "testimonialTitle": "What Families",
+        "testimonialTitleHighlight": "Are Saying",
+        "impactTitle": "Our",
+        "impactTitleHighlight": "Community Impact",
+        "visitTitle": "Visit Our Office"
+      },
+      "accessibility": {
+        "testimonialImageAlt": "Portrait of {author}, {relationship}",
+        "previousSlide": "Previous slide",
+        "nextSlide": "Next slide"
       }
     },
     "emergency": {
@@ -528,12 +616,24 @@
           "description": "Comprehensive grief counseling, spiritual care, and emotional support for both patients and family members throughout the journey."
         },
         "family": {
-          "title": "Family Strength",
+          "title": "Family Support",
           "description": "Family education, respite care, and bereavement services that continue for 13 months after your loved one's passing."
         },
         "practical": {
-          "title": "Practical Benefits",
+          "title": "Practical Planning",
           "description": "24/7 on-call support, medical equipment, medications, and professional care services all covered by insurance."
+        },
+        "comfort": {
+          "title": "Comfort and Peace",
+          "description": "Prioritizing pain relief and symptom management to ensure maximum comfort and quality of life."
+        },
+        "control": {
+          "title": "Personal Control",
+          "description": "Respecting patient autonomy and personal choices in their care decisions."
+        },
+        "legal": {
+          "title": "Legal Clarity",
+          "description": "Clear understanding of healthcare directives and legal aspects of end-of-life care."
         }
       }
     },
@@ -891,5 +991,45 @@
     "contactUs": "Contact Us",
     "note": "Note",
     "checkAvailability": "Check Availability"
+  },
+  "faqSection": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Get answers to common questions about hospice care, our services, and how we can support you and your loved ones during this important time.",
+    "contactButton": "Any questions? Reach out",
+    "items": {
+      "payment": {
+        "question": "How is hospice care paid for?",
+        "answer": "Most hospice care is covered by Medicare, Medicaid, and private insurance. We work directly with insurance providers to minimize out-of-pocket expenses for families. Our admissions team will verify your benefits and explain any potential costs upfront."
+      },
+      "eligibility": {
+        "question": "Who is eligible for hospice care?",
+        "answer": "Hospice care is available for individuals with a life-limiting illness and a prognosis of six months or less if the disease runs its normal course. Common conditions include cancer, heart disease, dementia, respiratory conditions, and stroke complications."
+      },
+      "location": {
+        "question": "Where is hospice care provided?",
+        "answer": "Hospice care can be provided wherever the patient calls home - whether that's their own residence, a family member's home, assisted living facility, or nursing home. We also have inpatient facilities for situations requiring more intensive medical management."
+      },
+      "services": {
+        "question": "What services are included in hospice care?",
+        "answer": "Our comprehensive hospice services include pain and symptom management, nursing care, personal care assistance, social work support, spiritual care, medical equipment and supplies, medications related to the hospice diagnosis, and bereavement support for families."
+      },
+      "family": {
+        "question": "How does hospice support family members?",
+        "answer": "We provide extensive support to family members including education about caregiving, emotional and spiritual support, respite care to give family caregivers a break, and bereavement counseling that continues for up to 13 months after the loss of a loved one."
+      },
+      "timing": {
+        "question": "When is the right time to consider hospice care?",
+        "answer": "The earlier hospice care begins, the more benefit patients and families receive. Consider hospice when curative treatments are no longer effective or desired, when comfort becomes the primary goal, or when frequent hospitalizations occur. It's never too early to have the conversation."
+      },
+      "team": {
+        "question": "Who is part of the hospice care team?",
+        "answer": "Our interdisciplinary team includes physicians, nurses, home health aides, social workers, chaplains, volunteers, and other specialists as needed. Each team member brings unique expertise to ensure comprehensive, compassionate care for both patients and families."
+      },
+      "quality": {
+        "question": "How do you ensure quality of life?",
+        "answer": "We focus on managing pain and symptoms effectively, supporting emotional and spiritual needs, maintaining dignity and independence as much as possible, and helping patients engage in meaningful activities and relationships. Quality of life is at the heart of everything we do."
+      }
+    }
   }
 }

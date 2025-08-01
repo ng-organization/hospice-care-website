@@ -23,9 +23,9 @@ export function ContactHeroSection() {
       <div className="relative z-10 w-full px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto text-center">
           {/* Badge */}
-          <Badge className="bg-white/20 backdrop-blur-sm text-white border-white/30 px-6 py-3 rounded-full text-lg font-medium mb-8">
+          {/* <Badge className="bg-white/20 backdrop-blur-sm text-white border-white/30 px-6 py-3 rounded-full text-lg font-medium mb-8">
             {t("contactPage.hero.badge")}
-          </Badge>
+          </Badge> */}
 
           {/* Main Title - No buttons, just text */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-light text-white mb-6 leading-tight">
@@ -44,7 +44,7 @@ export function ContactHeroSection() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white from-0% via-white/30 via-20% to-transparent to-100% z-10"></div>
     </section>
   );
-} 
+}

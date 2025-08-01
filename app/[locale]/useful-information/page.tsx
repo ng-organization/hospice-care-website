@@ -1,8 +1,9 @@
 "use client";
 
 import { UsefulInfoHeroSection } from "@/components/sections/info/UsefulInfoHeroSection";
-import { UsefulInfoFAQSection } from "@/components/sections/info/UsefulInfoFAQSection";
+import { FAQ } from "@/components/ui/faq-section";
 import { UsefulInfoResourcesSection } from "@/components/sections/info/UsefulInfoResourcesSection";
+import { CTA } from "@/components/ui/call-to-action";
 import { PageTransition } from "@/components/motion";
 
 export default function UsefulInformationPage() {
@@ -10,8 +11,9 @@ export default function UsefulInformationPage() {
     <PageTransition className="min-h-screen flex flex-col scroll-smooth">
       <main className="flex-1">
         <UsefulInfoHeroSection />
-        <UsefulInfoFAQSection />
+        <FAQ />
         <UsefulInfoResourcesSection />
+        <CTA variant="useful-info" />
       </main>
     </PageTransition>
   );

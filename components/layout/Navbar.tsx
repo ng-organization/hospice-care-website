@@ -73,8 +73,8 @@ export function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link 
-            href={`/${locale}`} 
+          <Link
+            href={`/${locale}`}
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
             <img
@@ -104,7 +104,7 @@ export function Navbar() {
                           navigationMenuTriggerStyle(),
                           "transition-all duration-300 bg-transparent hover:bg-white/20 focus:bg-white/20",
                           isScrolled
-                            ? "text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:bg-slate-100"
+                            ? "text-slate-700 hover:text-slate-900 hover:bg-slate-600 focus:bg-slate-600"
                             : "text-white/90 hover:text-white"
                         )}
                       >
@@ -136,7 +136,9 @@ export function Navbar() {
               )}
             >
               <Phone className="w-4 h-4 lg:mr-2" />
-              <span className="hidden lg:inline">{t("navigation.callNow")}</span>
+              <span className="hidden lg:inline">
+                {t("navigation.callNow")}
+              </span>
             </Button>
 
             {/* Mobile Menu Button - Original Implementation */}

@@ -63,7 +63,7 @@ export function ServicesSection() {
             </StaggerItem>
           </StaggerContainer>
 
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 max-w-7xl mx-auto">
             {services.map((service, index) => (
               <StaggerItem key={index}>
                 <Card

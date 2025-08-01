@@ -15,7 +15,6 @@ export function AboutHeroSection() {
       description={t("aboutPage.hero.description")}
       primaryButtonText={t("common.callButton")}
       secondaryButtonText={t("common.contactUs")}
-      customHeight="h-[75vh]"
     />
   );
 }

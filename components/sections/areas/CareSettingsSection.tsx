@@ -62,22 +62,22 @@ export function CareSettingsSection() {
               {t("areasPage.settings.coordinationDescription")}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-white rounded-lg px-6 py-3 shadow-sm border border-primary-200">
+              <div className="bg-white rounded-lg px-6 py-3 shadow-sm">
                 <span className="text-sm font-medium text-primary-700">
                   {t("areasPage.settings.features.onCallSupport")}
                 </span>
               </div>
-              <div className="bg-white rounded-lg px-6 py-3 shadow-sm border border-primary-200">
+              <div className="bg-white rounded-lg px-6 py-3 shadow-sm">
                 <span className="text-sm font-medium text-primary-700">
                   {t("areasPage.settings.features.carePlanCoordination")}
                 </span>
               </div>
-              <div className="bg-white rounded-lg px-6 py-3 shadow-sm border border-primary-200">
+              <div className="bg-white rounded-lg px-6 py-3 shadow-sm">
                 <span className="text-sm font-medium text-primary-700">
                   {t("areasPage.settings.features.familyCommunication")}
                 </span>
               </div>
-              <div className="bg-white rounded-lg px-6 py-3 shadow-sm border border-primary-200">
+              <div className="bg-white rounded-lg px-6 py-3 shadow-sm">
                 <span className="text-sm font-medium text-primary-700">
                   {t("areasPage.settings.features.medicationManagement")}
                 </span>

@@ -14,9 +14,9 @@ export function AboutSection() {
   const t = useTranslations();
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-gray-50">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 gap-24 items-center lg:grid-cols-2">
+    <section className="w-full py-24 bg-gray-50">
+      <div className="w-full px-4 md:px-8 lg:px-16">
+        <div className="grid grid-cols-1 gap-24 items-center lg:grid-cols-2 max-w-7xl mx-auto">
           <AnimatedSection animation="slideInRight" delay={0.4}>
             <div className="relative order-1 lg:order-2">
               <div className="aspect-square bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl overflow-hidden shadow-xl">
@@ -99,15 +99,9 @@ export function AboutSection() {
                     variant="primary"
                     size="lg"
                     className="px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105"
+                    onClick={() => window.open("tel:909-321-2255", "_self")}
                   >
-                    {t("about.buttons.meetTeam")}
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    className="px-8 py-4 rounded-full text-lg transition-all duration-300"
-                  >
-                    {t("about.buttons.viewCredentials")}
+                    {t("common.callButton")}
                   </Button>
                 </div>
               </StaggerItem>
@@ -115,6 +109,6 @@ export function AboutSection() {
           </AnimatedSection>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

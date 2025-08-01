@@ -1,8 +1,15 @@
 import { useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Heart, Stethoscope, Clock, Shield, Phone, ArrowRight } from "lucide-react";
+import { Cta4 } from "@/components/ui/cta";
+import {
+  CheckCircle,
+  Users,
+  Heart,
+  Stethoscope,
+  Clock,
+  Shield,
+} from "lucide-react";
 
 export function DignityDecisionSection() {
   const t = useTranslations();
@@ -10,7 +17,7 @@ export function DignityDecisionSection() {
   return (
     <>
       {/* Decision Making Process */}
-      <section className="min-h-[80vh] w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section">
+      {/* <section className="min-h-[80vh] w-full bg-gradient-to-br from-secondary-50/30 to-white observe-section">
         <div className="w-full px-4 md:px-8 lg:px-16 py-24">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -87,7 +94,9 @@ export function DignityDecisionSection() {
                           {t("dignityPage.decision.authority.patient.title")}
                         </h4>
                         <p className="text-sm text-slate-600">
-                          {t("dignityPage.decision.authority.patient.description")}
+                          {t(
+                            "dignityPage.decision.authority.patient.description"
+                          )}
                         </p>
                       </div>
                     </div>
@@ -98,7 +107,9 @@ export function DignityDecisionSection() {
                           {t("dignityPage.decision.authority.family.title")}
                         </h4>
                         <p className="text-sm text-slate-600">
-                          {t("dignityPage.decision.authority.family.description")}
+                          {t(
+                            "dignityPage.decision.authority.family.description"
+                          )}
                         </p>
                       </div>
                     </div>
@@ -111,7 +122,9 @@ export function DignityDecisionSection() {
                           {t("dignityPage.decision.authority.hierarchy.title")}
                         </h4>
                         <p className="text-sm text-slate-600">
-                          {t("dignityPage.decision.authority.hierarchy.description")}
+                          {t(
+                            "dignityPage.decision.authority.hierarchy.description"
+                          )}
                         </p>
                       </div>
                     </div>
@@ -122,7 +135,9 @@ export function DignityDecisionSection() {
                           {t("dignityPage.decision.authority.guidance.title")}
                         </h4>
                         <p className="text-sm text-slate-600">
-                          {t("dignityPage.decision.authority.guidance.description")}
+                          {t(
+                            "dignityPage.decision.authority.guidance.description"
+                          )}
                         </p>
                       </div>
                     </div>
@@ -132,10 +147,10 @@ export function DignityDecisionSection() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Eligibility & Assessment */}
-      <section className="min-h-[80vh] w-full bg-white observe-section">
+      {/* <section className="min-h-[80vh] w-full bg-white observe-section">
         <div className="w-full px-4 md:px-8 lg:px-16 py-24">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -169,7 +184,9 @@ export function DignityDecisionSection() {
                         {t("dignityPage.eligibility.criteria.prognosis.title")}
                       </h4>
                       <p className="text-slate-600 text-sm">
-                        {t("dignityPage.eligibility.criteria.prognosis.description")}
+                        {t(
+                          "dignityPage.eligibility.criteria.prognosis.description"
+                        )}
                       </p>
                     </div>
                   </div>
@@ -183,7 +200,9 @@ export function DignityDecisionSection() {
                         {t("dignityPage.eligibility.criteria.decline.title")}
                       </h4>
                       <p className="text-slate-600 text-sm">
-                        {t("dignityPage.eligibility.criteria.decline.description")}
+                        {t(
+                          "dignityPage.eligibility.criteria.decline.description"
+                        )}
                       </p>
                     </div>
                   </div>
@@ -197,7 +216,9 @@ export function DignityDecisionSection() {
                         {t("dignityPage.eligibility.criteria.comfort.title")}
                       </h4>
                       <p className="text-slate-600 text-sm">
-                        {t("dignityPage.eligibility.criteria.comfort.description")}
+                        {t(
+                          "dignityPage.eligibility.criteria.comfort.description"
+                        )}
                       </p>
                     </div>
                   </div>
@@ -212,20 +233,40 @@ export function DignityDecisionSection() {
                   <CardContent className="p-8">
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3">
-                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">1</span>
-                        <span className="text-slate-700">{t("dignityPage.eligibility.assessment.steps.consultation")}</span>
+                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                          1
+                        </span>
+                        <span className="text-slate-700">
+                          {t(
+                            "dignityPage.eligibility.assessment.steps.consultation"
+                          )}
+                        </span>
                       </div>
                       <div className="flex items-center space-x-3">
-                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">2</span>
-                        <span className="text-slate-700">{t("dignityPage.eligibility.assessment.steps.medical")}</span>
+                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                          2
+                        </span>
+                        <span className="text-slate-700">
+                          {t(
+                            "dignityPage.eligibility.assessment.steps.medical"
+                          )}
+                        </span>
                       </div>
                       <div className="flex items-center space-x-3">
-                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">3</span>
-                        <span className="text-slate-700">{t("dignityPage.eligibility.assessment.steps.team")}</span>
+                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                          3
+                        </span>
+                        <span className="text-slate-700">
+                          {t("dignityPage.eligibility.assessment.steps.team")}
+                        </span>
                       </div>
                       <div className="flex items-center space-x-3">
-                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">4</span>
-                        <span className="text-slate-700">{t("dignityPage.eligibility.assessment.steps.plan")}</span>
+                        <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                          4
+                        </span>
+                        <span className="text-slate-700">
+                          {t("dignityPage.eligibility.assessment.steps.plan")}
+                        </span>
                       </div>
                     </div>
                     <div className="mt-6 p-4 bg-primary-50 rounded-lg">
@@ -239,7 +280,7 @@ export function DignityDecisionSection() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits & CTA */}
       <section className="min-h-[80vh] w-full bg-gradient-to-br from-accent-50/30 to-white observe-section">
@@ -264,8 +305,8 @@ export function DignityDecisionSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                    <Heart className="w-6 h-6 text-green-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-4">
+                    <Heart className="w-6 h-6" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("dignityPage.benefits.items.emotional.title")}
@@ -278,8 +319,8 @@ export function DignityDecisionSection() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                    <Users className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-4">
+                    <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("dignityPage.benefits.items.family.title")}
@@ -292,8 +333,8 @@ export function DignityDecisionSection() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                    <Shield className="w-6 h-6 text-purple-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-4">
+                    <Shield className="w-6 h-6" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("dignityPage.benefits.items.practical.title")}
@@ -307,30 +348,23 @@ export function DignityDecisionSection() {
 
             {/* CTA */}
             <div className="text-center">
-              <Card className="border-0 bg-accent-600 shadow-2xl max-w-4xl mx-auto">
-                <CardContent className="p-12 text-center">
-                  <h3 className="text-3xl font-semibold text-white mb-4">
-                    {t("dignityPage.cta.title")}
-                  </h3>
-                  <p className="text-accent-100 text-lg mb-8 max-w-2xl mx-auto">
-                    {t("dignityPage.cta.description")}
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" className="bg-white text-accent-600 hover:bg-gray-100 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105">
-                      <Phone className="w-5 h-5 mr-2" />
-                      {t("dignityPage.cta.callButton")}
-                    </Button>
-                    <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-accent-600 px-8 py-4 rounded-full transition-all duration-300 bg-transparent">
-                      <ArrowRight className="w-5 h-5 mr-2" />
-                      {t("dignityPage.cta.learnButton")}
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+              <Cta4
+                title={t("dignityPage.cta.title")}
+                description={t("dignityPage.cta.description")}
+                buttonText={t("dignityPage.cta.callButton")}
+                buttonUrl="tel:909-321-2255"
+                items={[
+                  t("dignityPage.benefits.items.comfort.title"),
+                  t("dignityPage.benefits.items.control.title"),
+                  t("dignityPage.benefits.items.family.title"),
+                  t("dignityPage.benefits.items.legal.title"),
+                  t("dignityPage.benefits.items.practical.title"),
+                ]}
+              />
             </div>
           </div>
         </div>
       </section>
     </>
   );
-} 
+}
