@@ -269,7 +269,7 @@ export function UsefulInfoResourcesSection() {
               {previewPdf.title}
             </DialogTitle>
             <DialogDescription className="text-slate-600">
-              {locale === "zh" ? "預覽文件內容" : "Preview document content"}
+              {t("common.preview")} {t("usefulInfoPage.resources.items.guide.title").toLowerCase()}
             </DialogDescription>
           </DialogHeader>
           
@@ -291,7 +291,7 @@ export function UsefulInfoResourcesSection() {
               onClick={() => setPreviewOpen(false)}
               className="flex-1 sm:flex-none"
             >
-              {locale === "zh" ? "關閉" : "Close"}
+              {t("common.close")}
             </Button>
             <Button
               variant="outline"
@@ -299,7 +299,7 @@ export function UsefulInfoResourcesSection() {
               className="flex-1 sm:flex-none"
             >
               <Download className="w-4 h-4 mr-2" />
-              {locale === "zh" ? "下載檔案" : "Download File"}
+              {t("common.download")}
             </Button>
           </DialogFooter>
         </DialogContent>

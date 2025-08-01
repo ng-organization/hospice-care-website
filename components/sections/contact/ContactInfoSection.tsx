@@ -31,14 +31,14 @@ export function ContactInfoSection() {
       icon: Phone,
       title: t("contactPage.info.phone.title"),
       primary: "909-321-2255",
-      secondary: "Backup: 909-256-4705",
+      secondary: `${t("contact.phone.backup")}: 909-256-4705`,
       note: t("contactPage.info.phone.note"),
       bgColor: "from-primary-50/50 to-white",
       iconBg: "bg-primary-100",
       iconColor: "text-primary-600",
       primaryColor: "text-primary-600",
       href: "tel:909-321-2255",
-      buttonText: "Call Now"
+      buttonText: t("common.callNow")
     },
     {
       icon: Mail,
@@ -51,7 +51,7 @@ export function ContactInfoSection() {
       iconColor: "text-secondary-600",
       primaryColor: "text-secondary-600",
       href: "mailto:info@hospicecare.com",
-      buttonText: "Send Email"
+      buttonText: t("common.sendEmail")
     },
     {
       icon: MapPin,
@@ -64,20 +64,20 @@ export function ContactInfoSection() {
       iconColor: "text-accent-600",
       primaryColor: "text-slate-700",
       href: "https://maps.google.com/?q=600+N.+Mountain+Ave,+Suite+D105,+Upland,+CA+91786",
-      buttonText: "Get Directions"
+      buttonText: t("common.getDirections")
     },
     {
       icon: User,
       title: t("contactPage.info.manager.title"),
       primary: "Haydee Agojo",
-      secondary: "Care Manager",
+      secondary: t("contact.manager.title"),
       note: t("contactPage.info.manager.description"),
       bgColor: "from-green-50/50 to-white",
       iconBg: "bg-green-100",
       iconColor: "text-green-600",
       primaryColor: "text-green-600",
       href: "tel:909-321-2255",
-      buttonText: "Contact Haydee"
+      buttonText: t("common.contact")
     }
   ];
 
@@ -89,10 +89,10 @@ export function ContactInfoSection() {
           <div className="flex items-center gap-1 sm:gap-2">
             <div className={`w-3 h-3 rounded-full ${isOfficeHours ? 'bg-green-500 animate-pulse' : 'bg-amber-500'}`}></div>
             <span className="text-xs sm:text-sm font-medium text-slate-700 hidden sm:block">
-              {isOfficeHours ? 'We\'re Available' : '24/7 Emergency'}
+              {isOfficeHours ? t("contact.status.available") : t("contact.status.emergency")}
             </span>
             <span className="text-xs font-medium text-slate-700 sm:hidden">
-              {isOfficeHours ? 'Available' : '24/7'}
+              {isOfficeHours ? t("contact.status.available") : t("contact.status.emergency")}
             </span>
           </div>
           <div className="h-4 w-px bg-gray-300"></div>
@@ -168,7 +168,7 @@ export function ContactInfoSection() {
                             <div className="flex items-center space-x-2 text-sm text-slate-600 mb-4">
                               <Clock className="w-4 h-4" />
                               <span className={`font-medium ${isOfficeHours ? 'text-green-600' : 'text-amber-600'}`}>
-                                {isOfficeHours ? 'Currently Open' : 'Currently Closed'}
+                                {isOfficeHours ? t("contact.status.open") : t("contact.status.closed")}
                               </span>
                             </div>
                           )}

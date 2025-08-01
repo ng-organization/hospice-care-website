@@ -253,6 +253,18 @@
         "closeLabel": "Close overlay",
         "hours": "Mon-Fri: 9:00 AM - 5:00 PM"
       }
+    },
+    "status": {
+      "available": "Available",
+      "emergency": "Emergency Support",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "phone": {
+      "backup": "Backup"
+    },
+    "manager": {
+      "title": "Care Manager"
     }
   },
   "contactPage": {
@@ -992,7 +1004,14 @@
     "callButton": "Call 909-321-2255",
     "contactUs": "Contact Us",
     "note": "Note",
-    "checkAvailability": "Check Availability"
+    "checkAvailability": "Check Availability",
+    "callNow": "Call Now",
+    "sendEmail": "Send Email",
+    "getDirections": "Get Directions",
+    "contact": "Contact",
+    "preview": "Preview",
+    "close": "Close",
+    "download": "Download"
   },
   "faqSection": {
     "badge": "FAQ",

@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { SkipLink } from "@/components/ui/skip-link";
 import "../globals.css";
 import { FloatingCallButton } from "@/components/ui/FloatingCallButton";
 
@@ -36,8 +37,11 @@ html {
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <SkipLink href="#main-content" />
           <Navbar />
-          {children}
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
           <Footer />
           <FloatingCallButton />
         </NextIntlClientProvider>
