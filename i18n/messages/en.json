@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "companyName": "諾安安寧療護",
+    "companyName": "IE Community Hospice",
     "home": "Home",
     "services": "Services",
     "about": "About Us",
@@ -51,10 +51,10 @@
     "viewAllServices": "View All Services"
   },
   "about": {
-    "badge": "About 諾安安寧療護",
+    "badge": "About IE Community Hospice",
     "title": "Federally Certified",
     "titleHighlight": "Hospice Care Provider",
-    "description": "諾安安寧療護 is a federally certified Medicare/Medi-Cal hospice care provider serving 5 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
+    "description": "IE Community Hospice is a federally certified Medicare/Medi-Cal hospice care provider serving 5 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
     "stats": {
       "families": "Counties Served",
       "experience": "Years of Service"
@@ -80,16 +80,16 @@
   },
   "aboutPage": {
     "hero": {
-      "badge": "About 諾安安寧療護",
+      "badge": "About IE Community Hospice",
       "title": "Committed to",
       "titleHighlight": "Compassionate Care",
-      "description": "諾安安寧療護 is guided by a commitment for personal and clinical excellence through compassionate care and service to our patients."
+      "description": "IE Community Hospice is guided by a commitment for personal and clinical excellence through compassionate care and service to our patients."
     },
     "mission": {
       "badge": "Our Mission",
       "title": "Creating Comfort",
       "titleHighlight": "and Peace",
-      "description": "諾安安寧療護 is guided by a commitment for personal and clinical excellence through compassionate care and service to our patients. We believe it is vital to create an environment of comfort and peace as patients and their families deal with the realities that come with terminal illness."
+      "description": "IE Community Hospice is guided by a commitment for personal and clinical excellence through compassionate care and service to our patients. We believe it is vital to create an environment of comfort and peace as patients and their families deal with the realities that come with terminal illness."
     },
     "promise": {
       "badge": "Our Promise",
@@ -106,7 +106,7 @@
       "badge": "Our Programs",
       "title": "Comprehensive Care",
       "titleHighlight": "Levels",
-      "description": "Based on patient's acuity and level of need, 諾安安寧療護 provides different levels of care to meet individual needs.",
+      "description": "Based on patient's acuity and level of need, IE Community Hospice provides different levels of care to meet individual needs.",
       "items": [
         {
           "title": "Routine Care",
@@ -143,7 +143,7 @@
       "badge": "Compliance & Accreditation",
       "title": "Equal Care",
       "titleHighlight": "for Everyone",
-      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, 諾安安寧療護, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age.",
+      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, IE Community Hospice, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age.",
       "certifications": {
         "medicare": {
           "title": "Medicare Certified",
@@ -561,7 +561,7 @@
         }
       },
       "quote": "The goal of hospice care is not to hasten death, but to make the time remaining as meaningful and comfortable as possible.",
-      "quoteAuthor": "諾安安寧療護 Philosophy"
+      "quoteAuthor": "IE Community Hospice Philosophy"
     },
     "decision": {
       "badge": "Decision Making",
@@ -674,7 +674,7 @@
     }
   },
   "footer": {
-    "description": "諾安安寧療護 - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
+    "description": "IE Community Hospice - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
     "badges": {
       "medicare": "Medicare Certified",
       "licensed": "CMS Certified",
@@ -723,7 +723,7 @@
       "chinese": "Chinese in LA"
     },
     "legal": {
-      "copyright": "© {year} 諾安安寧療護 All rights reserved.",
+      "copyright": "© {year} IE Community Hospice (諾安安寧療護) All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "hipaa": "HIPAA Notice",
@@ -734,7 +734,7 @@
     "badge": "Service Coverage Areas",
     "title": "Serving Southern",
     "titleHighlight": "California Counties",
-    "description": "諾安安寧療護 proudly serves families across four major Southern California counties, providing compassionate hospice care wherever you call home.",
+    "description": "IE Community Hospice proudly serves families across four major Southern California counties, providing compassionate hospice care wherever you call home.",
     "counties": {
       "sanBernardino": "San Bernardino County",
       "riverside": "Riverside County",
@@ -760,7 +760,7 @@
       "badge": "Service Coverage Areas",
       "title": "Serving Southern California",
       "titleHighlight": "Wherever You Call Home",
-      "description": "諾安安寧療護 proudly serves families across four major Southern California counties, providing compassionate hospice care in the comfort and familiarity of your chosen setting."
+      "description": "IE Community Hospice proudly serves families across four major Southern California counties, providing compassionate hospice care in the comfort and familiarity of your chosen setting."
     },
     "counties": {
       "badge": "Coverage Areas",
@@ -929,7 +929,7 @@
       "badge": "Comprehensive Hospice Services",
       "title": "Our Complete Range of",
       "titleHighlight": "Hospice Care Services",
-      "description": "諾安安寧療護 provides a full spectrum of hospice care services designed to enhance quality of life for patients and families during end-of-life care.",
+      "description": "IE Community Hospice provides a full spectrum of hospice care services designed to enhance quality of life for patients and families during end-of-life care.",
       "ctaPrimary": "Call 909-321-2255",
       "ctaSecondary": "Contact Us Today"
     },

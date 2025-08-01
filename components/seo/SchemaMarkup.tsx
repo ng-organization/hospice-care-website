@@ -11,11 +11,11 @@ export async function SchemaMarkup({ locale, pageType = 'home' }: SchemaMarkupPr
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": ["MedicalBusiness", "LocalBusiness", "Organization"],
-    "name": "諾安安寧療護",
-    "alternateName": ["IE Community Hospice", "諾安安寧療護"],
+    "name": locale === 'zh' ? "諾安安寧療護" : "IE Community Hospice",
+    "alternateName": locale === 'zh' ? ["IE Community Hospice", "諾安安寧療護"] : ["諾安安寧療護", "IE Community Hospice"],
     "description": locale === 'zh' 
       ? "諾安安寧療護是聯邦認證的專業機構，專為南加州華人家庭提供雙語安寧照護服務，用心理解每個家庭的文化背景和需要。"
-      : "諾安安寧療護 provides bilingual hospice care services in Southern California. Medicare/Medi-Cal certified. Professional, compassionate end-of-life care with dignity.",
+      : "IE Community Hospice provides bilingual hospice care services in Southern California. Medicare/Medi-Cal certified. Professional, compassionate end-of-life care with dignity.",
     "url": `${baseUrl}/${locale}`,
     "logo": `${baseUrl}/images/logo.png`,
     "image": `${baseUrl}/images/hospice-care-og.jpg`,
@@ -138,8 +138,8 @@ export async function SchemaMarkup({ locale, pageType = 'home' }: SchemaMarkupPr
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "諾安安寧療護",
-    "alternateName": "IE Community Hospice",
+    "name": locale === 'zh' ? "諾安安寧療護" : "IE Community Hospice",
+    "alternateName": locale === 'zh' ? "IE Community Hospice" : "諾安安寧療護",
     "url": `${baseUrl}/${locale}`,
     "description": locale === 'zh'
       ? "專業安寧療護服務，為南加州華人家庭提供雙語支持和文化敏感的照護"
@@ -162,7 +162,7 @@ export async function SchemaMarkup({ locale, pageType = 'home' }: SchemaMarkupPr
       : "Comprehensive hospice care services including home care, pain management, family support and professional medical care",
     "provider": {
       "@type": "MedicalBusiness",
-      "name": "諾安安寧療護"
+      "name": locale === 'zh' ? "諾安安寧療護" : "IE Community Hospice"
     },
     "areaServed": "Southern California",
     "serviceType": "Healthcare",

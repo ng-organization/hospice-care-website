@@ -22,11 +22,11 @@ export async function generateMetadata({
   
   const title = isZh 
     ? "諾安安寧療護 - 南加州專業雙語安寧照護服務 | Medicare認證"
-    : "諾安安寧療護 - Professional Hospice Care Southern California | Medicare Certified";
+    : "IE Community Hospice - Professional Hospice Care Southern California | Medicare Certified";
     
   const description = isZh
     ? "諾安安寧療護為南加州華人家庭提供Medicare認證的專業安寧照護服務。24小時雙語支持，居家照護，疼痛管理。聖貝納迪諾縣、河濱縣、洛杉磯縣、橙縣服務。"
-    : "諾安安寧療護 provides Medicare-certified hospice care for Southern California families. 24/7 bilingual support, home care, pain management. Serving San Bernardino, Riverside, LA, Orange counties.";
+    : "IE Community Hospice provides Medicare-certified hospice care for Southern California families. 24/7 bilingual support, home care, pain management. Serving San Bernardino, Riverside, LA, Orange counties.";
 
   return {
     title,
@@ -34,9 +34,9 @@ export async function generateMetadata({
     keywords: isZh 
       ? "安寧療護, 安寧照護, 臨終關懷, Medicare, 華人安寧療護, 南加州, 居家照護, 疼痛管理, 雙語服務, 聖貝納迪諾縣, 河濱縣, 洛杉磯縣, 橙縣, 24小時護理"
       : "hospice care, palliative care, end of life care, Medicare certified, Chinese hospice care, Southern California, home care, pain management, bilingual services, San Bernardino County, Riverside County, Los Angeles County, Orange County, 24/7 nursing",
-    authors: [{ name: "諾安安寧療護" }],
-    creator: "諾安安寧療護",
-    publisher: "諾安安寧療護",
+    authors: [{ name: isZh ? "諾安安寧療護" : "IE Community Hospice" }],
+    creator: isZh ? "諾安安寧療護" : "IE Community Hospice",
+    publisher: isZh ? "諾安安寧療護" : "IE Community Hospice",
     robots: {
       index: true,
       follow: true,
@@ -53,7 +53,7 @@ export async function generateMetadata({
       locale: isZh ? 'zh_TW' : 'en_US',
       alternateLocale: isZh ? 'en_US' : 'zh_TW',
       url: `${baseUrl}/${locale}`,
-      siteName: '諾安安寧療護',
+      siteName: isZh ? '諾安安寧療護' : 'IE Community Hospice',
       title,
       description,
       images: [
@@ -61,13 +61,13 @@ export async function generateMetadata({
           url: `${baseUrl}/images/hospice-care-og.jpg`,
           width: 1200,
           height: 630,
-          alt: isZh ? '諾安安寧療護 - 專業安寧照護服務' : '諾安安寧療護 - Professional Hospice Care Services',
+          alt: isZh ? '諾安安寧療護 - 專業安寧照護服務' : 'IE Community Hospice - Professional Hospice Care Services',
         },
         {
           url: `${baseUrl}/images/logo.png`,
           width: 800,
           height: 600,
-          alt: '諾安安寧療護 Logo',
+          alt: isZh ? '諾安安寧療護 Logo' : 'IE Community Hospice Logo',
         },
       ],
     },
@@ -97,8 +97,8 @@ export async function generateMetadata({
     category: 'Healthcare',
     classification: 'Healthcare Services',
     other: {
-      'apple-mobile-web-app-title': '諾安安寧療護',
-      'application-name': '諾安安寧療護',
+      'apple-mobile-web-app-title': isZh ? '諾安安寧療護' : 'IE Community Hospice',
+      'application-name': isZh ? '諾安安寧療護' : 'IE Community Hospice',
       'msapplication-TileColor': '#3B82F6',
       'theme-color': '#ffffff',
     },
@@ -114,6 +114,7 @@ export default async function LocaleLayout({
 }) {
   const messages = await getMessages();
   const { locale } = await params;
+  const isZh = locale === 'zh';
 
   return (
     <html lang={locale}>
@@ -136,8 +137,8 @@ html {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="諾安安寧療護" />
-        <meta name="application-name" content="諾安安寧療護" />
+        <meta name="apple-mobile-web-app-title" content={isZh ? "諾安安寧療護" : "IE Community Hospice"} />
+        <meta name="application-name" content={isZh ? "諾安安寧療護" : "IE Community Hospice"} />
         <meta name="msapplication-TileColor" content="#3B82F6" />
         <meta name="theme-color" content="#ffffff" />
       </head>
