@@ -63,11 +63,7 @@ function CTA({ variant = "default", className = "" }: CTAProps) {
   };
 
   const handleSecondaryClick = () => {
-    if (variant === "areas") {
-      window.location.href = `/${locale}#contact`;
-    } else {
-      window.location.href = `/${locale}/contact`;
-    }
+    window.location.href = `/${locale}/contact`;
   };
 
   return (

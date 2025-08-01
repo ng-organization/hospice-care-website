@@ -510,7 +510,7 @@
       "titleHighlight": "",
       "description": "我們富有同情心的團隊隨時為您解答關於安寧照護的任何疑問，並協助您做出這個重要決定。",
       "callButton": "致電 909-321-2255",
-      "contactButton": "聯絡表格"
+      "contactButton": "聯絡我們"
     }
   },
   "dignityPage": {
@@ -851,7 +851,7 @@
         "title": "準備開始了嗎？",
         "description": "我們的團隊隨時為您提供幫助，了解您的選擇並確認您具體地區的服務可用性。今天就聯絡我們進行諮詢。",
         "callButton": "立即致電",
-        "contactButton": "聯絡表格",
+        "contactButton": "聯絡我們",
         "note": "每個縣內具體地點的服務可用性可能有所不同。我們鼓勵您聯絡我們確認覆蓋範圍並討論您家庭的獨特需求。"
       }
     }

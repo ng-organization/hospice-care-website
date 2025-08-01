@@ -31,7 +31,7 @@ export function ServicesCTASection() {
           <Button
             variant="outline"
             size="lg"
-            onClick={() => (window.location.href = `/${locale}#contact`)}
+            onClick={() => (window.location.href = `/${locale}/contact`)}
             className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 px-8 py-4 rounded-full text-lg transition-all duration-300 bg-transparent backdrop-blur-sm"
           >
             {t("servicesPage.cta.ctaSecondary")}

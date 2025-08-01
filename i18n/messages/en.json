@@ -487,7 +487,7 @@
       "titleHighlight": "",
       "description": "Our compassionate team is here to answer any questions you may have about hospice care and help guide you through this important decision.",
       "callButton": "Call 909-321-2255",
-      "contactButton": "Contact Form"
+      "contactButton": "Contact Us"
     }
   },
   "dignityPage": {
@@ -828,7 +828,7 @@
         "title": "Ready to Get Started?",
         "description": "Our team is here to help you understand your options and confirm service availability in your specific area. Contact us today for a consultation.",
         "callButton": "Call Now",
-        "contactButton": "Contact Form",
+        "contactButton": "Contact Us",
         "note": "Service availability may vary by specific location within each county. We encourage you to contact us to confirm coverage and discuss your family's unique needs."
       }
     }

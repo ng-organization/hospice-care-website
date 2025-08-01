@@ -54,7 +54,7 @@ export function HeroSection({
     if (onSecondaryClick) {
       onSecondaryClick();
     } else {
-      window.location.href = `/${locale}#contact`;
+      window.location.href = `/${locale}/contact`;
     }
   };
 
