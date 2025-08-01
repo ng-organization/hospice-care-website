@@ -24,6 +24,7 @@ import {
   Phone,
   ArrowRight,
 } from "lucide-react";
+import { PDFViewer } from "@/components/ui/PDFViewer";
 
 export function UsefulInfoResourcesSection() {
   const t = useTranslations();
@@ -263,45 +264,27 @@ export function UsefulInfoResourcesSection() {
 
       {/* PDF Preview Dialog */}
       <Dialog open={previewOpen} onOpenChange={setPreviewOpen}>
-        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] flex flex-col">
-          <DialogHeader>
-            <DialogTitle className="text-xl text-slate-800">
+        <DialogContent className="max-w-4xl w-[90vw] h-[85vh] max-h-[800px] flex flex-col p-0 gap-0">
+          <DialogHeader className="px-4 pt-4 pb-3 flex-shrink-0">
+            <DialogTitle className="text-lg text-slate-800 truncate">
               {previewPdf.title}
             </DialogTitle>
-            <DialogDescription className="text-slate-600">
-              {t("common.preview")} {t("usefulInfoPage.resources.items.guide.title").toLowerCase()}
+            <DialogDescription className="text-sm text-slate-600 truncate">
+              {t("common.preview")} - {previewPdf.filename}
             </DialogDescription>
           </DialogHeader>
           
-          <div className="flex-1 w-full border rounded-lg overflow-hidden bg-slate-50">
-            {previewPdf.url && (
-              <iframe
-                src={`${previewPdf.url}#toolbar=1&navpanes=0&scrollbar=1`}
-                width="100%"
-                height="100%"
-                className="border-0"
-                title={previewPdf.title}
-              />
-            )}
+          <div className="flex-1 px-4 pb-4 min-h-0">
+            <div className="w-full h-full border rounded-lg overflow-hidden bg-slate-50">
+              {previewPdf.url && (
+                <PDFViewer
+                  file={previewPdf.url}
+                  className="w-full h-full"
+                  onDownload={handleDownloadFromPreview}
+                />
+              )}
+            </div>
           </div>
-
-          <DialogFooter className="flex flex-col sm:flex-row gap-2 pt-4">
-            <Button
-              variant="outline"
-              onClick={() => setPreviewOpen(false)}
-              className="flex-1 sm:flex-none"
-            >
-              {t("common.close")}
-            </Button>
-            <Button
-              variant="outline"
-              onClick={handleDownloadFromPreview}
-              className="flex-1 sm:flex-none"
-            >
-              <Download className="w-4 h-4 mr-2" />
-              {t("common.download")}
-            </Button>
-          </DialogFooter>
         </DialogContent>
       </Dialog>
     </>
