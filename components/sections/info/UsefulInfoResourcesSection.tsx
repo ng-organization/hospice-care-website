@@ -224,8 +224,8 @@ export function UsefulInfoResourcesSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Facebook className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Facebook className="w-8 h-8 text-primary-600" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.community.facebook.title")}
@@ -242,8 +242,8 @@ export function UsefulInfoResourcesSection() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Users className="w-8 h-8 text-red-600" />
+                  <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Users className="w-8 h-8 text-secondary-600" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.community.chinese.title")}

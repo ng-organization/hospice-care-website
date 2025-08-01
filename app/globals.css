@@ -684,3 +684,38 @@
     }
   }
 }
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable specific animations */
+  .animate-fade-in-left,
+  .animate-fade-in-right,
+  .animate-slide-up,
+  .animate-fade-in-up,
+  .animate-float,
+  .animate-float-delayed {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Disable hover transforms */
+  *:hover {
+    transform: none !important;
+  }
+
+  /* Keep essential focus indicators but remove motion */
+  :focus-visible {
+    outline: 2px solid var(--color-primary) !important;
+    outline-offset: 2px !important;
+  }
+}
