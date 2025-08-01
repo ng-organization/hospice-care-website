@@ -72,7 +72,7 @@ export function HeroSection({
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Hero Content */}
-      <div className="section-content relative z-10 text-center">
+      <div className="w-full px-4 md:px-8 lg:px-16 relative z-10 text-center">
         <StaggerContainer
           className={`space-y-8 ${
             isHomePage ? "max-w-5xl mx-auto" : "max-w-4xl mx-auto"
