@@ -13,7 +13,7 @@ IE Community Hospice is a program designed to meet the special needs of patients
 
 ## Our Advantages
 - Patient-Centered, Personalized Care Plans
-- Bilingual Staff and Chinese-Speaking Home Visit Services
+- Multiple Language Medical Professionals and Chinese-Speaking Home Visit Services
 - Family Care Education and Training
 
 ## Our Services at a Glance
