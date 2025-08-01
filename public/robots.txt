@@ -1,0 +1,53 @@
+# Robots.txt for 諾安安寧療護 - Hospice Care Services
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Important pages for healthcare services
+Allow: /en/
+Allow: /zh/
+Allow: /en/services
+Allow: /zh/services
+Allow: /en/about
+Allow: /zh/about
+Allow: /en/contact
+Allow: /zh/contact
+Allow: /en/areas
+Allow: /zh/areas
+Allow: /en/death-with-dignity
+Allow: /zh/death-with-dignity
+Allow: /en/useful-information
+Allow: /zh/useful-information
+
+# Block admin and internal files
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /.env*
+Disallow: /node_modules/
+
+# Allow access to static assets
+Allow: /images/
+Allow: /docs/
+Allow: /favicon.ico
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.pdf
+
+# Sitemap location
+Sitemap: https://www.iecommunityhospice.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Special instructions for healthcare content
+# Priority crawling for medical information
+Allow: /sitemap.xml
+Allow: /manifest.json

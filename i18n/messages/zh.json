@@ -24,6 +24,16 @@
     "close": "關閉",
     "download": "下載"
   },
+  "accessibility": {
+    "skipToMainContent": "跳到主要內容",
+    "close": "關閉",
+    "toggleSidebar": "切換側邊欄",
+    "openMobileMenu": "開啟行動選單",
+    "closeMobileMenu": "關閉行動選單",
+    "loading": "載入中",
+    "previous": "上一個",
+    "next": "下一個"
+  },
   "hero": {
     "badge": "聯邦醫療保險認證 • 全天候服務",
     "title": "讓生命的最後一程",

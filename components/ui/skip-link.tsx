@@ -23,7 +23,7 @@ export function SkipLink({ href = "#main-content", children, className }: SkipLi
         className
       )}
     >
-      {children || "Skip to main content"}
+      {children || t("accessibility.skipToMainContent")}
     </a>
   );
 }
