@@ -15,15 +15,32 @@
     "note": "請注意",
     "callButton": "立即致電 909-321-2255",
     "contactUs": "聯絡我們",
-    "checkAvailability": "詢問服務是否適用"
+    "checkAvailability": "詢問服務是否適用",
+    "callNow": "立即致電",
+    "sendEmail": "發送電郵",
+    "getDirections": "獲取路線",
+    "contact": "聯絡",
+    "preview": "預覽",
+    "close": "關閉",
+    "download": "下載"
+  },
+  "accessibility": {
+    "skipToMainContent": "跳到主要內容",
+    "close": "關閉",
+    "toggleSidebar": "切換側邊欄",
+    "openMobileMenu": "開啟行動選單",
+    "closeMobileMenu": "關閉行動選單",
+    "loading": "載入中",
+    "previous": "上一個",
+    "next": "下一個"
   },
   "hero": {
     "badge": "聯邦醫療保險認證 • 全天候服務",
-    "title": "讓生命走得",
-    "titleHighlight": "安詳有尊嚴",
-    "description": "聯邦認證的安寧療護服務，專為華人家庭提供溫暖貼心的雙語照護。聯邦醫療保險、加州醫療保險及各大保險公司全額給付，讓您無後顧之憂。",
-    "ctaPrimary": "馬上致電 909-321-2255",
-    "ctaSecondary": "了解我們如何幫助您",
+    "title": "讓生命的最後一程",
+    "titleHighlight": "溫暖而有尊嚴",
+    "description": "我們是政府認證的專業安寧療護機構，深深理解華人家庭的文化和情感需要。Medicare、Medi-Cal及各大保險公司全額給付，專業的華語醫護團隊陪伴您的家人，讓這段路走得更安詳、更有尊嚴。",
+    "ctaPrimary": "立即致電 909-321-2255",
+    "ctaSecondary": "了解我們如何用心陪伴您的家人",
     "certifications": {
       "medicare": "聯邦醫療保險認證",
       "licensed": "CMS認證機構",
@@ -32,25 +49,25 @@
   },
   "services": {
     "badge": "我們的服務",
-    "title": "全方位的溫暖",
-    "titleHighlight": "安寧照護",
-    "description": "我們的華語醫護團隊深深了解華人家庭的需要，提供量身定制的貼心照護，讓您的親人在最熟悉的環境中，得到最專業的關愛。",
+    "title": "用心守護",
+    "titleHighlight": "每一個家庭",
+    "description": "我們的華語醫護團隊深刻理解華人文化與家庭觀念，提供貼心的專業照護，讓您的親人在最溫暖舒適的環境中，感受到家人般的真摯關愛。",
     "items": {
       "homecare": {
         "title": "居家照護",
-        "description": "在最熟悉溫暖的家中，提供定期探視和隨時的貼心照料。"
+        "description": "在最熟悉溫暖的家中，我們的護理師定期上門探視，24小時隨時提供專業照護和溫馨陪伴。"
       },
       "inpatient": {
         "title": "住院照護",
-        "description": "當需要更專業的醫療照顧時，我們協助安排最適合的醫療機構。"
+        "description": "當需要更進階的醫療照顧時，我們會協助安排最適合的專業醫療機構，確保得到最好的照護。"
       },
       "continuous": {
         "title": "連續照護",
-        "description": "在最困難的時刻，我們的護理師全程陪伴，讓家人安心。"
+        "description": "在最困難的時刻，我們的專業護理師24小時貼身照顧，讓家人能夠安心。"
       },
       "respite": {
         "title": "暫託照護",
-        "description": "讓辛苦的家人有時間休息，我們在專業機構提供最多5天的安心照顧。"
+        "description": "讓辛苦照顧的家人能夠稍事休息，我們在專業機構提供最多5天的優質照護。"
       }
     },
     "additionalInfo": "除了基本照護，我們還提供疼痛舒緩、心理諮商、哀傷輔導、愛心志工陪伴、藥物管理及醫療設備等全方位服務，讓每個家庭都能得到最完整的關懷。",
@@ -149,7 +166,21 @@
       "badge": "合規與認證",
       "title": "人人享有",
       "titleHighlight": "平等護理",
-      "description": "根據1964年《民權法案》第六章、1973年《復健法案》第504節和1975年《年齡歧視法案》及其實施條例，諾安安寧療護有限公司在提供服務和就業時不因種族、膚色、信仰、宗教、性別、性取向、國籍、殘疾和年齡而歧視。"
+      "description": "根據1964年《民權法案》第六章、1973年《復健法案》第504節和1975年《年齡歧視法案》及其實施條例，諾安安寧療護有限公司在提供服務和就業時不因種族、膚色、信仰、宗教、性別、性取向、國籍、殘疾和年齡而歧視。",
+      "certifications": {
+        "medicare": {
+          "title": "聯邦醫療保險認證",
+          "description": "聯邦政府認證"
+        },
+        "cms": {
+          "title": "CMS 提供者",
+          "description": "醫療保險和醫療補助中心"
+        },
+        "equalOpportunity": {
+          "title": "機會平等",
+          "description": "無歧視護理"
+        }
+      }
     }
   },
   "testimonials": {
@@ -160,17 +191,17 @@
       {
         "name": "王女士",
         "relation": "患者家屬",
-        "content": "有了會說中文的護理師，就像家人在身邊一樣。他們懂得我們的文化，也明白我們的心情，用真誠的愛心照顧我的家人。"
+        "content": "能說中文的護理師真的很重要，他們不只理解我們的文化背景，更能體會家屬內心的煎熬。每次來探訪，都像自己的家人一樣噓寒問暖，讓我們在這段艱難的時光裡感受到真正的溫暖和安慰。"
       },
       {
         "name": "陳氏家族",
         "relation": "家庭成員",
-        "content": "不管白天黑夜，只要一通電話，他們馬上就到。父親沒有痛苦，我們心裡也安心。最後的時光，父親走得很安祥，這就是最大的安慰。"
+        "content": "不管什麼時候，只要一通電話，他們總是立刻趕到。父親在他們精心照顧下，沒有承受太多痛苦，我們全家人都很安心。最後那段時光，父親很安祥地離開了，這是我們最大的安慰。"
       },
       {
         "name": "羅先生",
         "relation": "感恩的家屬",
-        "content": "一分錢都不用担心，保險全部給付。這樣我們就能安心地陪伴在家人身邊，把每一天都當成珍貴的礎物。"
+        "content": "真的很感謝，他們幫我們處理所有保險手續，一分錢都不用操心。這樣我們就能安心地全心陪伴在家人身邊，把每一天相處的時光都當作珍貴的禮物好好珍惜。"
       }
     ]
   },
@@ -179,23 +210,6 @@
     "title": "我們始終在這裡",
     "titleHighlight": "等候您的來電",
     "description": "無論何時，只要您需要我們，請立即致電 909-321-2255。我們的專業人員會耐心解答您所有關於保險和照護的疑問。",
-    "form": {
-      "title": "留下您的訊息",
-      "firstName": "您的姓名",
-      "lastName": "家族姓氏",
-      "email": "電子信箱",
-      "phone": "聯絡電話",
-      "inquiryType": "詢問類型",
-      "inquiryTypePlaceholder": "請選擇詢問類型",
-      "inquiryTypes": {
-        "service": "服務諮詢",
-        "referral": "病患轉介",
-        "other": "其他問題"
-      },
-      "message": "您想說的話",
-      "messagePlaceholder": "請告訴我們您的情況，我們希望能夠幫到您和家人...",
-      "submit": "發送訊息"
-    },
     "info": {
       "title": "與我們聯繫",
       "phone": {
@@ -259,6 +273,18 @@
         "closeLabel": "關閉浮層",
         "hours": "週一至五：上午 9:00 - 下午 5:00"
       }
+    },
+    "status": {
+      "available": "可用",
+      "emergency": "緊急支援",
+      "open": "營業中",
+      "closed": "已關閉"
+    },
+    "phone": {
+      "backup": "備用"
+    },
+    "manager": {
+      "title": "護理經理"
     }
   },
   "contactPage": {
@@ -267,32 +293,6 @@
       "title": "我們隨時為您",
       "titleHighlight": "提供幫助",
       "description": "如果您對安寧照護、保險覆蓋有任何疑問，或想安排諮詢，請隨時與我們聯絡。我們富有同情心的團隊隨時準備為您和您的家人提供支持。"
-    },
-    "form": {
-      "badge": "聯絡我們",
-      "title": "發送訊息給我們",
-      "titleHighlight": "今天",
-      "description": "請填寫下方表格，我們會在工作日的24小時內回覆您。",
-      "formTitle": "發送訊息給我們",
-      "formDescription": "請填寫下方表格，我們會在工作日的24小時內回覆您。",
-      "firstName": "名字",
-      "firstNamePlaceholder": "請輸入您的名字",
-      "lastName": "姓氏",
-      "lastNamePlaceholder": "請輸入您的姓氏",
-      "phone": "電話號碼",
-      "phonePlaceholder": "(555) 123-4567",
-      "email": "電子郵件",
-      "emailPlaceholder": "your.email@example.com",
-      "inquiryType": "詢問類型",
-      "inquiryTypePlaceholder": "請選擇詢問類型",
-      "inquiryTypes": {
-        "service": "服務諮詢",
-        "referral": "病患轉介",
-        "other": "其他問題"
-      },
-      "message": "留言",
-      "messagePlaceholder": "請告訴我們如何為您和您的家人提供幫助...",
-      "submit": "發送訊息"
     },
     "info": {
       "badge": "聯絡資訊",
@@ -473,12 +473,14 @@
         "guide": {
           "title": "安寧照護指南",
           "description": "全面指南，解釋安寧照護理念、服務內容以及家屬可以期待的服務。",
-          "button": "下載指南"
+          "button": "下載指南",
+          "preview": "預覽指南"
         },
         "family": {
           "title": "家庭支援手冊",
           "description": "為家庭照護者提供的資源，包括自我照護技巧和悲傷支援資訊。",
-          "button": "下載手冊"
+          "button": "下載手冊",
+          "preview": "預覽手冊"
         },
         "forms": {
           "title": "重要表格",
@@ -991,12 +993,6 @@
       "ctaPrimary": "致電 909-321-2255",
       "ctaSecondary": "立即聯絡我們"
     }
-  },
-  "common": {
-    "callButton": "致電 909-321-2255",
-    "contactUs": "聯絡我們",
-    "note": "備註",
-    "checkAvailability": "查看可用性"
   },
   "faqSection": {
     "badge": "常見問題",

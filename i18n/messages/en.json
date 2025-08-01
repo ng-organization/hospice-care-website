@@ -54,7 +54,7 @@
     "badge": "About IE Community Hospice",
     "title": "Federally Certified",
     "titleHighlight": "Hospice Care Provider",
-    "description": "IE Community Hospice Inc. is a federally certified Medicare/Medi-Cal hospice care provider serving 5 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
+    "description": "IE Community Hospice is a federally certified Medicare/Medi-Cal hospice care provider serving 5 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
     "stats": {
       "families": "Counties Served",
       "experience": "Years of Service"
@@ -143,7 +143,21 @@
       "badge": "Compliance & Accreditation",
       "title": "Equal Care",
       "titleHighlight": "for Everyone",
-      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, IE Community Hospice, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age."
+      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, IE Community Hospice, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age.",
+      "certifications": {
+        "medicare": {
+          "title": "Medicare Certified",
+          "description": "Federal Certification"
+        },
+        "cms": {
+          "title": "CMS Provider",
+          "description": "Centers for Medicare & Medicaid"
+        },
+        "equalOpportunity": {
+          "title": "Equal Opportunity",
+          "description": "Non-Discriminatory Care"
+        }
+      }
     }
   },
   "testimonials": {
@@ -173,23 +187,6 @@
     "title": "We're Here to Help",
     "titleHighlight": "24 Hours a Day",
     "description": "Don't worry about insurance - call 909-321-2255. We have insurance specialists ready to answer all your questions and concerns.",
-    "form": {
-      "title": "Send us a message",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "phone": "Phone",
-      "message": "Message",
-      "messagePlaceholder": "How can we help you and your family?",
-      "submit": "Send Message",
-      "inquiryType": "Type of Inquiry",
-      "inquiryTypePlaceholder": "Select inquiry type",
-      "inquiryTypes": {
-        "service": "Service Inquiry",
-        "referral": "Patient Referral",
-        "other": "Other Questions"
-      }
-    },
     "info": {
       "title": "Contact Information",
       "phone": {
@@ -253,6 +250,18 @@
         "closeLabel": "Close overlay",
         "hours": "Mon-Fri: 9:00 AM - 5:00 PM"
       }
+    },
+    "status": {
+      "available": "Available",
+      "emergency": "Emergency Support",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "phone": {
+      "backup": "Backup"
+    },
+    "manager": {
+      "title": "Care Manager"
     }
   },
   "contactPage": {
@@ -261,32 +270,6 @@
       "title": "We're Here to Help",
       "titleHighlight": "Every Step of the Way",
       "description": "Reach out to us anytime with questions about hospice care, insurance coverage, or to schedule a consultation. Our compassionate team is ready to support you and your family."
-    },
-    "form": {
-      "badge": "Contact Us",
-      "title": "Send Us a Message",
-      "titleHighlight": "Today",
-      "description": "Fill out the form below and we'll get back to you within 24 hours during business days.",
-      "formTitle": "Send Us a Message",
-      "formDescription": "Fill out the form below and we'll get back to you within 24 hours during business days.",
-      "firstName": "First Name",
-      "firstNamePlaceholder": "Enter your first name",
-      "lastName": "Last Name",
-      "lastNamePlaceholder": "Enter your last name",
-      "phone": "Phone Number",
-      "phonePlaceholder": "(555) 123-4567",
-      "email": "Email Address",
-      "emailPlaceholder": "your.email@example.com",
-      "inquiryType": "Type of Inquiry",
-      "inquiryTypePlaceholder": "Select inquiry type",
-      "inquiryTypes": {
-        "service": "Service Inquiry",
-        "referral": "Patient Referral",
-        "other": "Other Questions"
-      },
-      "message": "Message",
-      "messagePlaceholder": "Tell us how we can help you and your family...",
-      "submit": "Send Message"
     },
     "info": {
       "badge": "Contact Information",
@@ -467,12 +450,14 @@
         "guide": {
           "title": "Hospice Care Guide",
           "description": "Comprehensive guide explaining hospice philosophy, services, and what families can expect.",
-          "button": "Download Guide"
+          "button": "Download Guide",
+          "preview": "Preview Guide"
         },
         "family": {
           "title": "Family Support Handbook",
           "description": "Resources for family caregivers, including self-care tips and grief support information.",
-          "button": "Download Handbook"
+          "button": "Download Handbook",
+          "preview": "Preview Handbook"
         },
         "forms": {
           "title": "Important Forms",
@@ -646,7 +631,7 @@
     }
   },
   "footer": {
-    "description": "IE Community Hospice Inc. - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
+    "description": "IE Community Hospice - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
     "badges": {
       "medicare": "Medicare Certified",
       "licensed": "CMS Certified",
@@ -695,7 +680,7 @@
       "chinese": "Chinese in LA"
     },
     "legal": {
-      "copyright": "© {year} IE Community Hospice Inc. All rights reserved.",
+      "copyright": "© {year} IE Community Hospice (諾安安寧療護) All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "hipaa": "HIPAA Notice",
@@ -990,7 +975,24 @@
     "callButton": "Call 909-321-2255",
     "contactUs": "Contact Us",
     "note": "Note",
-    "checkAvailability": "Check Availability"
+    "checkAvailability": "Check Availability",
+    "callNow": "Call Now",
+    "sendEmail": "Send Email",
+    "getDirections": "Get Directions",
+    "contact": "Contact",
+    "preview": "Preview",
+    "close": "Close",
+    "download": "Download"
+  },
+  "accessibility": {
+    "skipToMainContent": "Skip to main content",
+    "close": "Close",
+    "toggleSidebar": "Toggle Sidebar",
+    "openMobileMenu": "Open mobile menu",
+    "closeMobileMenu": "Close mobile menu",
+    "loading": "Loading",
+    "previous": "Previous",
+    "next": "Next"
   },
   "faqSection": {
     "badge": "FAQ",

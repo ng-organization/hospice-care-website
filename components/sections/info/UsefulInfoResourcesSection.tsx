@@ -1,7 +1,18 @@
+"use client";
+
 import { useTranslations, useLocale } from "next-intl";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 import {
   Download,
@@ -13,10 +24,13 @@ import {
   Phone,
   ArrowRight,
 } from "lucide-react";
+import { PDFViewer } from "@/components/ui/PDFViewer";
 
 export function UsefulInfoResourcesSection() {
   const t = useTranslations();
   const locale = useLocale();
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewPdf, setPreviewPdf] = useState({ url: "", title: "", filename: "" });
 
   // Determine resource file paths based on locale
   const getResourcePaths = () => {
@@ -51,6 +65,16 @@ export function UsefulInfoResourcesSection() {
       // Fallback: just open in new tab
       window.open(filePath, "_blank");
     }
+  };
+
+  const handlePreview = (filePath: string, title: string, fileName: string) => {
+    setPreviewPdf({ url: filePath, title, filename: fileName });
+    setPreviewOpen(true);
+  };
+
+  const handleDownloadFromPreview = () => {
+    handleDownload(previewPdf.url, previewPdf.filename);
+    setPreviewOpen(false);
   };
 
   return (
@@ -92,6 +116,23 @@ export function UsefulInfoResourcesSection() {
                       size="sm"
                       className="flex-1"
                       onClick={() =>
+                        handlePreview(
+                          resourcePaths.guide,
+                          t("usefulInfoPage.resources.items.guide.title"),
+                          locale === "zh"
+                            ? "安寧療護指南.pdf"
+                            : "Hospice Care Guide.pdf"
+                        )
+                      }
+                    >
+                      <Eye className="w-4 h-4 mr-2" />
+                      {t("usefulInfoPage.resources.items.guide.preview")}
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() =>
                         handleDownload(
                           resourcePaths.guide,
                           locale === "zh"
@@ -119,6 +160,23 @@ export function UsefulInfoResourcesSection() {
                     {t("usefulInfoPage.resources.items.family.description")}
                   </p>
                   <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() =>
+                        handlePreview(
+                          resourcePaths.family,
+                          t("usefulInfoPage.resources.items.family.title"),
+                          locale === "zh"
+                            ? "臨終關懷家庭支援手冊.pdf"
+                            : "Hospice Family Support Handbook.pdf"
+                        )
+                      }
+                    >
+                      <Eye className="w-4 h-4 mr-2" />
+                      {t("usefulInfoPage.resources.items.family.preview")}
+                    </Button>
                     <Button
                       variant="outline"
                       size="sm"
@@ -166,8 +224,8 @@ export function UsefulInfoResourcesSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Facebook className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Facebook className="w-8 h-8 text-primary-600" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.community.facebook.title")}
@@ -184,8 +242,8 @@ export function UsefulInfoResourcesSection() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Users className="w-8 h-8 text-red-600" />
+                  <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Users className="w-8 h-8 text-secondary-600" />
                   </div>
                   <h3 className="font-semibold text-slate-800 mb-3">
                     {t("usefulInfoPage.community.chinese.title")}
@@ -203,6 +261,32 @@ export function UsefulInfoResourcesSection() {
           </div>
         </div>
       </section>
+
+      {/* PDF Preview Dialog */}
+      <Dialog open={previewOpen} onOpenChange={setPreviewOpen}>
+        <DialogContent className="max-w-4xl w-[90vw] h-[85vh] max-h-[800px] flex flex-col p-0 gap-0">
+          <DialogHeader className="px-4 pt-4 pb-3 flex-shrink-0">
+            <DialogTitle className="text-lg text-slate-800 truncate">
+              {previewPdf.title}
+            </DialogTitle>
+            <DialogDescription className="text-sm text-slate-600 truncate">
+              {t("common.preview")} - {previewPdf.filename}
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="flex-1 px-4 pb-4 min-h-0">
+            <div className="w-full h-full border rounded-lg overflow-hidden bg-slate-50">
+              {previewPdf.url && (
+                <PDFViewer
+                  file={previewPdf.url}
+                  className="w-full h-full"
+                  onDownload={handleDownloadFromPreview}
+                />
+              )}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </>
   );
 }

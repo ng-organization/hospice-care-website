@@ -57,7 +57,7 @@ export function Features() {
     ];
 
     return (
-        <section className="py-16 md:py-24">
+        <section className="py-24">
             <div className="mx-auto max-w-6xl space-y-12 px-6 md:space-y-20">
                 <div className="relative z-10 mx-auto max-w-2xl space-y-8 text-center md:space-y-16">
                     <h2 className="text-balance text-5xl font-medium lg:text-6xl">

@@ -14,10 +14,9 @@ export function ComplianceSection() {
             <Badge className="bg-accent-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
               {t("aboutPage.compliance.badge")}
             </Badge>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-slate-800 mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-accent-600 mb-6">
               {t("aboutPage.compliance.title")}
-              <br />
-              <span className="font-semibold text-accent-600">
+              <span className="text-accent-600">
                 {t("aboutPage.compliance.titleHighlight")}
               </span>
             </h2>
@@ -42,26 +41,15 @@ export function ComplianceSection() {
 
           {/* Certifications badges */}
           <div className="flex flex-wrap justify-center gap-6 mt-12">
-            <div className="bg-white rounded-lg shadow-md px-6 py-4 text-center">
-              <p className="text-sm font-semibold text-accent-800">
-                Medicare Certified
-              </p>
-              <p className="text-xs text-slate-600">Federal Certification</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md px-6 py-4 text-center">
-              <p className="text-sm font-semibold text-accent-800">
-                CMS Provider
-              </p>
-              <p className="text-xs text-slate-600">
-                Centers for Medicare & Medicaid
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md px-6 py-4 text-center">
-              <p className="text-sm font-semibold text-accent-800">
-                Equal Opportunity
-              </p>
-              <p className="text-xs text-slate-600">Non-Discriminatory Care</p>
-            </div>
+            <Badge className="bg-white/80 backdrop-blur-sm text-slate-700 px-6 py-3 rounded-full text-sm font-medium min-w-[140px] justify-center border border-slate-200/50 shadow-sm hover:shadow-md transition-all duration-200">
+              {t("aboutPage.compliance.certifications.medicare.title")}
+            </Badge>
+            <Badge className="bg-white/80 backdrop-blur-sm text-slate-700 px-6 py-3 rounded-full text-sm font-medium min-w-[140px] justify-center border border-slate-200/50 shadow-sm hover:shadow-md transition-all duration-200">
+              {t("aboutPage.compliance.certifications.cms.title")}
+            </Badge>
+            <Badge className="bg-white/80 backdrop-blur-sm text-slate-700 px-6 py-3 rounded-full text-sm font-medium min-w-[140px] justify-center border border-slate-200/50 shadow-sm hover:shadow-md transition-all duration-200">
+              {t("aboutPage.compliance.certifications.equalOpportunity.title")}
+            </Badge>
           </div>
         </div>
       </div>
