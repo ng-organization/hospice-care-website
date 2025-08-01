@@ -473,12 +473,14 @@
         "guide": {
           "title": "安寧照護指南",
           "description": "全面指南，解釋安寧照護理念、服務內容以及家屬可以期待的服務。",
-          "button": "下載指南"
+          "button": "下載指南",
+          "preview": "預覽指南"
         },
         "family": {
           "title": "家庭支援手冊",
           "description": "為家庭照護者提供的資源，包括自我照護技巧和悲傷支援資訊。",
-          "button": "下載手冊"
+          "button": "下載手冊",
+          "preview": "預覽手冊"
         },
         "forms": {
           "title": "重要表格",

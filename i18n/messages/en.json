@@ -467,12 +467,14 @@
         "guide": {
           "title": "Hospice Care Guide",
           "description": "Comprehensive guide explaining hospice philosophy, services, and what families can expect.",
-          "button": "Download Guide"
+          "button": "Download Guide",
+          "preview": "Preview Guide"
         },
         "family": {
           "title": "Family Support Handbook",
           "description": "Resources for family caregivers, including self-care tips and grief support information.",
-          "button": "Download Handbook"
+          "button": "Download Handbook",
+          "preview": "Preview Handbook"
         },
         "forms": {
           "title": "Important Forms",

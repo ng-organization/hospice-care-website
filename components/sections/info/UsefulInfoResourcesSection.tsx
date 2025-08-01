@@ -1,7 +1,18 @@
+"use client";
+
 import { useTranslations, useLocale } from "next-intl";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 import {
   Download,
@@ -17,6 +28,8 @@ import {
 export function UsefulInfoResourcesSection() {
   const t = useTranslations();
   const locale = useLocale();
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewPdf, setPreviewPdf] = useState({ url: "", title: "", filename: "" });
 
   // Determine resource file paths based on locale
   const getResourcePaths = () => {
@@ -51,6 +64,16 @@ export function UsefulInfoResourcesSection() {
       // Fallback: just open in new tab
       window.open(filePath, "_blank");
     }
+  };
+
+  const handlePreview = (filePath: string, title: string, fileName: string) => {
+    setPreviewPdf({ url: filePath, title, filename: fileName });
+    setPreviewOpen(true);
+  };
+
+  const handleDownloadFromPreview = () => {
+    handleDownload(previewPdf.url, previewPdf.filename);
+    setPreviewOpen(false);
   };
 
   return (
@@ -92,6 +115,23 @@ export function UsefulInfoResourcesSection() {
                       size="sm"
                       className="flex-1"
                       onClick={() =>
+                        handlePreview(
+                          resourcePaths.guide,
+                          t("usefulInfoPage.resources.items.guide.title"),
+                          locale === "zh"
+                            ? "安寧療護指南.pdf"
+                            : "Hospice Care Guide.pdf"
+                        )
+                      }
+                    >
+                      <Eye className="w-4 h-4 mr-2" />
+                      {t("usefulInfoPage.resources.items.guide.preview")}
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() =>
                         handleDownload(
                           resourcePaths.guide,
                           locale === "zh"
@@ -119,6 +159,23 @@ export function UsefulInfoResourcesSection() {
                     {t("usefulInfoPage.resources.items.family.description")}
                   </p>
                   <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() =>
+                        handlePreview(
+                          resourcePaths.family,
+                          t("usefulInfoPage.resources.items.family.title"),
+                          locale === "zh"
+                            ? "臨終關懷家庭支援手冊.pdf"
+                            : "Hospice Family Support Handbook.pdf"
+                        )
+                      }
+                    >
+                      <Eye className="w-4 h-4 mr-2" />
+                      {t("usefulInfoPage.resources.items.family.preview")}
+                    </Button>
                     <Button
                       variant="outline"
                       size="sm"
@@ -203,6 +260,50 @@ export function UsefulInfoResourcesSection() {
           </div>
         </div>
       </section>
+
+      {/* PDF Preview Dialog */}
+      <Dialog open={previewOpen} onOpenChange={setPreviewOpen}>
+        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] flex flex-col">
+          <DialogHeader>
+            <DialogTitle className="text-xl text-slate-800">
+              {previewPdf.title}
+            </DialogTitle>
+            <DialogDescription className="text-slate-600">
+              {locale === "zh" ? "預覽文件內容" : "Preview document content"}
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="flex-1 w-full border rounded-lg overflow-hidden bg-slate-50">
+            {previewPdf.url && (
+              <iframe
+                src={`${previewPdf.url}#toolbar=1&navpanes=0&scrollbar=1`}
+                width="100%"
+                height="100%"
+                className="border-0"
+                title={previewPdf.title}
+              />
+            )}
+          </div>
+
+          <DialogFooter className="flex flex-col sm:flex-row gap-2 pt-4">
+            <Button
+              variant="outline"
+              onClick={() => setPreviewOpen(false)}
+              className="flex-1 sm:flex-none"
+            >
+              {locale === "zh" ? "關閉" : "Close"}
+            </Button>
+            <Button
+              variant="outline"
+              onClick={handleDownloadFromPreview}
+              className="flex-1 sm:flex-none"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              {locale === "zh" ? "下載檔案" : "Download File"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </>
   );
 }
