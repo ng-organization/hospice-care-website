@@ -15,7 +15,7 @@
     "badge": "Medicare & Medi-Cal Certified • 24/7 Availability",
     "title": "Life with Dignity,",
     "titleHighlight": "Comfort Care",
-    "description": "Federally certified hospice care provider serving Southern California with bilingual English/Traditional Chinese services. Medicare, Medi-Cal, and HMO coverage up to 100%.",
+    "description": "Federally certified hospice care provider serving Southern California with multiple language English/Traditional Chinese services. Medicare, Medi-Cal, and HMO coverage up to 100%.",
     "ctaPrimary": "Call 909-321-2255",
     "ctaSecondary": "Learn About Our Services",
     "certifications": {
@@ -69,8 +69,8 @@
         "description": "Round-the-clock care and support when you need it most."
       },
       "bilingual": {
-        "title": "Bilingual Care",
-        "description": "English and Traditional Chinese speaking staff available."
+        "title": "Multiple Language Care",
+        "description": "Multiple language medical professionals including English and Traditional Chinese speaking staff available."
       }
     },
     "buttons": {
@@ -450,13 +450,13 @@
         "guide": {
           "title": "Hospice Care Guide",
           "description": "Comprehensive guide explaining hospice philosophy, services, and what families can expect.",
-          "button": "Download Guide",
+          "button": "Download",
           "preview": "Preview Guide"
         },
         "family": {
           "title": "Family Support Handbook",
           "description": "Resources for family caregivers, including self-care tips and grief support information.",
-          "button": "Download Handbook",
+          "button": "Download",
           "preview": "Preview Handbook"
         },
         "forms": {
@@ -631,12 +631,12 @@
     }
   },
   "footer": {
-    "description": "IE Community Hospice - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with bilingual services and culturally sensitive care.",
+    "description": "IE Community Hospice - Federally certified Medicare/Medi-Cal hospice care provider serving Southern California with multiple language services and culturally sensitive care.",
     "badges": {
       "medicare": "Medicare Certified",
       "licensed": "CMS Certified",
       "available": "24/7 Available",
-      "bilingual": "Bilingual Staff"
+      "bilingual": "Multiple Language Staff"
     },
     "quickLinks": {
       "title": "Quick Links",
@@ -735,7 +735,7 @@
         },
         {
           "name": "Riverside County",
-          "description": "Serving the diverse communities of Riverside County with culturally sensitive and bilingual hospice care.",
+          "description": "Serving the diverse communities of Riverside County with culturally sensitive and multiple language hospice care.",
           "cities": "Including Riverside, Corona, Moreno Valley, Palm Springs, Hemet, and surrounding areas"
         },
         {

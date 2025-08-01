@@ -21,19 +21,19 @@ export async function generateMetadata({
   const isZh = locale === 'zh';
   
   const title = isZh 
-    ? "諾安安寧療護 - 南加州專業雙語安寧照護服務 | Medicare認證"
+    ? "諾安安寧療護 - 南加州專業多語言安寧照護服務 | Medicare認證"
     : "IE Community Hospice - Professional Hospice Care Southern California | Medicare Certified";
     
   const description = isZh
-    ? "諾安安寧療護為南加州華人家庭提供Medicare認證的專業安寧照護服務。24小時雙語支持，居家照護，疼痛管理。聖貝納迪諾縣、河濱縣、洛杉磯縣、橙縣服務。"
-    : "IE Community Hospice provides Medicare-certified hospice care for Southern California families. 24/7 bilingual support, home care, pain management. Serving San Bernardino, Riverside, LA, Orange counties.";
+    ? "諾安安寧療護為南加州華人家庭提供Medicare認證的專業安寧照護服務。24小時多語言支持，居家照護，疼痛管理。聖貝納迪諾縣、河濱縣、洛杉磯縣、橙縣服務。"
+    : "IE Community Hospice provides Medicare-certified hospice care for Southern California families. 24/7 multiple language support, home care, pain management. Serving San Bernardino, Riverside, LA, Orange counties.";
 
   return {
     title,
     description,
     keywords: isZh 
-      ? "安寧療護, 安寧照護, 臨終關懷, Medicare, 華人安寧療護, 南加州, 居家照護, 疼痛管理, 雙語服務, 聖貝納迪諾縣, 河濱縣, 洛杉磯縣, 橙縣, 24小時護理"
-      : "hospice care, palliative care, end of life care, Medicare certified, Chinese hospice care, Southern California, home care, pain management, bilingual services, San Bernardino County, Riverside County, Los Angeles County, Orange County, 24/7 nursing",
+      ? "安寧療護, 安寧照護, 臨終關懷, Medicare, 華人安寧療護, 南加州, 居家照護, 疼痛管理, 多語言服務, 聖貝納迪諾縣, 河濱縣, 洛杉磯縣, 橙縣, 24小時護理"
+      : "hospice care, palliative care, end of life care, Medicare certified, Chinese hospice care, Southern California, home care, pain management, multiple language services, San Bernardino County, Riverside County, Los Angeles County, Orange County, 24/7 nursing",
     authors: [{ name: isZh ? "諾安安寧療護" : "IE Community Hospice" }],
     creator: isZh ? "諾安安寧療護" : "IE Community Hospice",
     publisher: isZh ? "諾安安寧療護" : "IE Community Hospice",

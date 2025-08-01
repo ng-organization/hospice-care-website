@@ -1,9 +1,11 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Shield } from "lucide-react";
+import { getContentImage } from "@/lib/utils";
 
 export function DignityPhilosophySection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section className="min-h-[80vh] w-full bg-white observe-section">
@@ -79,7 +81,7 @@ export function DignityPhilosophySection() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/image_asset/20250724_1445_Realistic Healthcare Portrait_remix_01k0z67dw8f99s2362jmy2mf9p.webp"
+                  src={getContentImage(locale, "dignity-philosophy")}
                   alt="Compassionate healthcare professional showing caring approach"
                   className="w-full h-[500px] object-cover"
                 />

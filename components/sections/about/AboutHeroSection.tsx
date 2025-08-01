@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/ui/HeroSection";
 import { useLocale, useTranslations } from "next-intl";
+import { getHeroImage } from "@/lib/utils";
 
 export function AboutHeroSection() {
   const t = useTranslations();
@@ -8,7 +9,7 @@ export function AboutHeroSection() {
   return (
     <HeroSection
       variant="page"
-      backgroundImage="/image_asset/20250724_1452_Realistic Caring Interaction_remix_01k0z6m6yke1av5srhgz6j4c9c.webp"
+      backgroundImage={getHeroImage(locale, "/about")}
       badgeText={t("aboutPage.hero.badge")}
       title={t("aboutPage.hero.title")}
       titleHighlight={t("aboutPage.hero.titleHighlight")}

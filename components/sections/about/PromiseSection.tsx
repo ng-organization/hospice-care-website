@@ -1,10 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getContentImage } from "@/lib/utils";
 
 export function PromiseSection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section className="min-h-[70vh] w-full bg-white observe-section">
@@ -14,7 +16,7 @@ export function PromiseSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/image_asset/20250724_1731_Realistic Caregiver Portrait_remix_01k0zfs49tfdyvy2tc86hmm1k0.webp"
+                src={getContentImage(locale, "promise-caregiver")}
                 alt="Caregiver providing compassionate support"
                 className="w-full h-[500px] object-cover"
               />

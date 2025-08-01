@@ -1,8 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getContentImage } from "@/lib/utils";
 
 export function MissionSection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section className="min-h-[80vh] w-full bg-gradient-to-br from-primary-50/30 to-white observe-section">
@@ -31,7 +33,7 @@ export function MissionSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/image_asset/20250725_1123_Realistic Doctor Consultation_remix_01k11d2jzke1w8mxrazmkk5kny.webp"
+                src={getContentImage(locale, "mission-consultation")}
                 alt="Doctor consultation showing compassionate care"
                 className="w-full h-[500px] object-cover"
               />

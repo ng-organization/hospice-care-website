@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { HeroSection } from "@/components/ui/HeroSection";
+import { getHeroImage } from "@/lib/utils";
 
 export function DignityHeroSection() {
   const t = useTranslations();
@@ -8,7 +9,7 @@ export function DignityHeroSection() {
   return (
     <HeroSection
       variant="page"
-      backgroundImage="/image_asset/20250724_1347_Realistic Quilt Sharing_remix_01k0z2x346e8m8tztchby92rbv.webp"
+      backgroundImage={getHeroImage(locale, "/death-with-dignity")}
       badgeText={t("dignityPage.hero.badge")}
       title={t("dignityPage.hero.title")}
       titleHighlight={t("dignityPage.hero.titleHighlight")}

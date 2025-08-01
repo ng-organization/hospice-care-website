@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -9,9 +9,11 @@ import {
   StaggerItem,
 } from "@/components/motion";
 import { Check } from "lucide-react";
+import { getContentImage } from "@/lib/utils";
 
 export function AboutSection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section className="w-full py-24 bg-gray-50">
@@ -21,7 +23,7 @@ export function AboutSection() {
             <div className="relative order-1 lg:order-2">
               <div className="aspect-square bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/image_asset/20250725_1034_Realistic Care Interaction_remix_01k11a9631e8rv6vmsdb2qbgkh.webp"
+                  src={getContentImage(locale, "about-team")}
                   alt="Professional hospice care team providing compassionate care"
                   className="w-full h-full object-cover"
                 />
