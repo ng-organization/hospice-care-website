@@ -1,13 +1,9 @@
 "use client";
 
-import { useState, useCallback } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCw, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-
-// Set up PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 interface PDFViewerProps {
   file: string;
@@ -17,43 +13,43 @@ interface PDFViewerProps {
 
 export function PDFViewer({ file, className = "", onDownload }: PDFViewerProps) {
   const t = useTranslations();
-  const [numPages, setNumPages] = useState<number>(0);
-  const [pageNumber, setPageNumber] = useState<number>(1);
-  const [scale, setScale] = useState<number>(0.8);
-  const [rotation, setRotation] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const onDocumentLoadSuccess = useCallback(({ numPages }: { numPages: number }) => {
-    setNumPages(numPages);
+  useEffect(() => {
+    setLoading(true);
+    setError(null);
+  }, [file]);
+
+  const handleIframeLoad = () => {
     setLoading(false);
     setError(null);
-  }, []);
+  };
 
-  const onDocumentLoadError = useCallback((error: Error) => {
-    console.error('Error loading PDF:', error);
-    setError('Failed to load PDF document');
+  const handleIframeError = () => {
     setLoading(false);
-  }, []);
-
-  const goToPrevPage = () => {
-    setPageNumber(prev => Math.max(prev - 1, 1));
+    setError('Unable to load PDF preview');
   };
 
-  const goToNextPage = () => {
-    setPageNumber(prev => Math.min(prev + 1, numPages));
-  };
-
-  const zoomIn = () => {
-    setScale(prev => Math.min(prev + 0.2, 3.0));
-  };
-
-  const zoomOut = () => {
-    setScale(prev => Math.max(prev - 0.2, 0.4));
-  };
-
-  const rotate = () => {
-    setRotation(prev => (prev + 90) % 360);
+  const handleDownloadClick = () => {
+    if (onDownload) {
+      onDownload();
+    } else {
+      // Fallback download functionality
+      try {
+        const link = document.createElement("a");
+        link.href = file;
+        link.download = file.split('/').pop() || 'document.pdf';
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (error) {
+        console.error("Error downloading file:", error);
+        window.open(file, "_blank");
+      }
+    }
   };
 
   if (error) {
@@ -66,13 +62,11 @@ export function PDFViewer({ file, className = "", onDownload }: PDFViewerProps) 
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-slate-800 mb-2">Unable to Preview PDF</h3>
-          <p className="text-slate-600 mb-4">The PDF document could not be loaded for preview.</p>
-          {onDownload && (
-            <Button onClick={onDownload} className="bg-primary-600 hover:bg-primary-700">
-              <Download className="w-4 h-4 mr-2" />
-              {t("common.download")} PDF
-            </Button>
-          )}
+          <p className="text-slate-600 mb-4">The PDF document could not be loaded for preview. Please download it to view.</p>
+          <Button onClick={handleDownloadClick} className="bg-primary-600 hover:bg-primary-700">
+            <Download className="w-4 h-4 mr-2" />
+            {t("common.download")} PDF
+          </Button>
         </div>
       </div>
     );
@@ -82,65 +76,22 @@ export function PDFViewer({ file, className = "", onDownload }: PDFViewerProps) 
     <div className={`flex flex-col h-full ${className}`}>
       {/* PDF Controls */}
       <div className="flex items-center justify-between p-3 bg-slate-100 border-b flex-wrap gap-2">
-        <div className="flex items-center gap-1">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={goToPrevPage}
-            disabled={pageNumber <= 1}
-            className="h-8 w-8 p-0"
-          >
-            <ChevronLeft className="w-3 h-3" />
-          </Button>
-          
-          <span className="text-xs text-slate-600 min-w-[70px] text-center px-2">
-            {loading ? (
-              <span className="animate-pulse">Loading...</span>
-            ) : (
-              `${pageNumber} / ${numPages}`
-            )}
-          </span>
-          
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={goToNextPage}
-            disabled={pageNumber >= numPages}
-            className="h-8 w-8 p-0"
-          >
-            <ChevronRight className="w-3 h-3" />
-          </Button>
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-slate-600">PDF Preview</span>
         </div>
 
-        <div className="flex items-center gap-1">
-          <Button variant="outline" size="sm" onClick={zoomOut} disabled={scale <= 0.4} className="h-8 w-8 p-0">
-            <ZoomOut className="w-3 h-3" />
+        <div className="flex items-center gap-2">
+          <Button variant="outline" size="sm" onClick={handleDownloadClick} className="h-8">
+            <Download className="w-3 h-3 mr-1" />
+            Download
           </Button>
-          
-          <span className="text-xs text-slate-600 min-w-[45px] text-center">
-            {Math.round(scale * 100)}%
-          </span>
-          
-          <Button variant="outline" size="sm" onClick={zoomIn} disabled={scale >= 3.0} className="h-8 w-8 p-0">
-            <ZoomIn className="w-3 h-3" />
-          </Button>
-
-          <Button variant="outline" size="sm" onClick={rotate} className="h-8 w-8 p-0">
-            <RotateCw className="w-3 h-3" />
-          </Button>
-
-          {onDownload && (
-            <Button variant="outline" size="sm" onClick={onDownload} className="h-8 w-8 p-0">
-              <Download className="w-3 h-3" />
-            </Button>
-          )}
         </div>
       </div>
 
-      {/* PDF Document */}
-      <div className="flex-1 overflow-auto bg-slate-50 p-2">
+      {/* PDF Document via Iframe */}
+      <div className="flex-1 overflow-hidden bg-slate-50 relative">
         {loading && (
-          <div className="flex items-center justify-center h-full">
+          <div className="absolute inset-0 flex items-center justify-center z-10 bg-slate-50">
             <div className="text-center">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600 mx-auto mb-2"></div>
               <span className="text-sm text-slate-600">Loading PDF...</span>
@@ -148,26 +99,14 @@ export function PDFViewer({ file, className = "", onDownload }: PDFViewerProps) 
           </div>
         )}
         
-        {!loading && (
-          <div className="flex justify-center min-h-full">
-            <Document
-              file={file}
-              onLoadSuccess={onDocumentLoadSuccess}
-              onLoadError={onDocumentLoadError}
-              loading=""
-              className="react-pdf__Document"
-            >
-              <Page
-                pageNumber={pageNumber}
-                scale={scale}
-                rotate={rotation}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-                className="react-pdf__Page"
-              />
-            </Document>
-          </div>
-        )}
+        <iframe
+          src={`${file}#toolbar=1&navpanes=1&scrollbar=1`}
+          className="w-full h-full border-0"
+          title="PDF Preview"
+          onLoad={handleIframeLoad}
+          onError={handleIframeError}
+          style={{ minHeight: '400px' }}
+        />
       </div>
     </div>
   );

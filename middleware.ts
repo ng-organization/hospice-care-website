@@ -7,5 +7,17 @@ export default createMiddleware({
 })
 
 export const config = {
-  matcher: ['/', '/(zh|en)/:path*']
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - Static asset directories
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|resources|assets|image_asset).*)',
+    '/',
+    '/(zh|en)/:path*'
+  ]
 }
