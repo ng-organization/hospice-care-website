@@ -143,7 +143,21 @@
       "badge": "Compliance & Accreditation",
       "title": "Equal Care",
       "titleHighlight": "for Everyone",
-      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, 諾安安寧療護, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age."
+      "description": "Pursuant to Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, and Age Discrimination Act of 1975, and their implementing regulations, 諾安安寧療護, Inc. does not discriminate in the provision of services and employment because of race, color, creed, religion, sex, sexual preferences, national origin, disability, and age.",
+      "certifications": {
+        "medicare": {
+          "title": "Medicare Certified",
+          "description": "Federal Certification"
+        },
+        "cms": {
+          "title": "CMS Provider",
+          "description": "Centers for Medicare & Medicaid"
+        },
+        "equalOpportunity": {
+          "title": "Equal Opportunity",
+          "description": "Non-Discriminatory Care"
+        }
+      }
     }
   },
   "testimonials": {
