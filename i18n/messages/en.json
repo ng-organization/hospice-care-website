@@ -47,14 +47,14 @@
         "description": "Up to 5 days of relief care for families and primary caregivers in professional facilities."
       }
     },
-    "additionalInfo": "We also provide pain management, social worker services, bereavement support, volunteer programs, medication services, and medical equipment - all as part of our comprehensive hospice care.",
+    "additionalInfo": "We also provide pain management, social worker services, bereavement support, volunteer programs, medication services, medical equipment, and transportation services - all as part of our comprehensive hospice care.",
     "viewAllServices": "View All Services"
   },
   "about": {
     "badge": "About IE Community Hospice",
     "title": "Federally Certified",
     "titleHighlight": "Hospice Care Provider",
-    "description": "IE Community Hospice is a federally certified Medicare/Medi-Cal hospice care provider serving 5 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
+    "description": "IE Community Hospice is a federally certified Medicare/Medi-Cal hospice care provider serving 6 counties in Southern California. Our mission: providing compassionate care that enhances quality of life with dignity, comfort, and hope.",
     "stats": {
       "families": "Counties Served",
       "experience": "Years of Service"
@@ -717,16 +717,16 @@
       "badge": "Service Coverage Areas",
       "title": "Serving Southern California",
       "titleHighlight": "Wherever You Call Home",
-      "description": "IE Community Hospice proudly serves families across four major Southern California counties, providing compassionate hospice care in the comfort and familiarity of your chosen setting."
+      "description": "IE Community Hospice proudly serves families across six major Southern California counties, providing compassionate hospice care in the comfort and familiarity of your chosen setting."
     },
     "counties": {
       "badge": "Coverage Areas",
-      "title": "Four Major Counties",
+      "title": "Six Major Counties",
       "titleHighlight": "We Serve",
       "description": "Our compassionate care extends across Southern California's most populated regions, ensuring families have access to quality hospice services close to home.",
       "serviceAreasLabel": "Service Areas:",
       "coverageTitle": "Comprehensive Southern California Coverage",
-      "coverageDescription": "Our service area spans across four major counties, covering the most populated regions of Southern California. We're strategically positioned to serve families from mountain communities to coastal areas, ensuring quality hospice care is accessible throughout the region.",
+      "coverageDescription": "Our service area spans across six major counties, covering the most populated regions of Southern California. We're strategically positioned to serve families from mountain communities to coastal areas, ensuring quality hospice care is accessible throughout the region.",
       "items": [
         {
           "name": "San Bernardino County",
@@ -747,6 +747,16 @@
           "name": "Orange County",
           "description": "Quality hospice services for Orange County families, with convenient access to our certified care team.",
           "cities": "Including Anaheim, Santa Ana, Irvine, Garden Grove, Orange, and surrounding areas"
+        },
+        {
+          "name": "Ventura County",
+          "description": "Extending our compassionate care to Ventura County families with comprehensive hospice services.",
+          "cities": "Including Ventura, Oxnard, Thousand Oaks, Simi Valley, Camarillo, and surrounding areas"
+        },
+        {
+          "name": "San Diego County",
+          "description": "Providing quality hospice care throughout San Diego County, from coastal communities to inland regions.",
+          "cities": "Including San Diego, Chula Vista, Oceanside, Escondido, Carlsbad, and surrounding areas"
         }
       ]
     },
@@ -754,7 +764,7 @@
       "badge": "Main Office",
       "title": "Centrally Located",
       "titleHighlight": "in Upland",
-      "description": "Our main office is strategically located in Upland, providing easy access for families across all four counties we serve.",
+      "description": "Our main office is strategically located in Upland, providing easy access for families across all six counties we serve.",
       "address": "600 N. Mountain Ave, Suite D105\nUpland, CA 91786",
       "directions": "Easily accessible from major freeways including I-10, I-210, and I-15",
       "parking": "Free parking available for all visitors",
@@ -928,6 +938,10 @@
       "equipment": {
         "title": "Equipment Services",
         "description": "Necessary medical equipment and supplies to ensure patient comfort and care."
+      },
+      "transportation": {
+        "title": "Transportation Services",
+        "description": "Safe and comfortable medical transportation for appointments and facility transfers."
       }
     },
     "levelsOfCare": {

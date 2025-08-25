@@ -1,4 +1,5 @@
 import { 
+  Car,
   Clock,
   HandHeart,
   Heart,
@@ -53,6 +54,11 @@ export function Features() {
             icon: <Wrench className="size-6" />,
             title: t("servicesPage.coreServices.equipment.title"),
             description: t("servicesPage.coreServices.equipment.description"),
+        },
+        {
+            icon: <Car className="size-6" />,
+            title: t("servicesPage.coreServices.transportation.title"),
+            description: t("servicesPage.coreServices.transportation.description"),
         },
     ];
 
