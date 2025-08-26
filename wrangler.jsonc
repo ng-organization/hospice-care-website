@@ -1,6 +1,16 @@
 {
     "main": ".open-next/worker.js",
     "name": "ie-community-hospice",
+    "routes": [
+        {
+            "pattern": "iecommunityhospiceinc.com",
+            "custom_domain": true
+        },
+        {
+            "pattern": "www.iecommunityhospiceinc.com",
+            "custom_domain": true
+        }
+    ],
     "observability": {
         "enabled": true,
         "head_sampling_rate": 1
