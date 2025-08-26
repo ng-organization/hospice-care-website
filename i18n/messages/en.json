@@ -28,7 +28,7 @@
     "badge": "Our Services",
     "title": "Comprehensive Hospice",
     "titleHighlight": "Care Services",
-    "description": "Our Chinese-speaking medical professionals provide personalized care arrangements for patients and families, including home care, inpatient care, continuous care, and respite care services.",
+    "description": "Our multilingual medical professionals provide personalized care arrangements for patients and families, including home care, inpatient care, continuous care, and respite care services.",
     "items": {
       "homecare": {
         "title": "Home Care",
@@ -168,7 +168,7 @@
       {
         "name": "Mrs. Wang",
         "relation": "Patient Family",
-        "content": "The Chinese-speaking staff made all the difference. They understood our cultural needs and provided care with genuine compassion and respect."
+        "content": "The multilingual staff made all the difference. They understood our cultural needs and provided care with genuine compassion and respect."
       },
       {
         "name": "Chen Family",
@@ -478,7 +478,7 @@
       },
       "chinese": {
         "title": "Chinese Community",
-        "description": "Connect with Chinese-speaking families and access resources in your language.",
+        "description": "Connect with multilingual families and access resources in your language.",
         "button": "Visit Chinese in LA"
       }
     },
